@@ -101,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,6 +115,87 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passport-stamps-cr-getty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ho-chieu-viet-nam-di-duoc-bao-nhieu-nuoc-khong-can-visa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\104465_22baf277.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\how-to-travel-third-world-passport-thai-image-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hình-nền-máy-tính-Gradient-màu-xanh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hero-landing-constellation-head-3000x1688_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_phone_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_person_add_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_edit_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_delete_sweep_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_search_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_portrait_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_portrait_black_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_search_black_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_supervisor_account_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_person_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_insert_photo_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_local_printshop_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_arrow_back_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_arrow_back_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_arrow_back_black_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_arrow_back_black_48dp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_arrow_back_white_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_arrow_back_white_48dp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_arrow_back_black_48dp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_person_add_black_48dp1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

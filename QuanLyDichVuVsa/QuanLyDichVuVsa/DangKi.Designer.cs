@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pBAvatar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,15 +40,16 @@
             this.tBEmail = new System.Windows.Forms.TextBox();
             this.tBSDT = new System.Windows.Forms.TextBox();
             this.tBDiaChi = new System.Windows.Forms.TextBox();
-            this.pBPassport = new System.Windows.Forms.PictureBox();
             this.cBNam = new System.Windows.Forms.CheckBox();
             this.cBNu = new System.Windows.Forms.CheckBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.bTDangKi = new System.Windows.Forms.Button();
             this.bTThoat = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).BeginInit();
+            this.bTDangKi = new System.Windows.Forms.Button();
+            this.pBPassport = new System.Windows.Forms.PictureBox();
+            this.pBAvatar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,14 +61,6 @@
             this.label1.Size = new System.Drawing.Size(347, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng Ký Thành Viên";
-            // 
-            // pBAvatar
-            // 
-            this.pBAvatar.Location = new System.Drawing.Point(42, 73);
-            this.pBAvatar.Name = "pBAvatar";
-            this.pBAvatar.Size = new System.Drawing.Size(112, 148);
-            this.pBAvatar.TabIndex = 1;
-            this.pBAvatar.TabStop = false;
             // 
             // label2
             // 
@@ -162,14 +154,6 @@
             this.tBDiaChi.Size = new System.Drawing.Size(420, 20);
             this.tBDiaChi.TabIndex = 13;
             // 
-            // pBPassport
-            // 
-            this.pBPassport.Location = new System.Drawing.Point(295, 255);
-            this.pBPassport.Name = "pBPassport";
-            this.pBPassport.Size = new System.Drawing.Size(420, 128);
-            this.pBPassport.TabIndex = 14;
-            this.pBPassport.TabStop = false;
-            // 
             // cBNam
             // 
             this.cBNam.AutoSize = true;
@@ -206,23 +190,45 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "AVATAR";
             // 
-            // bTDangKi
-            // 
-            this.bTDangKi.Location = new System.Drawing.Point(295, 399);
-            this.bTDangKi.Name = "bTDangKi";
-            this.bTDangKi.Size = new System.Drawing.Size(216, 23);
-            this.bTDangKi.TabIndex = 19;
-            this.bTDangKi.Text = "Đăng kí";
-            this.bTDangKi.UseVisualStyleBackColor = true;
-            // 
             // bTThoat
             // 
-            this.bTThoat.Location = new System.Drawing.Point(537, 399);
+            this.bTThoat.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_arrow_back_black_48dp3;
+            this.bTThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bTThoat.Location = new System.Drawing.Point(295, 399);
             this.bTThoat.Name = "bTThoat";
-            this.bTThoat.Size = new System.Drawing.Size(178, 23);
+            this.bTThoat.Size = new System.Drawing.Size(178, 30);
             this.bTThoat.TabIndex = 20;
-            this.bTThoat.Text = "Thoát";
             this.bTThoat.UseVisualStyleBackColor = true;
+            // 
+            // bTDangKi
+            // 
+            this.bTDangKi.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_person_add_black_48dp1;
+            this.bTDangKi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bTDangKi.Location = new System.Drawing.Point(547, 399);
+            this.bTDangKi.Name = "bTDangKi";
+            this.bTDangKi.Size = new System.Drawing.Size(168, 30);
+            this.bTDangKi.TabIndex = 19;
+            this.bTDangKi.UseVisualStyleBackColor = true;
+            // 
+            // pBPassport
+            // 
+            this.pBPassport.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_insert_photo_white_48dp;
+            this.pBPassport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pBPassport.Location = new System.Drawing.Point(295, 255);
+            this.pBPassport.Name = "pBPassport";
+            this.pBPassport.Size = new System.Drawing.Size(420, 128);
+            this.pBPassport.TabIndex = 14;
+            this.pBPassport.TabStop = false;
+            // 
+            // pBAvatar
+            // 
+            this.pBAvatar.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_portrait_black_48dp1;
+            this.pBAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pBAvatar.Location = new System.Drawing.Point(42, 73);
+            this.pBAvatar.Name = "pBAvatar";
+            this.pBAvatar.Size = new System.Drawing.Size(112, 148);
+            this.pBAvatar.TabIndex = 1;
+            this.pBAvatar.TabStop = false;
             // 
             // DangKi
             // 
@@ -251,8 +257,8 @@
             this.Controls.Add(this.label1);
             this.Name = "DangKi";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
