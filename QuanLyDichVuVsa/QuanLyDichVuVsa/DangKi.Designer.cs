@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.pBAvatar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,27 +41,38 @@
             this.tBEmail = new System.Windows.Forms.TextBox();
             this.tBSDT = new System.Windows.Forms.TextBox();
             this.tBDiaChi = new System.Windows.Forms.TextBox();
-            this.cBNam = new System.Windows.Forms.CheckBox();
-            this.cBNu = new System.Windows.Forms.CheckBox();
+            this.pBPassport = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.bTThoat = new System.Windows.Forms.Button();
             this.bTDangKi = new System.Windows.Forms.Button();
-            this.pBPassport = new System.Windows.Forms.PictureBox();
-            this.pBAvatar = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).BeginInit();
+            this.bTThoat = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(207, 9);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(222, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 43);
+            this.label1.Size = new System.Drawing.Size(356, 35);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Đăng Ký Thành Viên";
+            this.label1.Text = "ĐĂNG KÝ THÀNH VIÊN";
+            // 
+            // pBAvatar
+            // 
+            this.pBAvatar.Location = new System.Drawing.Point(42, 73);
+            this.pBAvatar.Name = "pBAvatar";
+            this.pBAvatar.Size = new System.Drawing.Size(112, 148);
+            this.pBAvatar.TabIndex = 1;
+            this.pBAvatar.TabStop = false;
             // 
             // label2
             // 
@@ -83,7 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(215, 151);
+            this.label4.Location = new System.Drawing.Point(215, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 4;
@@ -92,7 +104,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(215, 113);
+            this.label5.Location = new System.Drawing.Point(215, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 5;
@@ -102,7 +114,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(215, 188);
+            this.label6.Location = new System.Drawing.Point(215, 170);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 6;
@@ -111,7 +123,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(215, 255);
+            this.label7.Location = new System.Drawing.Point(215, 230);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 13);
             this.label7.TabIndex = 7;
@@ -120,7 +132,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(215, 225);
+            this.label8.Location = new System.Drawing.Point(215, 200);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 8;
@@ -135,48 +147,37 @@
             // 
             // tBEmail
             // 
-            this.tBEmail.Location = new System.Drawing.Point(295, 144);
+            this.tBEmail.Location = new System.Drawing.Point(295, 137);
             this.tBEmail.Name = "tBEmail";
             this.tBEmail.Size = new System.Drawing.Size(420, 20);
             this.tBEmail.TabIndex = 11;
             // 
             // tBSDT
             // 
-            this.tBSDT.Location = new System.Drawing.Point(295, 181);
+            this.tBSDT.Location = new System.Drawing.Point(295, 167);
             this.tBSDT.Name = "tBSDT";
             this.tBSDT.Size = new System.Drawing.Size(420, 20);
             this.tBSDT.TabIndex = 12;
             // 
             // tBDiaChi
             // 
-            this.tBDiaChi.Location = new System.Drawing.Point(295, 218);
+            this.tBDiaChi.Location = new System.Drawing.Point(295, 197);
             this.tBDiaChi.Name = "tBDiaChi";
             this.tBDiaChi.Size = new System.Drawing.Size(420, 20);
             this.tBDiaChi.TabIndex = 13;
+            this.tBDiaChi.TextChanged += new System.EventHandler(this.tBDiaChi_TextChanged);
             // 
-            // cBNam
+            // pBPassport
             // 
-            this.cBNam.AutoSize = true;
-            this.cBNam.Location = new System.Drawing.Point(611, 75);
-            this.cBNam.Name = "cBNam";
-            this.cBNam.Size = new System.Drawing.Size(48, 17);
-            this.cBNam.TabIndex = 15;
-            this.cBNam.Text = "Nam";
-            this.cBNam.UseVisualStyleBackColor = true;
-            // 
-            // cBNu
-            // 
-            this.cBNu.AutoSize = true;
-            this.cBNu.Location = new System.Drawing.Point(675, 76);
-            this.cBNu.Name = "cBNu";
-            this.cBNu.Size = new System.Drawing.Size(40, 17);
-            this.cBNu.TabIndex = 16;
-            this.cBNu.Text = "Nữ";
-            this.cBNu.UseVisualStyleBackColor = true;
+            this.pBPassport.Location = new System.Drawing.Point(295, 227);
+            this.pBPassport.Name = "pBPassport";
+            this.pBPassport.Size = new System.Drawing.Size(420, 128);
+            this.pBPassport.TabIndex = 14;
+            this.pBPassport.TabStop = false;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(295, 107);
+            this.dateTimePicker1.Location = new System.Drawing.Point(295, 104);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(231, 20);
             this.dateTimePicker1.TabIndex = 17;
@@ -184,63 +185,93 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(77, 235);
+            this.label9.Location = new System.Drawing.Point(70, 57);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 13);
+            this.label9.Size = new System.Drawing.Size(60, 13);
             this.label9.TabIndex = 18;
-            this.label9.Text = "AVATAR";
-            // 
-            // bTThoat
-            // 
-            this.bTThoat.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_arrow_back_black_48dp3;
-            this.bTThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bTThoat.Location = new System.Drawing.Point(295, 399);
-            this.bTThoat.Name = "bTThoat";
-            this.bTThoat.Size = new System.Drawing.Size(178, 30);
-            this.bTThoat.TabIndex = 20;
-            this.bTThoat.UseVisualStyleBackColor = true;
+            this.label9.Text = "HÌNH ẢNH";
             // 
             // bTDangKi
             // 
-            this.bTDangKi.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_person_add_black_48dp1;
-            this.bTDangKi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bTDangKi.Location = new System.Drawing.Point(547, 399);
+            this.bTDangKi.Location = new System.Drawing.Point(295, 399);
             this.bTDangKi.Name = "bTDangKi";
-            this.bTDangKi.Size = new System.Drawing.Size(168, 30);
+            this.bTDangKi.Size = new System.Drawing.Size(194, 23);
             this.bTDangKi.TabIndex = 19;
+            this.bTDangKi.Text = "Đăng kí";
             this.bTDangKi.UseVisualStyleBackColor = true;
             // 
-            // pBPassport
+            // bTThoat
             // 
-            this.pBPassport.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_insert_photo_white_48dp;
-            this.pBPassport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pBPassport.Location = new System.Drawing.Point(295, 255);
-            this.pBPassport.Name = "pBPassport";
-            this.pBPassport.Size = new System.Drawing.Size(420, 128);
-            this.pBPassport.TabIndex = 14;
-            this.pBPassport.TabStop = false;
+            this.bTThoat.Location = new System.Drawing.Point(521, 399);
+            this.bTThoat.Name = "bTThoat";
+            this.bTThoat.Size = new System.Drawing.Size(194, 23);
+            this.bTThoat.TabIndex = 20;
+            this.bTThoat.Text = "Thoát";
+            this.bTThoat.UseVisualStyleBackColor = true;
             // 
-            // pBAvatar
+            // button1
             // 
-            this.pBAvatar.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_portrait_black_48dp1;
-            this.pBAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pBAvatar.Location = new System.Drawing.Point(42, 73);
-            this.pBAvatar.Name = "pBAvatar";
-            this.pBAvatar.Size = new System.Drawing.Size(112, 148);
-            this.pBAvatar.TabIndex = 1;
-            this.pBAvatar.TabStop = false;
+            this.button1.Location = new System.Drawing.Point(60, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 23);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Chọn ảnh";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Location = new System.Drawing.Point(601, 73);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(114, 20);
+            this.panel1.TabIndex = 22;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(73, 1);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(39, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Nữ";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(3, 1);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(47, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Nam";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(637, 361);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 22);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Chọn tệp";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // DangKi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bTThoat);
             this.Controls.Add(this.bTDangKi);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.cBNu);
-            this.Controls.Add(this.cBNam);
             this.Controls.Add(this.pBPassport);
             this.Controls.Add(this.tBDiaChi);
             this.Controls.Add(this.tBSDT);
@@ -257,8 +288,10 @@
             this.Controls.Add(this.label1);
             this.Name = "DangKi";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,12 +313,15 @@
         private System.Windows.Forms.TextBox tBSDT;
         private System.Windows.Forms.TextBox tBDiaChi;
         private System.Windows.Forms.PictureBox pBPassport;
-        private System.Windows.Forms.CheckBox cBNam;
-        private System.Windows.Forms.CheckBox cBNu;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button bTDangKi;
         private System.Windows.Forms.Button bTThoat;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
