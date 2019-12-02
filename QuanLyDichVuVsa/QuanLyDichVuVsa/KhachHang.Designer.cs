@@ -34,92 +34,107 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bTDangKi = new System.Windows.Forms.Button();
             this.bTSua = new System.Windows.Forms.Button();
-            this.bTxoa = new System.Windows.Forms.Button();
+            this.bTXoa = new System.Windows.Forms.Button();
+            this.bTBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(407, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(305, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 42);
+            this.label1.Size = new System.Drawing.Size(219, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "KHÁCH HÀNG";
             // 
             // tBTimKiem
             // 
-            this.tBTimKiem.Location = new System.Drawing.Point(744, 69);
-            this.tBTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tBTimKiem.Location = new System.Drawing.Point(442, 57);
+            this.tBTimKiem.Multiline = true;
             this.tBTimKiem.Name = "tBTimKiem";
-            this.tBTimKiem.Size = new System.Drawing.Size(198, 22);
+            this.tBTimKiem.Size = new System.Drawing.Size(271, 25);
             this.tBTimKiem.TabIndex = 1;
             // 
             // bTTimKiem
             // 
-            this.bTTimKiem.Location = new System.Drawing.Point(951, 65);
-            this.bTTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bTTimKiem.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_search_black_48dp;
+            this.bTTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bTTimKiem.Location = new System.Drawing.Point(719, 57);
             this.bTTimKiem.Name = "bTTimKiem";
-            this.bTTimKiem.Size = new System.Drawing.Size(100, 28);
+            this.bTTimKiem.Size = new System.Drawing.Size(69, 25);
             this.bTTimKiem.TabIndex = 2;
-            this.bTTimKiem.Text = "Tìm Kiếm";
             this.bTTimKiem.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 65);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 88);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(706, 474);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 350);
             this.dataGridView1.TabIndex = 3;
             // 
             // bTDangKi
             // 
-            this.bTDangKi.Location = new System.Drawing.Point(744, 159);
-            this.bTDangKi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bTDangKi.BackColor = System.Drawing.Color.Transparent;
+            this.bTDangKi.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_person_add_black_48dp;
+            this.bTDangKi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bTDangKi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bTDangKi.Location = new System.Drawing.Point(26, 57);
             this.bTDangKi.Name = "bTDangKi";
-            this.bTDangKi.Size = new System.Drawing.Size(307, 54);
+            this.bTDangKi.Size = new System.Drawing.Size(86, 25);
             this.bTDangKi.TabIndex = 4;
-            this.bTDangKi.Text = "Đăng kí";
-            this.bTDangKi.UseVisualStyleBackColor = true;
+            this.bTDangKi.UseVisualStyleBackColor = false;
             // 
             // bTSua
             // 
-            this.bTSua.Location = new System.Drawing.Point(744, 244);
-            this.bTSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bTSua.BackColor = System.Drawing.Color.Transparent;
+            this.bTSua.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_edit_black_48dp;
+            this.bTSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bTSua.Location = new System.Drawing.Point(118, 57);
             this.bTSua.Name = "bTSua";
-            this.bTSua.Size = new System.Drawing.Size(307, 53);
+            this.bTSua.Size = new System.Drawing.Size(86, 25);
             this.bTSua.TabIndex = 5;
-            this.bTSua.Text = "Sửa";
-            this.bTSua.UseVisualStyleBackColor = true;
+            this.bTSua.UseVisualStyleBackColor = false;
             // 
-            // bTxoa
+            // bTXoa
             // 
-            this.bTxoa.Location = new System.Drawing.Point(744, 329);
-            this.bTxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bTxoa.Name = "bTxoa";
-            this.bTxoa.Size = new System.Drawing.Size(307, 57);
-            this.bTxoa.TabIndex = 6;
-            this.bTxoa.Text = "Xóa";
-            this.bTxoa.UseVisualStyleBackColor = true;
+            this.bTXoa.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_delete_sweep_black_48dp;
+            this.bTXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bTXoa.Location = new System.Drawing.Point(210, 57);
+            this.bTXoa.Name = "bTXoa";
+            this.bTXoa.Size = new System.Drawing.Size(86, 25);
+            this.bTXoa.TabIndex = 6;
+            this.bTXoa.UseVisualStyleBackColor = true;
+            // 
+            // bTBack
+            // 
+            this.bTBack.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.baseline_arrow_back_black_48dp1;
+            this.bTBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bTBack.Location = new System.Drawing.Point(302, 57);
+            this.bTBack.Name = "bTBack";
+            this.bTBack.Size = new System.Drawing.Size(86, 25);
+            this.bTBack.TabIndex = 7;
+            this.bTBack.UseVisualStyleBackColor = true;
             // 
             // KhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.bTxoa);
+            this.BackgroundImage = global::QuanLyDichVuVsa.Properties.Resources.hero_landing_constellation_head_3000x1688_0;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bTBack);
+            this.Controls.Add(this.bTXoa);
             this.Controls.Add(this.bTSua);
             this.Controls.Add(this.bTDangKi);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bTTimKiem);
             this.Controls.Add(this.tBTimKiem);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "KhachHang";
             this.Text = "KhachHang";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -136,6 +151,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button bTDangKi;
         private System.Windows.Forms.Button bTSua;
-        private System.Windows.Forms.Button bTxoa;
+        private System.Windows.Forms.Button bTXoa;
+        private System.Windows.Forms.Button bTBack;
     }
 }

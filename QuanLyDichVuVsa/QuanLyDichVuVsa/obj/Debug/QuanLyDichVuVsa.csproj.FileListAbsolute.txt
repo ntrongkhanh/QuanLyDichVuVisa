@@ -6,3 +6,8 @@ H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDich
 H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.csproj.GenerateResource.cache
 H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.exe
 H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.pdb
+H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.BienNhan.resources
+H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.DangKi.resources
+H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.DoangThucs.resources
+H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.KhachHang.resources
+H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.Main.resources
