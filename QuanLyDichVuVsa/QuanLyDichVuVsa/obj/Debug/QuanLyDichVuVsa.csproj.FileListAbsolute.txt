@@ -11,3 +11,16 @@ H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDich
 H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.DoangThucs.resources
 H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.KhachHang.resources
 H:\hướng đối tượng\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.Main.resources
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\bin\Debug\QuanLyDichVuVsa.exe.config
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\bin\Debug\QuanLyDichVuVsa.exe
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\bin\Debug\QuanLyDichVuVsa.pdb
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.csprojAssemblyReference.cache
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.BienNhan.resources
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.DangKi.resources
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.DoangThucs.resources
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.KhachHang.resources
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.Main.resources
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.Properties.Resources.resources
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.csproj.GenerateResource.cache
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.exe
+H:\githup\QuanLyDichVuVisa\QuanLyDichVuVsa\QuanLyDichVuVsa\obj\Debug\QuanLyDichVuVsa.pdb
