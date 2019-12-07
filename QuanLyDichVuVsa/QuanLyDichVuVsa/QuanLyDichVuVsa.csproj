@@ -33,6 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,11 +60,17 @@
     <Compile Include="BienNhan.Designer.cs">
       <DependentUpon>BienNhan.cs</DependentUpon>
     </Compile>
-    <Compile Include="DangKi.cs">
+    <Compile Include="frmDangKiDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangKi.Designer.cs">
-      <DependentUpon>DangKi.cs</DependentUpon>
+    <Compile Include="frmDangKiDichVu.Designer.cs">
+      <DependentUpon>frmDangKiDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangKiThanhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangKiThanhVien.Designer.cs">
+      <DependentUpon>frmDangKiThanhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="DoangThucs.cs">
       <SubType>Form</SubType>
@@ -81,8 +95,11 @@
     <EmbeddedResource Include="BienNhan.resx">
       <DependentUpon>BienNhan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DangKi.resx">
-      <DependentUpon>DangKi.cs</DependentUpon>
+    <EmbeddedResource Include="frmDangKiDichVu.resx">
+      <DependentUpon>frmDangKiDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangKiThanhVien.resx">
+      <DependentUpon>frmDangKiThanhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoangThucs.resx">
       <DependentUpon>DoangThucs.cs</DependentUpon>
@@ -93,6 +110,7 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -196,6 +214,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\baseline_person_add_black_48dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QLDVBUS\" />
+    <Folder Include="QLDVDAL\" />
+    <Folder Include="QLDVDTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

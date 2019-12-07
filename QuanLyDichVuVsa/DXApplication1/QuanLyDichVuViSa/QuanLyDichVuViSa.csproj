@@ -1,0 +1,198 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37C59959-23BE-4CA4-A041-5F9F52F403C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyDichVuViSa</RootNamespace>
+    <AssemblyName>QuanLyDichVuViSa</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDanhMucViSa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhMucViSa.Designer.cs">
+      <DependentUpon>FrmDanhMucViSa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDanhSachDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhSachDichVu.Designer.cs">
+      <DependentUpon>FrmDanhSachDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDanhMucDiaChiNhapCanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhMucDiaChiNhapCanh.Designer.cs">
+      <DependentUpon>FrmDanhMucDiaChiNhapCanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDanhMucDichVuBoSung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhMucDichVuBoSung.Designer.cs">
+      <DependentUpon>FrmDanhMucDichVuBoSung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDichVu.Designer.cs">
+      <DependentUpon>FrmDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoanhThu.Designer.cs">
+      <DependentUpon>FrmDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangKyDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangKyDichVu.Designer.cs">
+      <DependentUpon>FrmDangKyDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDanhSachKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhSachKhachHang.Designer.cs">
+      <DependentUpon>FrmDanhSachKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangKyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangKyKhachHang.Designer.cs">
+      <DependentUpon>FrmDangKyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDanhMucThoiGianXuLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhMucThoiGianXuLy.Designer.cs">
+      <DependentUpon>FrmDanhMucThoiGianXuLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateKhachHang.Designer.cs">
+      <DependentUpon>FrmUpdateKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDangKyDichVu.resx">
+      <DependentUpon>FrmDangKyDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhMucViSa.resx">
+      <DependentUpon>FrmDanhMucViSa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhSachDichVu.resx">
+      <DependentUpon>FrmDanhSachDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhSachKhachHang.resx">
+      <DependentUpon>FrmDanhSachKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangKyKhachHang.resx">
+      <DependentUpon>FrmDangKyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhMucDiaChiNhapCanh.resx">
+      <DependentUpon>FrmDanhMucDiaChiNhapCanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhMucDichVuBoSung.resx">
+      <DependentUpon>FrmDanhMucDichVuBoSung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDichVu.resx">
+      <DependentUpon>FrmDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoanhThu.resx">
+      <DependentUpon>FrmDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhMucThoiGianXuLy.resx">
+      <DependentUpon>FrmDanhMucThoiGianXuLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateKhachHang.resx">
+      <DependentUpon>FrmUpdateKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0001.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

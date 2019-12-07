@@ -16,7 +16,7 @@ namespace QuanLyDichVuVsa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangKi());
+            Application.Run(new Main());
         }
     }
 }
