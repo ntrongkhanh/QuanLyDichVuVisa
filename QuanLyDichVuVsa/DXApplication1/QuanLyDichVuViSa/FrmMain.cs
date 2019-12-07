@@ -169,5 +169,20 @@ namespace QuanLyDichVuViSa
                 frm.Activate();
             }
         }
+
+        private void BarButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = kiemtraform(typeof(FrmDoanhThu));
+            if (frm == null)
+            {
+                FrmDoanhThu forms = new FrmDoanhThu();
+                forms.MdiParent = this;
+                forms.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+        }
     }
 }
