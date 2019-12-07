@@ -39,7 +39,6 @@
             this.bTDangKi = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pBPassport = new System.Windows.Forms.PictureBox();
             this.tBDiaChi = new System.Windows.Forms.TextBox();
             this.tBSDT = new System.Windows.Forms.TextBox();
             this.tBEmail = new System.Windows.Forms.TextBox();
@@ -51,10 +50,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pBAvatar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.pBPassport = new System.Windows.Forms.PictureBox();
+            this.pBAvatar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).BeginInit();
@@ -64,7 +64,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(299, 106);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 21);
+            this.textBox1.Size = new System.Drawing.Size(418, 21);
             this.textBox1.TabIndex = 71;
             // 
             // label10
@@ -78,7 +78,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(641, 387);
+            this.button2.Location = new System.Drawing.Point(299, 390);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 22);
             this.button2.TabIndex = 69;
@@ -89,7 +89,7 @@
             // 
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(605, 72);
+            this.panel1.Location = new System.Drawing.Point(605, 134);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(114, 20);
             this.panel1.TabIndex = 68;
@@ -127,18 +127,18 @@
             // 
             // bTThoat
             // 
-            this.bTThoat.Location = new System.Drawing.Point(678, 461);
+            this.bTThoat.Location = new System.Drawing.Point(64, 453);
             this.bTThoat.Name = "bTThoat";
-            this.bTThoat.Size = new System.Drawing.Size(194, 23);
+            this.bTThoat.Size = new System.Drawing.Size(76, 23);
             this.bTThoat.TabIndex = 66;
             this.bTThoat.Text = "Thoát";
             this.bTThoat.UseVisualStyleBackColor = true;
             // 
             // bTDangKi
             // 
-            this.bTDangKi.Location = new System.Drawing.Point(87, 471);
+            this.bTDangKi.Location = new System.Drawing.Point(299, 453);
             this.bTDangKi.Name = "bTDangKi";
-            this.bTDangKi.Size = new System.Drawing.Size(194, 23);
+            this.bTDangKi.Size = new System.Drawing.Size(144, 23);
             this.bTDangKi.TabIndex = 65;
             this.bTDangKi.Text = "Thay đổi thông tin";
             this.bTDangKi.UseVisualStyleBackColor = true;
@@ -158,14 +158,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(231, 21);
             this.dateTimePicker1.TabIndex = 63;
-            // 
-            // pBPassport
-            // 
-            this.pBPassport.Location = new System.Drawing.Point(299, 256);
-            this.pBPassport.Name = "pBPassport";
-            this.pBPassport.Size = new System.Drawing.Size(420, 128);
-            this.pBPassport.TabIndex = 62;
-            this.pBPassport.TabStop = false;
             // 
             // tBDiaChi
             // 
@@ -192,7 +184,7 @@
             // 
             this.tBName.Location = new System.Drawing.Point(299, 72);
             this.tBName.Name = "tBName";
-            this.tBName.Size = new System.Drawing.Size(231, 21);
+            this.tBName.Size = new System.Drawing.Size(418, 21);
             this.tBName.TabIndex = 58;
             // 
             // label8
@@ -243,7 +235,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(548, 75);
+            this.label3.Location = new System.Drawing.Point(548, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 52;
@@ -258,6 +250,42 @@
             this.label2.TabIndex = 51;
             this.label2.Text = "Họ Tên";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(188, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(407, 35);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "THÔNG TIN KHÁCH HÀNG";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(449, 453);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(135, 23);
+            this.button3.TabIndex = 72;
+            this.button3.Text = "Xóa khách hàng";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(590, 453);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(129, 23);
+            this.button4.TabIndex = 73;
+            this.button4.Text = "Lưu";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // pBPassport
+            // 
+            this.pBPassport.Location = new System.Drawing.Point(299, 256);
+            this.pBPassport.Name = "pBPassport";
+            this.pBPassport.Size = new System.Drawing.Size(420, 128);
+            this.pBPassport.TabIndex = 62;
+            this.pBPassport.TabStop = false;
+            // 
             // pBAvatar
             // 
             this.pBAvatar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -267,39 +295,11 @@
             this.pBAvatar.TabIndex = 50;
             this.pBAvatar.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(226, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(407, 35);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "THÔNG TIN KHÁCH HÀNG";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(322, 461);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 23);
-            this.button3.TabIndex = 72;
-            this.button3.Text = "Xóa khách hàng";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(460, 503);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 23);
-            this.button4.TabIndex = 73;
-            this.button4.Text = "Lưu";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // FrmUpdateKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 568);
+            this.ClientSize = new System.Drawing.Size(744, 514);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox1);
@@ -326,7 +326,7 @@
             this.Controls.Add(this.pBAvatar);
             this.Controls.Add(this.label1);
             this.Name = "FrmUpdateKhachHang";
-            this.Text = "FrmUpdateKhachHang";
+            this.Text = "Chỉnh sửa thông tin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).EndInit();

@@ -41,16 +41,16 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 96);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(650, 309);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 342);
             this.dataGridView1.TabIndex = 6;
             // 
             // bTTimKiem
             // 
             this.bTTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bTTimKiem.Location = new System.Drawing.Point(289, 76);
+            this.bTTimKiem.Location = new System.Drawing.Point(331, 65);
             this.bTTimKiem.Name = "bTTimKiem";
             this.bTTimKiem.Size = new System.Drawing.Size(69, 25);
             this.bTTimKiem.TabIndex = 5;
@@ -59,17 +59,17 @@
             // 
             // tBTimKiem
             // 
-            this.tBTimKiem.Location = new System.Drawing.Point(12, 76);
+            this.tBTimKiem.Location = new System.Drawing.Point(12, 65);
             this.tBTimKiem.Multiline = true;
             this.tBTimKiem.Name = "tBTimKiem";
-            this.tBTimKiem.Size = new System.Drawing.Size(271, 25);
+            this.tBTimKiem.Size = new System.Drawing.Size(313, 25);
             this.tBTimKiem.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(437, 74);
+            this.button1.Location = new System.Drawing.Point(713, 65);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 25);
             this.button1.TabIndex = 7;
             this.button1.Text = "Đóng";
             this.button1.UseVisualStyleBackColor = true;
@@ -87,8 +87,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(258, 9);
+            this.label1.Location = new System.Drawing.Point(195, 9);
             this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(415, 35);
             this.label1.TabIndex = 50;
             this.label1.Text = "DANH SÁCH KHÁCH HÀNG";
@@ -104,7 +105,7 @@
             this.Controls.Add(this.bTTimKiem);
             this.Controls.Add(this.tBTimKiem);
             this.Name = "FrmDanhSachKhachHang";
-            this.Text = "Form1";
+            this.Text = "Danh sách khách hàng";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

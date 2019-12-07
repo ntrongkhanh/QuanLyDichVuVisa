@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(176, 46);
+            this.label1.Location = new System.Drawing.Point(290, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 35);
             this.label1.TabIndex = 2;
@@ -52,25 +52,25 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 149);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 86);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(751, 344);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 407);
             this.dataGridView1.TabIndex = 3;
             // 
             // dtpk
             // 
             this.dtpk.CustomFormat = "MM/yyyy";
             this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpk.Location = new System.Drawing.Point(69, 99);
+            this.dtpk.Location = new System.Drawing.Point(77, 60);
             this.dtpk.Name = "dtpk";
-            this.dtpk.Size = new System.Drawing.Size(200, 20);
+            this.dtpk.Size = new System.Drawing.Size(240, 20);
             this.dtpk.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-7, 101);
+            this.label2.Location = new System.Drawing.Point(9, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 8;
@@ -78,27 +78,27 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(422, 96);
+            this.button2.Location = new System.Drawing.Point(412, 57);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(83, 23);
             this.button2.TabIndex = 11;
             this.button2.Text = "In";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(318, 96);
+            this.button1.Location = new System.Drawing.Point(323, 57);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(83, 23);
             this.button1.TabIndex = 10;
             this.button1.Text = "Xem";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(524, 96);
+            this.button3.Location = new System.Drawing.Point(713, 57);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(75, 25);
             this.button3.TabIndex = 12;
             this.button3.Text = "Đóng";
             this.button3.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(797, 502);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

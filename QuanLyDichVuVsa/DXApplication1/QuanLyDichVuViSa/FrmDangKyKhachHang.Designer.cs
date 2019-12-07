@@ -50,14 +50,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pBPassport = new System.Windows.Forms.PictureBox();
-            this.pBAvatar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pBPassport = new System.Windows.Forms.PictureBox();
+            this.pBAvatar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -78,7 +78,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(602, 394);
+            this.button2.Location = new System.Drawing.Point(260, 397);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 22);
             this.button2.TabIndex = 46;
@@ -127,7 +127,7 @@
             // 
             // bTThoat
             // 
-            this.bTThoat.Location = new System.Drawing.Point(486, 422);
+            this.bTThoat.Location = new System.Drawing.Point(422, 446);
             this.bTThoat.Name = "bTThoat";
             this.bTThoat.Size = new System.Drawing.Size(194, 23);
             this.bTThoat.TabIndex = 43;
@@ -136,9 +136,9 @@
             // 
             // bTDangKi
             // 
-            this.bTDangKi.Location = new System.Drawing.Point(260, 422);
+            this.bTDangKi.Location = new System.Drawing.Point(122, 446);
             this.bTDangKi.Name = "bTDangKi";
-            this.bTDangKi.Size = new System.Drawing.Size(194, 23);
+            this.bTDangKi.Size = new System.Drawing.Size(202, 23);
             this.bTDangKi.TabIndex = 42;
             this.bTDangKi.Text = "Đăng kí";
             this.bTDangKi.UseVisualStyleBackColor = true;
@@ -250,6 +250,25 @@
             this.label2.TabIndex = 28;
             this.label2.Text = "Họ Tên";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(719, 48);
+            this.panel2.TabIndex = 52;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(183, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(377, 35);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "ĐĂNG KÝ KHÁCH HÀNG";
+            // 
             // pBPassport
             // 
             this.pBPassport.Location = new System.Drawing.Point(260, 263);
@@ -261,36 +280,17 @@
             // pBAvatar
             // 
             this.pBAvatar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pBAvatar.Location = new System.Drawing.Point(7, 79);
+            this.pBAvatar.Location = new System.Drawing.Point(12, 79);
             this.pBAvatar.Name = "pBAvatar";
             this.pBAvatar.Size = new System.Drawing.Size(113, 149);
             this.pBAvatar.TabIndex = 27;
             this.pBAvatar.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 48);
-            this.panel2.TabIndex = 52;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(258, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(377, 35);
-            this.label1.TabIndex = 50;
-            this.label1.Text = "ĐĂNG KÝ KHÁCH HÀNG";
-            // 
             // FrmDangKyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(719, 505);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label10);
@@ -316,13 +316,13 @@
             this.Controls.Add(this.pBAvatar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmDangKyKhachHang";
-            this.Text = "FrmDangKyKhachHang";
+            this.Text = "Đăng ký khách hàng";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
