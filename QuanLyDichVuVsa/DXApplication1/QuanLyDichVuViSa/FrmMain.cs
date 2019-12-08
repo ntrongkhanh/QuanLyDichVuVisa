@@ -35,7 +35,9 @@ namespace QuanLyDichVuViSa
             {
                 FrmDangKyKhachHang forms = new FrmDangKyKhachHang();
                 forms.MdiParent = this;
+                
                 forms.Show();
+                
             }
             else
             {

@@ -185,31 +185,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\0001.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\new-customer-icon-3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseline_person_add_black_48dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\—Pngtree—list icon design_4776134.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseline_list_alt_white_48dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseline_perm_contact_calendar_black_48dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseline_portrait_black_48dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\election-checklist-symbol.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\list.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

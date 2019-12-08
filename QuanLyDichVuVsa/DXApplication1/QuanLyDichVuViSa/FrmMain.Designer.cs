@@ -85,7 +85,7 @@
             this.ribbonPage2,
             this.ribbonPage3,
             this.ribbonPage4});
-            this.ribbonControl1.Size = new System.Drawing.Size(1024, 150);
+            this.ribbonControl1.Size = new System.Drawing.Size(998, 150);
             // 
             // barButtonItem1
             // 
@@ -278,10 +278,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 577);
+            this.ClientSize = new System.Drawing.Size(998, 668);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();

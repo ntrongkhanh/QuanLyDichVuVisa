@@ -39,7 +39,6 @@
             this.bTDangKi = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.tBDiaChi = new System.Windows.Forms.TextBox();
             this.tBSDT = new System.Windows.Forms.TextBox();
             this.tBEmail = new System.Windows.Forms.TextBox();
             this.tBName = new System.Windows.Forms.TextBox();
@@ -54,6 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pBPassport = new System.Windows.Forms.PictureBox();
             this.pBAvatar = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).BeginInit();
@@ -62,7 +62,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(260, 113);
+            this.textBox1.Location = new System.Drawing.Point(406, 113);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(231, 20);
             this.textBox1.TabIndex = 48;
@@ -70,7 +70,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(180, 116);
+            this.label10.Location = new System.Drawing.Point(326, 116);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 13);
             this.label10.TabIndex = 47;
@@ -78,7 +78,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(260, 397);
+            this.button2.Location = new System.Drawing.Point(406, 397);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 22);
             this.button2.TabIndex = 46;
@@ -89,7 +89,7 @@
             // 
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(566, 79);
+            this.panel1.Location = new System.Drawing.Point(712, 113);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(114, 20);
             this.panel1.TabIndex = 45;
@@ -118,7 +118,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(25, 233);
+            this.button1.Location = new System.Drawing.Point(171, 233);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 23);
             this.button1.TabIndex = 44;
@@ -127,18 +127,18 @@
             // 
             // bTThoat
             // 
-            this.bTThoat.Location = new System.Drawing.Point(422, 446);
+            this.bTThoat.Location = new System.Drawing.Point(632, 438);
             this.bTThoat.Name = "bTThoat";
-            this.bTThoat.Size = new System.Drawing.Size(194, 23);
+            this.bTThoat.Size = new System.Drawing.Size(194, 31);
             this.bTThoat.TabIndex = 43;
-            this.bTThoat.Text = "Thoát";
+            this.bTThoat.Text = "Đóng";
             this.bTThoat.UseVisualStyleBackColor = true;
             // 
             // bTDangKi
             // 
-            this.bTDangKi.Location = new System.Drawing.Point(122, 446);
+            this.bTDangKi.Location = new System.Drawing.Point(406, 438);
             this.bTDangKi.Name = "bTDangKi";
-            this.bTDangKi.Size = new System.Drawing.Size(202, 23);
+            this.bTDangKi.Size = new System.Drawing.Size(202, 31);
             this.bTDangKi.TabIndex = 42;
             this.bTDangKi.Text = "Đăng kí";
             this.bTDangKi.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(35, 63);
+            this.label9.Location = new System.Drawing.Point(181, 63);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 13);
             this.label9.TabIndex = 41;
@@ -154,43 +154,36 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(260, 140);
+            this.dateTimePicker1.Location = new System.Drawing.Point(406, 143);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(231, 20);
             this.dateTimePicker1.TabIndex = 40;
             // 
-            // tBDiaChi
-            // 
-            this.tBDiaChi.Location = new System.Drawing.Point(260, 233);
-            this.tBDiaChi.Name = "tBDiaChi";
-            this.tBDiaChi.Size = new System.Drawing.Size(420, 20);
-            this.tBDiaChi.TabIndex = 38;
-            // 
             // tBSDT
             // 
-            this.tBSDT.Location = new System.Drawing.Point(260, 203);
+            this.tBSDT.Location = new System.Drawing.Point(406, 203);
             this.tBSDT.Name = "tBSDT";
             this.tBSDT.Size = new System.Drawing.Size(420, 20);
             this.tBSDT.TabIndex = 37;
             // 
             // tBEmail
             // 
-            this.tBEmail.Location = new System.Drawing.Point(260, 173);
+            this.tBEmail.Location = new System.Drawing.Point(406, 173);
             this.tBEmail.Name = "tBEmail";
             this.tBEmail.Size = new System.Drawing.Size(420, 20);
             this.tBEmail.TabIndex = 36;
             // 
             // tBName
             // 
-            this.tBName.Location = new System.Drawing.Point(260, 79);
+            this.tBName.Location = new System.Drawing.Point(406, 83);
             this.tBName.Name = "tBName";
-            this.tBName.Size = new System.Drawing.Size(231, 20);
+            this.tBName.Size = new System.Drawing.Size(420, 20);
             this.tBName.TabIndex = 35;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(180, 236);
+            this.label8.Location = new System.Drawing.Point(326, 236);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
             this.label8.TabIndex = 34;
@@ -199,7 +192,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(180, 266);
+            this.label7.Location = new System.Drawing.Point(326, 266);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 13);
             this.label7.TabIndex = 33;
@@ -208,7 +201,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(180, 206);
+            this.label6.Location = new System.Drawing.Point(326, 206);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 32;
@@ -217,7 +210,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(180, 146);
+            this.label5.Location = new System.Drawing.Point(326, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 31;
@@ -226,7 +219,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(180, 176);
+            this.label4.Location = new System.Drawing.Point(326, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 30;
@@ -235,7 +228,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(509, 82);
+            this.label3.Location = new System.Drawing.Point(655, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 29;
@@ -244,7 +237,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(180, 86);
+            this.label2.Location = new System.Drawing.Point(326, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 28;
@@ -256,14 +249,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(719, 48);
+            this.panel2.Size = new System.Drawing.Size(984, 48);
             this.panel2.TabIndex = 52;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(183, 9);
+            this.label1.Location = new System.Drawing.Point(304, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(377, 35);
             this.label1.TabIndex = 50;
@@ -271,7 +264,8 @@
             // 
             // pBPassport
             // 
-            this.pBPassport.Location = new System.Drawing.Point(260, 263);
+            this.pBPassport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pBPassport.Location = new System.Drawing.Point(406, 263);
             this.pBPassport.Name = "pBPassport";
             this.pBPassport.Size = new System.Drawing.Size(420, 128);
             this.pBPassport.TabIndex = 39;
@@ -280,17 +274,26 @@
             // pBAvatar
             // 
             this.pBAvatar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pBAvatar.Location = new System.Drawing.Point(12, 79);
+            this.pBAvatar.Location = new System.Drawing.Point(158, 79);
             this.pBAvatar.Name = "pBAvatar";
             this.pBAvatar.Size = new System.Drawing.Size(113, 149);
             this.pBAvatar.TabIndex = 27;
             this.pBAvatar.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(406, 233);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(420, 21);
+            this.comboBox1.TabIndex = 51;
+            // 
             // FrmDangKyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 505);
+            this.ClientSize = new System.Drawing.Size(984, 481);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label10);
@@ -302,7 +305,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pBPassport);
-            this.Controls.Add(this.tBDiaChi);
             this.Controls.Add(this.tBSDT);
             this.Controls.Add(this.tBEmail);
             this.Controls.Add(this.tBName);
@@ -342,7 +344,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pBPassport;
-        private System.Windows.Forms.TextBox tBDiaChi;
         private System.Windows.Forms.TextBox tBSDT;
         private System.Windows.Forms.TextBox tBEmail;
         private System.Windows.Forms.TextBox tBName;
@@ -356,5 +357,6 @@
         private System.Windows.Forms.PictureBox pBAvatar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

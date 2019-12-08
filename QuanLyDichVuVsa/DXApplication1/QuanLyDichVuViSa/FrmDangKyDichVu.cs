@@ -26,5 +26,20 @@ namespace QuanLyDichVuViSa
         {
 
         }
+
+        private void FrmDangKyDichVu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TBSDT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
