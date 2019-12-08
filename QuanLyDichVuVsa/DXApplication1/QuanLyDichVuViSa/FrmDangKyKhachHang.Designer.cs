@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbSHC = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnChonPass = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.bTThoat = new System.Windows.Forms.Button();
-            this.bTDangKi = new System.Windows.Forms.Button();
+            this.radioNu = new System.Windows.Forms.RadioButton();
+            this.radioNam = new System.Windows.Forms.RadioButton();
+            this.btnChonAnh = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDangKi = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.tBSDT = new System.Windows.Forms.TextBox();
-            this.tBEmail = new System.Windows.Forms.TextBox();
-            this.tBName = new System.Windows.Forms.TextBox();
+            this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.tbSDT = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,19 +53,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pBPassport = new System.Windows.Forms.PictureBox();
             this.pBAvatar = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboQuocTich = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBAvatar)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbSHC
             // 
-            this.textBox1.Location = new System.Drawing.Point(406, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 20);
-            this.textBox1.TabIndex = 48;
+            this.tbSHC.Location = new System.Drawing.Point(406, 113);
+            this.tbSHC.Name = "tbSHC";
+            this.tbSHC.Size = new System.Drawing.Size(231, 20);
+            this.tbSHC.TabIndex = 48;
             // 
             // label10
             // 
@@ -76,72 +76,72 @@
             this.label10.TabIndex = 47;
             this.label10.Text = "Số hộ chiếu";
             // 
-            // button2
+            // btnChonPass
             // 
-            this.button2.Location = new System.Drawing.Point(406, 397);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 22);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "Chọn tệp";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnChonPass.Location = new System.Drawing.Point(406, 397);
+            this.btnChonPass.Name = "btnChonPass";
+            this.btnChonPass.Size = new System.Drawing.Size(78, 22);
+            this.btnChonPass.TabIndex = 46;
+            this.btnChonPass.Text = "Chọn tệp";
+            this.btnChonPass.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.radioNu);
+            this.panel1.Controls.Add(this.radioNam);
             this.panel1.Location = new System.Drawing.Point(712, 113);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(114, 20);
             this.panel1.TabIndex = 45;
             // 
-            // radioButton2
+            // radioNu
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(73, 1);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioNu.AutoSize = true;
+            this.radioNu.Location = new System.Drawing.Point(73, 1);
+            this.radioNu.Name = "radioNu";
+            this.radioNu.Size = new System.Drawing.Size(39, 17);
+            this.radioNu.TabIndex = 1;
+            this.radioNu.TabStop = true;
+            this.radioNu.Text = "Nữ";
+            this.radioNu.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioNam
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 1);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioNam.AutoSize = true;
+            this.radioNam.Location = new System.Drawing.Point(3, 1);
+            this.radioNam.Name = "radioNam";
+            this.radioNam.Size = new System.Drawing.Size(47, 17);
+            this.radioNam.TabIndex = 0;
+            this.radioNam.TabStop = true;
+            this.radioNam.Text = "Nam";
+            this.radioNam.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnChonAnh
             // 
-            this.button1.Location = new System.Drawing.Point(171, 233);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 23);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Chọn ảnh";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Location = new System.Drawing.Point(171, 233);
+            this.btnChonAnh.Name = "btnChonAnh";
+            this.btnChonAnh.Size = new System.Drawing.Size(76, 23);
+            this.btnChonAnh.TabIndex = 44;
+            this.btnChonAnh.Text = "Chọn ảnh";
+            this.btnChonAnh.UseVisualStyleBackColor = true;
             // 
-            // bTThoat
+            // btnThoat
             // 
-            this.bTThoat.Location = new System.Drawing.Point(632, 438);
-            this.bTThoat.Name = "bTThoat";
-            this.bTThoat.Size = new System.Drawing.Size(194, 31);
-            this.bTThoat.TabIndex = 43;
-            this.bTThoat.Text = "Đóng";
-            this.bTThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Location = new System.Drawing.Point(632, 438);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(194, 31);
+            this.btnThoat.TabIndex = 43;
+            this.btnThoat.Text = "Đóng";
+            this.btnThoat.UseVisualStyleBackColor = true;
             // 
-            // bTDangKi
+            // btnDangKi
             // 
-            this.bTDangKi.Location = new System.Drawing.Point(406, 438);
-            this.bTDangKi.Name = "bTDangKi";
-            this.bTDangKi.Size = new System.Drawing.Size(202, 31);
-            this.bTDangKi.TabIndex = 42;
-            this.bTDangKi.Text = "Đăng kí";
-            this.bTDangKi.UseVisualStyleBackColor = true;
+            this.btnDangKi.Location = new System.Drawing.Point(406, 438);
+            this.btnDangKi.Name = "btnDangKi";
+            this.btnDangKi.Size = new System.Drawing.Size(202, 31);
+            this.btnDangKi.TabIndex = 42;
+            this.btnDangKi.Text = "Đăng kí";
+            this.btnDangKi.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -152,33 +152,33 @@
             this.label9.TabIndex = 41;
             this.label9.Text = "HÌNH ẢNH";
             // 
-            // dateTimePicker1
+            // dateNgaySinh
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(406, 143);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(231, 20);
-            this.dateTimePicker1.TabIndex = 40;
+            this.dateNgaySinh.Location = new System.Drawing.Point(406, 143);
+            this.dateNgaySinh.Name = "dateNgaySinh";
+            this.dateNgaySinh.Size = new System.Drawing.Size(231, 20);
+            this.dateNgaySinh.TabIndex = 40;
             // 
-            // tBSDT
+            // tbSDT
             // 
-            this.tBSDT.Location = new System.Drawing.Point(406, 203);
-            this.tBSDT.Name = "tBSDT";
-            this.tBSDT.Size = new System.Drawing.Size(420, 20);
-            this.tBSDT.TabIndex = 37;
+            this.tbSDT.Location = new System.Drawing.Point(406, 203);
+            this.tbSDT.Name = "tbSDT";
+            this.tbSDT.Size = new System.Drawing.Size(420, 20);
+            this.tbSDT.TabIndex = 37;
             // 
-            // tBEmail
+            // tbEmail
             // 
-            this.tBEmail.Location = new System.Drawing.Point(406, 173);
-            this.tBEmail.Name = "tBEmail";
-            this.tBEmail.Size = new System.Drawing.Size(420, 20);
-            this.tBEmail.TabIndex = 36;
+            this.tbEmail.Location = new System.Drawing.Point(406, 173);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(420, 20);
+            this.tbEmail.TabIndex = 36;
             // 
-            // tBName
+            // tbName
             // 
-            this.tBName.Location = new System.Drawing.Point(406, 83);
-            this.tBName.Name = "tBName";
-            this.tBName.Size = new System.Drawing.Size(420, 20);
-            this.tBName.TabIndex = 35;
+            this.tbName.Location = new System.Drawing.Point(406, 83);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(420, 20);
+            this.tbName.TabIndex = 35;
             // 
             // label8
             // 
@@ -280,34 +280,34 @@
             this.pBAvatar.TabIndex = 27;
             this.pBAvatar.TabStop = false;
             // 
-            // comboBox1
+            // comboQuocTich
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(406, 233);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(420, 21);
-            this.comboBox1.TabIndex = 51;
+            this.comboQuocTich.FormattingEnabled = true;
+            this.comboQuocTich.Location = new System.Drawing.Point(406, 233);
+            this.comboQuocTich.Name = "comboQuocTich";
+            this.comboQuocTich.Size = new System.Drawing.Size(420, 21);
+            this.comboQuocTich.TabIndex = 51;
             // 
             // FrmDangKyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 481);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboQuocTich);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbSHC);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnChonPass);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bTThoat);
-            this.Controls.Add(this.bTDangKi);
+            this.Controls.Add(this.btnChonAnh);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnDangKi);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateNgaySinh);
             this.Controls.Add(this.pBPassport);
-            this.Controls.Add(this.tBSDT);
-            this.Controls.Add(this.tBEmail);
-            this.Controls.Add(this.tBName);
+            this.Controls.Add(this.tbSDT);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbName);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -332,21 +332,21 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbSHC;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnChonPass;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button bTThoat;
-        private System.Windows.Forms.Button bTDangKi;
+        private System.Windows.Forms.RadioButton radioNu;
+        private System.Windows.Forms.RadioButton radioNam;
+        private System.Windows.Forms.Button btnChonAnh;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnDangKi;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateNgaySinh;
         private System.Windows.Forms.PictureBox pBPassport;
-        private System.Windows.Forms.TextBox tBSDT;
-        private System.Windows.Forms.TextBox tBEmail;
-        private System.Windows.Forms.TextBox tBName;
+        private System.Windows.Forms.TextBox tbSDT;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -357,6 +357,6 @@
         private System.Windows.Forms.PictureBox pBAvatar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboQuocTich;
     }
 }

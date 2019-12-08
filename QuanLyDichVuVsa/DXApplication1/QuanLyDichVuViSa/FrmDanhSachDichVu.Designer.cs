@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bTTimKiem = new System.Windows.Forms.Button();
-            this.tBTimKiem = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.tbTimKiem = new System.Windows.Forms.TextBox();
+            this.btnDong = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -38,39 +38,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // bTTimKiem
+            // btnTim
             // 
-            this.bTTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bTTimKiem.Location = new System.Drawing.Point(316, 87);
-            this.bTTimKiem.Name = "bTTimKiem";
-            this.bTTimKiem.Size = new System.Drawing.Size(75, 31);
-            this.bTTimKiem.TabIndex = 8;
-            this.bTTimKiem.Text = "Tìm";
-            this.bTTimKiem.UseVisualStyleBackColor = true;
+            this.btnTim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTim.Location = new System.Drawing.Point(316, 87);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(75, 31);
+            this.btnTim.TabIndex = 8;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = true;
             // 
-            // tBTimKiem
+            // tbTimKiem
             // 
-            this.tBTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBTimKiem.Location = new System.Drawing.Point(3, 87);
-            this.tBTimKiem.Name = "tBTimKiem";
-            this.tBTimKiem.Size = new System.Drawing.Size(307, 31);
-            this.tBTimKiem.TabIndex = 7;
+            this.tbTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTimKiem.Location = new System.Drawing.Point(3, 87);
+            this.tbTimKiem.Name = "tbTimKiem";
+            this.tbTimKiem.Size = new System.Drawing.Size(307, 31);
+            this.tbTimKiem.TabIndex = 7;
             // 
-            // button1
+            // btnDong
             // 
-            this.button1.Location = new System.Drawing.Point(897, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Đóng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDong.Location = new System.Drawing.Point(897, 90);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(75, 31);
+            this.btnDong.TabIndex = 10;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.tBTimKiem);
-            this.panel1.Controls.Add(this.bTTimKiem);
+            this.panel1.Controls.Add(this.btnDong);
+            this.panel1.Controls.Add(this.tbTimKiem);
+            this.panel1.Controls.Add(this.btnTim);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -113,9 +113,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button bTTimKiem;
-        private System.Windows.Forms.TextBox tBTimKiem;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.TextBox tbTimKiem;
+        private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;

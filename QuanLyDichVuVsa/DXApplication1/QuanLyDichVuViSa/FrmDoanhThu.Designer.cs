@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtpk = new System.Windows.Forms.DateTimePicker();
+            this.dateThang = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -38,14 +38,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtpk
+            // dateThang
             // 
-            this.dtpk.CustomFormat = "MM/yyyy";
-            this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpk.Location = new System.Drawing.Point(102, 61);
-            this.dtpk.Name = "dtpk";
-            this.dtpk.Size = new System.Drawing.Size(240, 20);
-            this.dtpk.TabIndex = 9;
+            this.dateThang.CustomFormat = "MM/yyyy";
+            this.dateThang.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateThang.Location = new System.Drawing.Point(102, 61);
+            this.dateThang.Name = "dateThang";
+            this.dateThang.Size = new System.Drawing.Size(240, 20);
+            this.dateThang.TabIndex = 9;
             // 
             // label2
             // 
@@ -68,7 +68,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dtpk);
+            this.panel1.Controls.Add(this.dateThang);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -113,7 +113,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.DateTimePicker dtpk;
+        private System.Windows.Forms.DateTimePicker dateThang;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;

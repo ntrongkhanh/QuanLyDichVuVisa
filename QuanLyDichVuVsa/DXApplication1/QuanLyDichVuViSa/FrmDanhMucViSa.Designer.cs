@@ -31,20 +31,23 @@
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.txtMaDonViTinh = new System.Windows.Forms.TextBox();
-            this.txtTenDonViTinh = new System.Windows.Forms.TextBox();
+            this.tbLoaiViSa = new System.Windows.Forms.TextBox();
+            this.tbChiPhi = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(381, 87);
+            this.btnHuy.Location = new System.Drawing.Point(282, 96);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 31);
             this.btnHuy.TabIndex = 31;
@@ -53,7 +56,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(292, 87);
+            this.btnLuu.Location = new System.Drawing.Point(193, 96);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 31);
             this.btnLuu.TabIndex = 30;
@@ -62,32 +65,32 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(203, 87);
+            this.btnThem.Location = new System.Drawing.Point(104, 96);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 31);
             this.btnThem.TabIndex = 29;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
-            // txtMaDonViTinh
+            // tbLoaiViSa
             // 
-            this.txtMaDonViTinh.Enabled = false;
-            this.txtMaDonViTinh.Location = new System.Drawing.Point(203, 40);
-            this.txtMaDonViTinh.Name = "txtMaDonViTinh";
-            this.txtMaDonViTinh.Size = new System.Drawing.Size(253, 20);
-            this.txtMaDonViTinh.TabIndex = 28;
+            this.tbLoaiViSa.Enabled = false;
+            this.tbLoaiViSa.Location = new System.Drawing.Point(104, 70);
+            this.tbLoaiViSa.Name = "tbLoaiViSa";
+            this.tbLoaiViSa.Size = new System.Drawing.Size(253, 20);
+            this.tbLoaiViSa.TabIndex = 28;
             // 
-            // txtTenDonViTinh
+            // tbChiPhi
             // 
-            this.txtTenDonViTinh.Enabled = false;
-            this.txtTenDonViTinh.Location = new System.Drawing.Point(584, 40);
-            this.txtTenDonViTinh.Name = "txtTenDonViTinh";
-            this.txtTenDonViTinh.Size = new System.Drawing.Size(253, 20);
-            this.txtTenDonViTinh.TabIndex = 27;
+            this.tbChiPhi.Enabled = false;
+            this.tbChiPhi.Location = new System.Drawing.Point(485, 70);
+            this.tbChiPhi.Name = "tbChiPhi";
+            this.tbChiPhi.Size = new System.Drawing.Size(253, 20);
+            this.tbChiPhi.TabIndex = 27;
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(381, 87);
+            this.btnXoa.Location = new System.Drawing.Point(282, 96);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 31);
             this.btnXoa.TabIndex = 26;
@@ -96,7 +99,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(292, 87);
+            this.btnSua.Location = new System.Drawing.Point(193, 96);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 31);
             this.btnSua.TabIndex = 25;
@@ -106,7 +109,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(524, 43);
+            this.label1.Location = new System.Drawing.Point(425, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 24;
@@ -115,7 +118,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(145, 43);
+            this.label4.Location = new System.Drawing.Point(46, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 23;
@@ -123,7 +126,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(762, 87);
+            this.button1.Location = new System.Drawing.Point(663, 96);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 31);
             this.button1.TabIndex = 33;
@@ -132,12 +135,13 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.txtTenDonViTinh);
+            this.panel1.Controls.Add(this.tbChiPhi);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtMaDonViTinh);
+            this.panel1.Controls.Add(this.tbLoaiViSa);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnSua);
@@ -148,16 +152,37 @@
             this.panel1.Size = new System.Drawing.Size(984, 130);
             this.panel1.TabIndex = 34;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(400, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(184, 25);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "DANH MỤC VISA";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 130);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(984, 351);
+            this.dataGridView1.TabIndex = 35;
+            // 
             // FrmDanhMucViSa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 481);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "FrmDanhMucViSa";
             this.Text = "Danh mục Visa";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -166,13 +191,15 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.TextBox txtMaDonViTinh;
-        private System.Windows.Forms.TextBox txtTenDonViTinh;
+        private System.Windows.Forms.TextBox tbLoaiViSa;
+        private System.Windows.Forms.TextBox tbChiPhi;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

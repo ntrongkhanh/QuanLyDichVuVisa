@@ -28,42 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtTenDonViTinh = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbTenDichVu = new System.Windows.Forms.TextBox();
+            this.btnDong = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbChiPhi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtTenDonViTinh
+            // tbTenDichVu
             // 
-            this.txtTenDonViTinh.Enabled = false;
-            this.txtTenDonViTinh.Location = new System.Drawing.Point(118, 12);
-            this.txtTenDonViTinh.Name = "txtTenDonViTinh";
-            this.txtTenDonViTinh.Size = new System.Drawing.Size(253, 20);
-            this.txtTenDonViTinh.TabIndex = 38;
+            this.tbTenDichVu.Enabled = false;
+            this.tbTenDichVu.Location = new System.Drawing.Point(118, 67);
+            this.tbTenDichVu.Name = "tbTenDichVu";
+            this.tbTenDichVu.Size = new System.Drawing.Size(253, 20);
+            this.tbTenDichVu.TabIndex = 38;
             // 
-            // button1
+            // btnDong
             // 
-            this.button1.Location = new System.Drawing.Point(657, 72);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Đóng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDong.Location = new System.Drawing.Point(657, 93);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(75, 31);
+            this.btnDong.TabIndex = 44;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(118, 72);
+            this.btnThem.Location = new System.Drawing.Point(118, 93);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 31);
             this.btnThem.TabIndex = 40;
@@ -73,7 +74,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 15);
+            this.label1.Location = new System.Drawing.Point(48, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 35;
@@ -81,7 +82,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(208, 72);
+            this.btnLuu.Location = new System.Drawing.Point(208, 93);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 31);
             this.btnLuu.TabIndex = 41;
@@ -90,25 +91,25 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(208, 72);
+            this.btnSua.Location = new System.Drawing.Point(208, 93);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 31);
             this.btnSua.TabIndex = 36;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tbChiPhi
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(479, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 20);
-            this.textBox1.TabIndex = 46;
+            this.tbChiPhi.Enabled = false;
+            this.tbChiPhi.Location = new System.Drawing.Point(479, 67);
+            this.tbChiPhi.Name = "tbChiPhi";
+            this.tbChiPhi.Size = new System.Drawing.Size(253, 20);
+            this.tbChiPhi.TabIndex = 46;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(432, 15);
+            this.label2.Location = new System.Drawing.Point(432, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 45;
@@ -116,16 +117,17 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.txtTenDonViTinh);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnXoa);
+            this.panel1.Controls.Add(this.btnHuy);
+            this.panel1.Controls.Add(this.tbTenDichVu);
+            this.panel1.Controls.Add(this.tbChiPhi);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnDong);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -141,23 +143,33 @@
             this.dataGridView1.Size = new System.Drawing.Size(984, 351);
             this.dataGridView1.TabIndex = 48;
             // 
-            // button2
+            // btnHuy
             // 
-            this.button2.Location = new System.Drawing.Point(296, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 31);
-            this.button2.TabIndex = 47;
-            this.button2.Text = "Hủy";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHuy.Location = new System.Drawing.Point(296, 93);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 31);
+            this.btnHuy.TabIndex = 47;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnXoa
             // 
-            this.button3.Location = new System.Drawing.Point(296, 72);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 31);
-            this.button3.TabIndex = 48;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(296, 93);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 31);
+            this.btnXoa.TabIndex = 48;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(330, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(325, 25);
+            this.label3.TabIndex = 49;
+            this.label3.Text = "DANH MỤC DỊCH VỤ BỔ SUNG";
             // 
             // FrmDanhMucDichVuBoSung
             // 
@@ -176,17 +188,18 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtTenDonViTinh;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbTenDichVu;
+        private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbChiPhi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Label label3;
     }
 }

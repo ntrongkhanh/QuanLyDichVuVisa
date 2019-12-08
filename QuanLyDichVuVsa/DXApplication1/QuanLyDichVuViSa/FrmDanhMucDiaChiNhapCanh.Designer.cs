@@ -34,10 +34,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtTenDonViTinh = new System.Windows.Forms.TextBox();
+            this.btnDong = new System.Windows.Forms.Button();
+            this.tbNoiNhapCanh = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -68,12 +69,11 @@
             this.btnLuu.TabIndex = 41;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 44);
+            this.label1.Location = new System.Drawing.Point(48, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 35;
@@ -97,28 +97,29 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnDong
             // 
-            this.button1.Location = new System.Drawing.Point(351, 86);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Đóng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDong.Location = new System.Drawing.Point(351, 86);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(75, 31);
+            this.btnDong.TabIndex = 44;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
             // 
-            // txtTenDonViTinh
+            // tbNoiNhapCanh
             // 
-            this.txtTenDonViTinh.Enabled = false;
-            this.txtTenDonViTinh.Location = new System.Drawing.Point(134, 41);
-            this.txtTenDonViTinh.Name = "txtTenDonViTinh";
-            this.txtTenDonViTinh.Size = new System.Drawing.Size(292, 20);
-            this.txtTenDonViTinh.TabIndex = 38;
+            this.tbNoiNhapCanh.Enabled = false;
+            this.tbNoiNhapCanh.Location = new System.Drawing.Point(134, 47);
+            this.tbNoiNhapCanh.Name = "tbNoiNhapCanh";
+            this.tbNoiNhapCanh.Size = new System.Drawing.Size(292, 20);
+            this.tbNoiNhapCanh.TabIndex = 38;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtTenDonViTinh);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.tbNoiNhapCanh);
             this.panel1.Controls.Add(this.btnLuu);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnDong);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.btnHuy);
@@ -138,6 +139,16 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(984, 351);
             this.dataGridView1.TabIndex = 46;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(320, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(344, 25);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "DANH MỤC ĐỊA CHỈ NHẬP CẢNH";
             // 
             // FrmDanhMucDiaChiNhapCanh
             // 
@@ -163,9 +174,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtTenDonViTinh;
+        private System.Windows.Forms.Button btnDong;
+        private System.Windows.Forms.TextBox tbNoiNhapCanh;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
     }
 }
