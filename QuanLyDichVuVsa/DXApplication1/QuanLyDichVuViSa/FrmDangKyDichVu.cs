@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace QuanLyDichVuViSa
@@ -40,6 +41,12 @@ namespace QuanLyDichVuViSa
         private void TBSDT_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtLuu_Click(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }

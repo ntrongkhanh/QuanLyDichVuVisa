@@ -34,9 +34,11 @@
             this.btLuu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tbSoHoChieu = new System.Windows.Forms.TextBox();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboQuocTich = new System.Windows.Forms.ComboBox();
             this.tbSDT = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,6 +53,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.labelGiaDVBS = new System.Windows.Forms.Label();
+            this.dateNgayNhanKQ = new System.Windows.Forms.DateTimePicker();
             this.labelTongChiPhi = new System.Windows.Forms.Label();
             this.labelGiaViSa = new System.Windows.Forms.Label();
             this.labelGiaThoiGian = new System.Windows.Forms.Label();
@@ -71,10 +75,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.comboLoaiViSa = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.tbSoHoChieu = new System.Windows.Forms.TextBox();
-            this.comboQuocTich = new System.Windows.Forms.ComboBox();
-            this.dateNgayNhanKQ = new System.Windows.Forms.DateTimePicker();
-            this.labelGiaDVBS = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -107,6 +107,7 @@
             this.btLuu.TabIndex = 77;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
+            this.btLuu.Click += new System.EventHandler(this.BtLuu_Click);
             // 
             // label2
             // 
@@ -129,6 +130,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 80);
             this.panel2.TabIndex = 82;
+            // 
+            // tbSoHoChieu
+            // 
+            this.tbSoHoChieu.Location = new System.Drawing.Point(88, 44);
+            this.tbSoHoChieu.Multiline = true;
+            this.tbSoHoChieu.Name = "tbSoHoChieu";
+            this.tbSoHoChieu.Size = new System.Drawing.Size(231, 26);
+            this.tbSoHoChieu.TabIndex = 56;
             // 
             // simpleButton1
             // 
@@ -170,6 +179,14 @@
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách hàng";
+            // 
+            // comboQuocTich
+            // 
+            this.comboQuocTich.FormattingEnabled = true;
+            this.comboQuocTich.Location = new System.Drawing.Point(605, 75);
+            this.comboQuocTich.Name = "comboQuocTich";
+            this.comboQuocTich.Size = new System.Drawing.Size(350, 21);
+            this.comboQuocTich.TabIndex = 88;
             // 
             // tbSDT
             // 
@@ -316,6 +333,23 @@
             this.groupBox2.TabIndex = 85;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dịch vụ";
+            // 
+            // labelGiaDVBS
+            // 
+            this.labelGiaDVBS.Location = new System.Drawing.Point(878, 105);
+            this.labelGiaDVBS.Name = "labelGiaDVBS";
+            this.labelGiaDVBS.Size = new System.Drawing.Size(45, 14);
+            this.labelGiaDVBS.TabIndex = 105;
+            this.labelGiaDVBS.Text = "0 USD";
+            this.labelGiaDVBS.UseCompatibleTextRendering = true;
+            // 
+            // dateNgayNhanKQ
+            // 
+            this.dateNgayNhanKQ.Enabled = false;
+            this.dateNgayNhanKQ.Location = new System.Drawing.Point(121, 72);
+            this.dateNgayNhanKQ.Name = "dateNgayNhanKQ";
+            this.dateNgayNhanKQ.Size = new System.Drawing.Size(198, 20);
+            this.dateNgayNhanKQ.TabIndex = 104;
             // 
             // labelTongChiPhi
             // 
@@ -486,39 +520,6 @@
             this.label9.Size = new System.Drawing.Size(54, 13);
             this.label9.TabIndex = 84;
             this.label9.Text = "Loại VISA";
-            // 
-            // tbSoHoChieu
-            // 
-            this.tbSoHoChieu.Location = new System.Drawing.Point(88, 44);
-            this.tbSoHoChieu.Multiline = true;
-            this.tbSoHoChieu.Name = "tbSoHoChieu";
-            this.tbSoHoChieu.Size = new System.Drawing.Size(231, 26);
-            this.tbSoHoChieu.TabIndex = 56;
-            // 
-            // comboQuocTich
-            // 
-            this.comboQuocTich.FormattingEnabled = true;
-            this.comboQuocTich.Location = new System.Drawing.Point(605, 75);
-            this.comboQuocTich.Name = "comboQuocTich";
-            this.comboQuocTich.Size = new System.Drawing.Size(350, 21);
-            this.comboQuocTich.TabIndex = 88;
-            // 
-            // dateNgayNhanKQ
-            // 
-            this.dateNgayNhanKQ.Enabled = false;
-            this.dateNgayNhanKQ.Location = new System.Drawing.Point(121, 72);
-            this.dateNgayNhanKQ.Name = "dateNgayNhanKQ";
-            this.dateNgayNhanKQ.Size = new System.Drawing.Size(198, 20);
-            this.dateNgayNhanKQ.TabIndex = 104;
-            // 
-            // labelGiaDVBS
-            // 
-            this.labelGiaDVBS.Location = new System.Drawing.Point(878, 105);
-            this.labelGiaDVBS.Name = "labelGiaDVBS";
-            this.labelGiaDVBS.Size = new System.Drawing.Size(45, 14);
-            this.labelGiaDVBS.TabIndex = 105;
-            this.labelGiaDVBS.Text = "0 USD";
-            this.labelGiaDVBS.UseCompatibleTextRendering = true;
             // 
             // FrmDangKyDichVu
             // 
