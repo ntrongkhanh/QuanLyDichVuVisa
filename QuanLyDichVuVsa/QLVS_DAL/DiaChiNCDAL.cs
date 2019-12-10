@@ -88,8 +88,8 @@ namespace QLVS_DAL
         public List<DiaChiNCDTO> select()
         {
             string query = string.Empty;
-            query += "SELECT * ";
-            query += "FROM dcnhapcanh";
+            query += "SELECT * FROM `quanlikh`.`dcnhapcanh`";
+            
 
             List<DiaChiNCDTO> list = new List<DiaChiNCDTO>();
             string ConnectionString = ConfigurationSettings.AppSettings["ConnectionString"];
@@ -138,7 +138,7 @@ namespace QLVS_DAL
             try
             {
                 kn.Open();
-                string sql = "select * from dcnhapcanh";
+                string sql = "select * from `quanlikh`.`dcnhapcanh`";
                 MySqlDataAdapter dt = new MySqlDataAdapter(sql, kn);
                 dt.Fill(k);//đổ dữ liệu từ DataBase sang bảng
                 kn.Close();

@@ -18,5 +18,10 @@ namespace QuanLyDichVuViSa
             InitializeComponent();
             
         }
+
+        private void BtnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

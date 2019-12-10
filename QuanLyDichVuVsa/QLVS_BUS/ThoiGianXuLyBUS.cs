@@ -9,7 +9,7 @@ using System.Data;
 
 namespace QLVS_BUS
 {
-    class ThoiGianXuLyBUS
+ public   class ThoiGianXuLyBUS
     {
         private ThoiGianXuLyDAL dcDAL;
 

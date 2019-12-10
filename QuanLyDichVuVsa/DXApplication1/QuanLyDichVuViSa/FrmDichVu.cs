@@ -27,5 +27,10 @@ namespace QuanLyDichVuViSa
         {
 
         }
+
+        private void BtnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

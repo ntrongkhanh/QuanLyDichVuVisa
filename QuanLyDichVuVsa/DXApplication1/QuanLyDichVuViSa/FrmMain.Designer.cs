@@ -91,7 +91,7 @@
             // 
             this.btnDangKyKH.Caption = "Đăng ký khách hàng";
             this.btnDangKyKH.Id = 2;
-            this.btnDangKyKH.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btnDangKyKH.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangKyKH.ImageOptions.SvgImage")));
             this.btnDangKyKH.Name = "btnDangKyKH";
             this.btnDangKyKH.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDangKyKH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem1_ItemClick);
@@ -100,7 +100,7 @@
             // 
             this.btnDanhSachKH.Caption = "Danh sách khách hàng";
             this.btnDanhSachKH.Id = 3;
-            this.btnDanhSachKH.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.btnDanhSachKH.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDanhSachKH.ImageOptions.SvgImage")));
             this.btnDanhSachKH.Name = "btnDanhSachKH";
             this.btnDanhSachKH.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDanhSachKH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem2_ItemClick);
@@ -109,7 +109,7 @@
             // 
             this.btnDangKyDichVu.Caption = "Đăng ký dịch vụ";
             this.btnDangKyDichVu.Id = 4;
-            this.btnDangKyDichVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.btnDangKyDichVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangKyDichVu.ImageOptions.SvgImage")));
             this.btnDangKyDichVu.Name = "btnDangKyDichVu";
             this.btnDangKyDichVu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDangKyDichVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem3_ItemClick);
@@ -118,7 +118,7 @@
             // 
             this.btn_DanhSachCho.Caption = "Danh sách dịch vụ chưa xử lý";
             this.btn_DanhSachCho.Id = 7;
-            this.btn_DanhSachCho.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.btn_DanhSachCho.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DanhSachCho.ImageOptions.SvgImage")));
             this.btn_DanhSachCho.Name = "btn_DanhSachCho";
             this.btn_DanhSachCho.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btn_DanhSachCho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem4_ItemClick);
@@ -127,7 +127,7 @@
             // 
             this.btnDanhSachDangXuLy.Caption = "Danh sách dịch vụ đang xử lý";
             this.btnDanhSachDangXuLy.Id = 8;
-            this.btnDanhSachDangXuLy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
+            this.btnDanhSachDangXuLy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDanhSachDangXuLy.ImageOptions.SvgImage")));
             this.btnDanhSachDangXuLy.Name = "btnDanhSachDangXuLy";
             this.btnDanhSachDangXuLy.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDanhSachDangXuLy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem5_ItemClick);
@@ -136,7 +136,7 @@
             // 
             this.btnDanhSachXuLyXong.Caption = "Danh sách dịch vụ xử lý xong";
             this.btnDanhSachXuLyXong.Id = 9;
-            this.btnDanhSachXuLyXong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
+            this.btnDanhSachXuLyXong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDanhSachXuLyXong.ImageOptions.SvgImage")));
             this.btnDanhSachXuLyXong.Name = "btnDanhSachXuLyXong";
             this.btnDanhSachXuLyXong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDanhSachXuLyXong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem6_ItemClick);
@@ -145,7 +145,7 @@
             // 
             this.btnDanhSachHoanThanh.Caption = "Danh sách dịch vụ đã hoàn thành";
             this.btnDanhSachHoanThanh.Id = 10;
-            this.btnDanhSachHoanThanh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
+            this.btnDanhSachHoanThanh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDanhSachHoanThanh.ImageOptions.SvgImage")));
             this.btnDanhSachHoanThanh.Name = "btnDanhSachHoanThanh";
             this.btnDanhSachHoanThanh.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDanhSachHoanThanh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem7_ItemClick);
@@ -154,7 +154,7 @@
             // 
             this.btnDanhSachThatBai.Caption = "Danh sách dịch vụ xử lý thất bại";
             this.btnDanhSachThatBai.Id = 11;
-            this.btnDanhSachThatBai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
+            this.btnDanhSachThatBai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDanhSachThatBai.ImageOptions.SvgImage")));
             this.btnDanhSachThatBai.Name = "btnDanhSachThatBai";
             this.btnDanhSachThatBai.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDanhSachThatBai.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem8_ItemClick);
@@ -163,7 +163,7 @@
             // 
             this.btnDoanhThu.Caption = "Doanh thu theo tháng";
             this.btnDoanhThu.Id = 13;
-            this.btnDoanhThu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
+            this.btnDoanhThu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDoanhThu.ImageOptions.SvgImage")));
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDoanhThu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem10_ItemClick);
@@ -172,7 +172,7 @@
             // 
             this.btnLoaiViSa.Caption = "Loại ViSa";
             this.btnLoaiViSa.Id = 14;
-            this.btnLoaiViSa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
+            this.btnLoaiViSa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLoaiViSa.ImageOptions.SvgImage")));
             this.btnLoaiViSa.Name = "btnLoaiViSa";
             this.btnLoaiViSa.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnLoaiViSa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem11_ItemClick);
@@ -181,7 +181,7 @@
             // 
             this.btnDiaChiNhapCanh.Caption = "Địa chỉ nhập cảnh";
             this.btnDiaChiNhapCanh.Id = 15;
-            this.btnDiaChiNhapCanh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
+            this.btnDiaChiNhapCanh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDiaChiNhapCanh.ImageOptions.SvgImage")));
             this.btnDiaChiNhapCanh.Name = "btnDiaChiNhapCanh";
             this.btnDiaChiNhapCanh.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDiaChiNhapCanh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem12_ItemClick);
@@ -190,7 +190,7 @@
             // 
             this.btnThoiGianXuLy.Caption = "Thời gian xử lý";
             this.btnThoiGianXuLy.Id = 16;
-            this.btnThoiGianXuLy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
+            this.btnThoiGianXuLy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThoiGianXuLy.ImageOptions.SvgImage")));
             this.btnThoiGianXuLy.Name = "btnThoiGianXuLy";
             this.btnThoiGianXuLy.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnThoiGianXuLy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem13_ItemClick);
@@ -199,7 +199,7 @@
             // 
             this.btnDichVuBoSung.Caption = "Dịch vụ bổ sung";
             this.btnDichVuBoSung.Id = 17;
-            this.btnDichVuBoSung.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem14.ImageOptions.SvgImage")));
+            this.btnDichVuBoSung.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDichVuBoSung.ImageOptions.SvgImage")));
             this.btnDichVuBoSung.Name = "btnDichVuBoSung";
             this.btnDichVuBoSung.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnDichVuBoSung.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarButtonItem14_ItemClick);
@@ -284,6 +284,7 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);

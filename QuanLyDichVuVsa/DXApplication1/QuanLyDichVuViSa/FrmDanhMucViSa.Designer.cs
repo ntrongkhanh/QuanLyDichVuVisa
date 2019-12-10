@@ -132,6 +132,7 @@
             this.button1.TabIndex = 33;
             this.button1.Text = "Đóng";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // panel1
             // 
@@ -180,6 +181,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmDanhMucViSa";
             this.Text = "Danh mục Visa";
+            this.Load += new System.EventHandler(this.FrmDanhMucViSa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

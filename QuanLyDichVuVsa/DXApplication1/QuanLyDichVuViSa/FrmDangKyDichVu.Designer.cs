@@ -89,6 +89,7 @@
             this.btDong.TabIndex = 79;
             this.btDong.Text = "Đóng";
             this.btDong.UseVisualStyleBackColor = true;
+            this.btDong.Click += new System.EventHandler(this.BtDong_Click);
             // 
             // btXuat
             // 

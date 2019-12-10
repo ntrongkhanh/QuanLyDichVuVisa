@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbSHC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbQuocTich = new System.Windows.Forms.TextBox();
             this.tbSDT = new System.Windows.Forms.TextBox();
@@ -47,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dateNgayNhanKQ = new System.Windows.Forms.DateTimePicker();
             this.labelTongChiPhi = new System.Windows.Forms.Label();
             this.labelGiaViSa = new System.Windows.Forms.Label();
             this.labelGiaXL = new System.Windows.Forms.Label();
@@ -73,8 +75,6 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
-            this.tbSHC = new System.Windows.Forms.TextBox();
-            this.dateNgayNhanKQ = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -124,6 +124,13 @@
             this.groupBox1.TabIndex = 79;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin thành viên";
+            // 
+            // tbSHC
+            // 
+            this.tbSHC.Location = new System.Drawing.Point(86, 48);
+            this.tbSHC.Name = "tbSHC";
+            this.tbSHC.Size = new System.Drawing.Size(262, 21);
+            this.tbSHC.TabIndex = 79;
             // 
             // label2
             // 
@@ -284,6 +291,13 @@
             this.groupBox2.TabIndex = 80;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dịch vụ";
+            // 
+            // dateNgayNhanKQ
+            // 
+            this.dateNgayNhanKQ.Location = new System.Drawing.Point(133, 97);
+            this.dateNgayNhanKQ.Name = "dateNgayNhanKQ";
+            this.dateNgayNhanKQ.Size = new System.Drawing.Size(231, 21);
+            this.dateNgayNhanKQ.TabIndex = 122;
             // 
             // labelTongChiPhi
             // 
@@ -508,20 +522,7 @@
             this.btnDong.TabIndex = 119;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
-            // 
-            // tbSHC
-            // 
-            this.tbSHC.Location = new System.Drawing.Point(86, 48);
-            this.tbSHC.Name = "tbSHC";
-            this.tbSHC.Size = new System.Drawing.Size(262, 21);
-            this.tbSHC.TabIndex = 79;
-            // 
-            // dateNgayNhanKQ
-            // 
-            this.dateNgayNhanKQ.Location = new System.Drawing.Point(133, 97);
-            this.dateNgayNhanKQ.Name = "dateNgayNhanKQ";
-            this.dateNgayNhanKQ.Size = new System.Drawing.Size(231, 21);
-            this.dateNgayNhanKQ.TabIndex = 122;
+            this.btnDong.Click += new System.EventHandler(this.BtnDong_Click);
             // 
             // FrmDichVu
             // 

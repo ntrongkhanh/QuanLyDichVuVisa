@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuanLyDichVuViSa</RootNamespace>
     <AssemblyName>QuanLyDichVuViSa</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -199,6 +200,10 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\QLVS_BUS\QLVS_BUS.csproj">
+      <Project>{c508b64c-0218-4932-9107-5639e7b52976}</Project>
+      <Name>QLVS_BUS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\QLVS_DAL\QLVS_DAL.csproj">
       <Project>{f1ce6ce4-6aef-42f6-8989-ae1d75b53720}</Project>
       <Name>QLVS_DAL</Name>

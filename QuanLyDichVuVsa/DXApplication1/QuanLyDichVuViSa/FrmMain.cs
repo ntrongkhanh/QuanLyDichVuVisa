@@ -186,5 +186,19 @@ namespace QuanLyDichVuViSa
                 frm.Activate();
             }
         }
+
+        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn thoát", "Thoát", MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
+            {
+                
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something elsef
+                e.Cancel = (dialogResult == DialogResult.No);
+            }
+        }
     }
 }

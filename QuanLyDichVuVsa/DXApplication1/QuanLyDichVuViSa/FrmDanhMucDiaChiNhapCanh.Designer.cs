@@ -38,6 +38,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -95,6 +97,7 @@
             this.btnDong.TabIndex = 44;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.BtnDong_Click);
             // 
             // tbNoiNhapCanh
             // 
@@ -133,11 +136,27 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ma,
+            this.DiaChi});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 130);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(984, 351);
             this.dataGridView1.TabIndex = 46;
+            // 
+            // Ma
+            // 
+            this.Ma.Frozen = true;
+            this.Ma.HeaderText = "Mã Địa Chỉ Nhập Cảnh";
+            this.Ma.Name = "Ma";
+            this.Ma.Width = 500;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa Chỉ Nhập Cảnh";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 500;
             // 
             // FrmDanhMucDiaChiNhapCanh
             // 
@@ -148,6 +167,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmDanhMucDiaChiNhapCanh";
             this.Text = "Địa chỉ xuất nhập cảnh";
+            this.Load += new System.EventHandler(this.FrmDanhMucDiaChiNhapCanh_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -167,5 +187,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
     }
 }

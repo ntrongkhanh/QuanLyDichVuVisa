@@ -133,6 +133,7 @@
             this.btnThoat.TabIndex = 43;
             this.btnThoat.Text = "Đóng";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.BtnThoat_Click);
             // 
             // btnDangKi
             // 

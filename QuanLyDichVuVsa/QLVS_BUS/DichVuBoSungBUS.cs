@@ -9,7 +9,7 @@ using System.Data;
 
 namespace QLVS_BUS
 {
-    class DichVuBoSungBUS
+  public  class DichVuBoSungBUS
     {
         private DichVuBoSungDAL dcDAL;
 

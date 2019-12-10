@@ -9,7 +9,7 @@ using System.Data;
 
 namespace QLVS_BUS
 {
-    class LoaiViSaBUS
+  public  class LoaiViSaBUS
     {
         private LoaiViSaDAL dcDAL;
 
