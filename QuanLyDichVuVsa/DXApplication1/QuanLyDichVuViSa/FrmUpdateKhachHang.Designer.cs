@@ -352,6 +352,7 @@
             this.Controls.Add(this.btnThayDoi);
             this.Name = "FrmUpdateKhachHang";
             this.Text = "Chỉnh sửa thông tin";
+            this.Load += new System.EventHandler(this.FrmUpdateKhachHang_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

@@ -107,6 +107,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmDanhSachKhachHang";
             this.Text = "Danh sách khách hàng";
+            this.Load += new System.EventHandler(this.FrmDanhSachKhachHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

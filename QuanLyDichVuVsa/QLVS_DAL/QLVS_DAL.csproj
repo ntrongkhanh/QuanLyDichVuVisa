@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DangKyKhachHangDAL.cs" />
+    <Compile Include="DanhSachKhachHangDAL.cs" />
     <Compile Include="DiaChiNCDAL.cs" />
     <Compile Include="DichVuBoSungDAL.cs" />
     <Compile Include="LoaiViSaDAL.cs" />

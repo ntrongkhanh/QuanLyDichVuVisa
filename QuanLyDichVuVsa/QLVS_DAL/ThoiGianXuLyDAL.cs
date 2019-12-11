@@ -89,7 +89,7 @@ namespace QLVS_DAL
         {
             string query = string.Empty;
             query += "SELECT * ";
-            query += "FROM loaivisa";
+            query += "FROM thoigianxuly";
 
             List<ThoiGianXuLyDTO> list = new List<ThoiGianXuLyDTO>();
             string ConnectionString = ConfigurationSettings.AppSettings["ConnectionString"];

@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using QLVS_DTO;
+using QLVS_BUS;
 namespace QuanLyDichVuViSa
 {
     public partial class FrmDanhSachKhachHang : Form
     {
+        private DanhSachKhachHangBUS khbus;
         public FrmDanhSachKhachHang()
         {
             InitializeComponent();
@@ -20,6 +22,31 @@ namespace QuanLyDichVuViSa
         private void BtnDong_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmDanhSachKhachHang_Load(object sender, EventArgs e)
+        {
+            khbus = new DanhSachKhachHangBUS();
+            List<DanhSachKhachHangDTO> list=khbus.select();
+            if (list == null)
+                MessageBox.Show("Load danh sách khách hàng thất bại. Vui lòng kiểm tra lại dũ liệu");
+            else
+            {
+                MessageBox.Show("Load khách hàng thành công");
+
+            }
+            loadDanhSach(list);
+        }
+
+        private void loadDanhSach(List<DanhSachKhachHangDTO> list)
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.DataSource = list;
+            MessageBox.Show(list.Count.ToString());
+            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dataGridView1.DataSource];
+            myCurrencyManager.Refresh();
         }
     }
 }
