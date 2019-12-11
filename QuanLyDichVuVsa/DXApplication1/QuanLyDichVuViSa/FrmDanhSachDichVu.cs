@@ -16,7 +16,11 @@ namespace QuanLyDichVuViSa
         {
             InitializeComponent();
         }
-
+        public FrmDanhSachDichVu(string flag)
+        {
+            
+            InitializeComponent();
+        }
         private void BtnDong_Click(object sender, EventArgs e)
         {
             this.Close();

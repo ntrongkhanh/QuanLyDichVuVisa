@@ -84,6 +84,7 @@
             this.btnChonPass.TabIndex = 46;
             this.btnChonPass.Text = "Chọn tệp";
             this.btnChonPass.UseVisualStyleBackColor = true;
+            this.btnChonPass.Click += new System.EventHandler(this.BtnChonPass_Click);
             // 
             // panel1
             // 
@@ -101,13 +102,13 @@
             this.radioNu.Name = "radioNu";
             this.radioNu.Size = new System.Drawing.Size(39, 17);
             this.radioNu.TabIndex = 1;
-            this.radioNu.TabStop = true;
             this.radioNu.Text = "Nữ";
             this.radioNu.UseVisualStyleBackColor = true;
             // 
             // radioNam
             // 
             this.radioNam.AutoSize = true;
+            this.radioNam.Checked = true;
             this.radioNam.Location = new System.Drawing.Point(3, 1);
             this.radioNam.Name = "radioNam";
             this.radioNam.Size = new System.Drawing.Size(47, 17);
@@ -124,6 +125,7 @@
             this.btnChonAnh.TabIndex = 44;
             this.btnChonAnh.Text = "Chọn ảnh";
             this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Click += new System.EventHandler(this.BtnChonAnh_Click);
             // 
             // btnThoat
             // 
@@ -143,6 +145,7 @@
             this.btnDangKi.TabIndex = 42;
             this.btnDangKi.Text = "Đăng kí";
             this.btnDangKi.UseVisualStyleBackColor = true;
+            this.btnDangKi.Click += new System.EventHandler(this.BtnDangKi_Click);
             // 
             // label9
             // 
@@ -166,6 +169,7 @@
             this.tbSDT.Name = "tbSDT";
             this.tbSDT.Size = new System.Drawing.Size(420, 20);
             this.tbSDT.TabIndex = 37;
+            this.tbSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TbSDT_KeyPress);
             // 
             // tbEmail
             // 
@@ -269,6 +273,7 @@
             this.pBPassport.Location = new System.Drawing.Point(406, 263);
             this.pBPassport.Name = "pBPassport";
             this.pBPassport.Size = new System.Drawing.Size(420, 128);
+            this.pBPassport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBPassport.TabIndex = 39;
             this.pBPassport.TabStop = false;
             // 
@@ -288,6 +293,7 @@
             this.comboQuocTich.Name = "comboQuocTich";
             this.comboQuocTich.Size = new System.Drawing.Size(420, 21);
             this.comboQuocTich.TabIndex = 51;
+            this.comboQuocTich.TextChanged += new System.EventHandler(this.ComboQuocTich_TextChanged);
             // 
             // FrmDangKyKhachHang
             // 
@@ -320,6 +326,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmDangKyKhachHang";
             this.Text = "Đăng ký khách hàng";
+            this.Load += new System.EventHandler(this.FrmDangKyKhachHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
