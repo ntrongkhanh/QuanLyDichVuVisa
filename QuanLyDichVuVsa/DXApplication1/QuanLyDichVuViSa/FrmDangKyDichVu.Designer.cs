@@ -38,7 +38,6 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboQuocTich = new System.Windows.Forms.ComboBox();
             this.tbSDT = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,15 +52,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.checkedComboBoxEdit1 = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.labelGiaDVBS = new System.Windows.Forms.Label();
             this.dateNgayNhanKQ = new System.Windows.Forms.DateTimePicker();
             this.labelTongChiPhi = new System.Windows.Forms.Label();
             this.labelGiaViSa = new System.Windows.Forms.Label();
             this.labelGiaThoiGian = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboDVBS = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dateNgayDK = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
@@ -75,10 +73,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.comboLoaiViSa = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.tbQuocGia = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btDong
@@ -161,7 +161,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboQuocTich);
+            this.groupBox1.Controls.Add(this.tbQuocGia);
             this.groupBox1.Controls.Add(this.tbSDT);
             this.groupBox1.Controls.Add(this.tbEmail);
             this.groupBox1.Controls.Add(this.label8);
@@ -181,21 +181,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách hàng";
             // 
-            // comboQuocTich
-            // 
-            this.comboQuocTich.FormattingEnabled = true;
-            this.comboQuocTich.Location = new System.Drawing.Point(605, 75);
-            this.comboQuocTich.Name = "comboQuocTich";
-            this.comboQuocTich.Size = new System.Drawing.Size(350, 21);
-            this.comboQuocTich.TabIndex = 88;
-            // 
             // tbSDT
             // 
             this.tbSDT.Location = new System.Drawing.Point(605, 43);
             this.tbSDT.Name = "tbSDT";
             this.tbSDT.Size = new System.Drawing.Size(350, 20);
             this.tbSDT.TabIndex = 33;
-            this.tbSDT.TextChanged += new System.EventHandler(this.TBSDT_TextChanged);
             // 
             // tbEmail
             // 
@@ -305,15 +296,14 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.checkedComboBoxEdit1);
             this.groupBox2.Controls.Add(this.labelGiaDVBS);
             this.groupBox2.Controls.Add(this.dateNgayNhanKQ);
             this.groupBox2.Controls.Add(this.labelTongChiPhi);
             this.groupBox2.Controls.Add(this.labelGiaViSa);
             this.groupBox2.Controls.Add(this.labelGiaThoiGian);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.comboDVBS);
-            this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.dateNgayDK);
             this.groupBox2.Controls.Add(this.label14);
@@ -335,9 +325,28 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dịch vụ";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(503, 105);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(85, 13);
+            this.label16.TabIndex = 107;
+            this.label16.Text = "Dịch vụ bổ sung";
+            // 
+            // checkedComboBoxEdit1
+            // 
+            this.checkedComboBoxEdit1.Location = new System.Drawing.Point(605, 103);
+            this.checkedComboBoxEdit1.Name = "checkedComboBoxEdit1";
+            this.checkedComboBoxEdit1.Properties.AllowMultiSelect = true;
+            this.checkedComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.checkedComboBoxEdit1.Size = new System.Drawing.Size(292, 20);
+            this.checkedComboBoxEdit1.TabIndex = 106;
+            // 
             // labelGiaDVBS
             // 
-            this.labelGiaDVBS.Location = new System.Drawing.Point(878, 105);
+            this.labelGiaDVBS.Location = new System.Drawing.Point(910, 109);
             this.labelGiaDVBS.Name = "labelGiaDVBS";
             this.labelGiaDVBS.Size = new System.Drawing.Size(45, 14);
             this.labelGiaDVBS.TabIndex = 105;
@@ -388,32 +397,6 @@
             this.label18.TabIndex = 100;
             this.label18.Text = "Tổng chi phí";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(121, 129);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(317, 77);
-            this.textBox2.TabIndex = 99;
-            this.textBox2.Visible = false;
-            // 
-            // comboDVBS
-            // 
-            this.comboDVBS.FormattingEnabled = true;
-            this.comboDVBS.Location = new System.Drawing.Point(605, 102);
-            this.comboDVBS.Name = "comboDVBS";
-            this.comboDVBS.Size = new System.Drawing.Size(243, 21);
-            this.comboDVBS.TabIndex = 98;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(503, 105);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 13);
-            this.label16.TabIndex = 97;
-            this.label16.Text = "Dịch vụ bổ sung";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -425,15 +408,15 @@
             // 
             // dateNgayDK
             // 
-            this.dateNgayDK.Location = new System.Drawing.Point(605, 11);
+            this.dateNgayDK.Location = new System.Drawing.Point(605, 8);
             this.dateNgayDK.Name = "dateNgayDK";
-            this.dateNgayDK.Size = new System.Drawing.Size(243, 20);
+            this.dateNgayDK.Size = new System.Drawing.Size(350, 20);
             this.dateNgayDK.TabIndex = 95;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(503, 15);
+            this.label14.Location = new System.Drawing.Point(503, 12);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(74, 13);
             this.label14.TabIndex = 94;
@@ -458,15 +441,15 @@
             // 
             // dateNgayXuatCanh
             // 
-            this.dateNgayXuatCanh.Location = new System.Drawing.Point(605, 72);
+            this.dateNgayXuatCanh.Location = new System.Drawing.Point(605, 69);
             this.dateNgayXuatCanh.Name = "dateNgayXuatCanh";
-            this.dateNgayXuatCanh.Size = new System.Drawing.Size(243, 20);
+            this.dateNgayXuatCanh.Size = new System.Drawing.Size(350, 20);
             this.dateNgayXuatCanh.TabIndex = 91;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(503, 75);
+            this.label12.Location = new System.Drawing.Point(503, 72);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(82, 13);
             this.label12.TabIndex = 90;
@@ -474,15 +457,15 @@
             // 
             // dateNgayNhapCanh
             // 
-            this.dateNgayNhapCanh.Location = new System.Drawing.Point(605, 40);
+            this.dateNgayNhapCanh.Location = new System.Drawing.Point(605, 37);
             this.dateNgayNhapCanh.Name = "dateNgayNhapCanh";
-            this.dateNgayNhapCanh.Size = new System.Drawing.Size(243, 20);
+            this.dateNgayNhapCanh.Size = new System.Drawing.Size(350, 20);
             this.dateNgayNhapCanh.TabIndex = 89;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(503, 46);
+            this.label11.Location = new System.Drawing.Point(503, 43);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(86, 13);
             this.label11.TabIndex = 88;
@@ -522,6 +505,13 @@
             this.label9.TabIndex = 84;
             this.label9.Text = "Loại VISA";
             // 
+            // tbQuocGia
+            // 
+            this.tbQuocGia.Location = new System.Drawing.Point(605, 74);
+            this.tbQuocGia.Name = "tbQuocGia";
+            this.tbQuocGia.Size = new System.Drawing.Size(350, 20);
+            this.tbQuocGia.TabIndex = 34;
+            // 
             // FrmDangKyDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -544,6 +534,7 @@
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -576,9 +567,6 @@
         private System.Windows.Forms.Label labelGiaViSa;
         private System.Windows.Forms.Label labelGiaThoiGian;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboDVBS;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker dateNgayDK;
         private System.Windows.Forms.Label label14;
@@ -593,8 +581,10 @@
         private System.Windows.Forms.ComboBox comboLoaiViSa;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbSoHoChieu;
-        private System.Windows.Forms.ComboBox comboQuocTich;
         private System.Windows.Forms.DateTimePicker dateNgayNhanKQ;
         private System.Windows.Forms.Label labelGiaDVBS;
+        private System.Windows.Forms.Label label16;
+        private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
+        private System.Windows.Forms.TextBox tbQuocGia;
     }
 }

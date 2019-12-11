@@ -21,7 +21,7 @@ namespace QuanLyDichVuViSa
         public FrmUpdateKhachHang()
         {
             InitializeComponent();
-
+            MAKH = "KH0003";
             connectionString = ConfigurationSettings.AppSettings["ConnectionString"];
         }
         public FrmUpdateKhachHang(string makh)
@@ -56,11 +56,11 @@ namespace QuanLyDichVuViSa
             tbEmail.Text = k.Rows[0][5].ToString();
             foreach (DataRow dr1 in k.Rows)
             {
-                MemoryStream ms = new MemoryStream((byte[])k.Rows[2][8]);
+                MemoryStream ms = new MemoryStream((byte[])k.Rows[0][8]);
                 pBPassport.Image = new Bitmap(ms);
                 pBPassport.SizeMode = PictureBoxSizeMode.Zoom;
 
-                MemoryStream ms1 = new MemoryStream((byte[])k.Rows[2][9]);
+                MemoryStream ms1 = new MemoryStream((byte[])k.Rows[0][9]);
                 pBAvatar.Image = new Bitmap(ms1);
                 pBAvatar.SizeMode = PictureBoxSizeMode.Zoom;
             }
