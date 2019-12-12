@@ -77,39 +77,80 @@ namespace QuanLyDichVuViSa
 
         private void BarButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            
+
+            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            if (frm == null)
+            {
                 FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
                 forms.MdiParent = this;
                 forms.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+            
             
         }
 
         private void BarButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-            forms.MdiParent = this;
-            forms.Show();
+            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            if (frm == null)
+            {
+                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
+                forms.MdiParent = this;
+                forms.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
         }
 
         private void BarButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-            forms.MdiParent = this;
-            forms.Show();
+            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            if (frm == null)
+            {
+                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
+                forms.MdiParent = this;
+                forms.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
         }
 
         private void BarButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-            forms.MdiParent = this;
-            forms.Show();
+            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            if (frm == null)
+            {
+                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
+                forms.MdiParent = this;
+                forms.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
         }
 
         private void BarButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-            forms.MdiParent = this;
-            forms.Show();
+            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            if (frm == null)
+            {
+                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
+                forms.MdiParent = this;
+                forms.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
         }
 
         private void BarButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
