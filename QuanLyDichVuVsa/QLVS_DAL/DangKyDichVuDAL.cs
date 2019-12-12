@@ -55,14 +55,14 @@ namespace QLVS_DAL
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
 
-                    cmd.Parameters.AddWithValue("@makh", dt.MaKH1);
-                    cmd.Parameters.AddWithValue("@hoten", dt.HoTen1);
-                    cmd.Parameters.AddWithValue("@gioitinh", dt.GioiTinh1);
-                    cmd.Parameters.AddWithValue("@ngaysinh", dt.NgaySinh1);
-                    cmd.Parameters.AddWithValue("@sdt", dt.SDT1);
-                    cmd.Parameters.AddWithValue("@email", dt.Email1);
-                    cmd.Parameters.AddWithValue("@maqg", dt.MaQG1);
-                    cmd.Parameters.AddWithValue("@sohochieu", dt.SoHoChieu1);
+                    cmd.Parameters.AddWithValue("@makh", dt.MaKH);
+                    cmd.Parameters.AddWithValue("@hoten", dt.HoTen);
+                    cmd.Parameters.AddWithValue("@gioitinh", dt.GioiTinh);
+                    cmd.Parameters.AddWithValue("@ngaysinh", dt.NgaySinh);
+                    cmd.Parameters.AddWithValue("@sdt", dt.SDT);
+                    cmd.Parameters.AddWithValue("@email", dt.Email);
+                    cmd.Parameters.AddWithValue("@maqg", dt.MaQG);
+                    cmd.Parameters.AddWithValue("@sohochieu", dt.SoHoChieu);
                     MySqlParameter picpara = new MySqlParameter();
                     picpara.MySqlDbType = MySqlDbType.MediumBlob;
                     picpara.ParameterName = "passport";

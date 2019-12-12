@@ -117,41 +117,56 @@
             // 
             // makh
             // 
+            this.makh.DataPropertyName = "MaKH";
             this.makh.HeaderText = "Mã khách hàng";
             this.makh.Name = "makh";
             // 
             // hoten
             // 
+            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hoten.DataPropertyName = "HoTen";
             this.hoten.HeaderText = "Họ tên";
             this.hoten.Name = "hoten";
             // 
             // SoHoChieu
             // 
+            this.SoHoChieu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SoHoChieu.DataPropertyName = "SoHoChieu";
             this.SoHoChieu.HeaderText = "Số hộ chiếu";
             this.SoHoChieu.Name = "SoHoChieu";
             // 
             // gioitinh
             // 
+            this.gioitinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.gioitinh.DataPropertyName = "GioiTinh";
             this.gioitinh.HeaderText = "Giới tính";
             this.gioitinh.Name = "gioitinh";
             // 
             // ngaysinh
             // 
+            this.ngaysinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngaysinh.DataPropertyName = "NgaySinh";
             this.ngaysinh.HeaderText = "Ngày Sinh";
             this.ngaysinh.Name = "ngaysinh";
             // 
             // SDT
             // 
+            this.SDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SDT.DataPropertyName = "SDT";
             this.SDT.HeaderText = "Số điện thoại";
             this.SDT.Name = "SDT";
             // 
             // email
             // 
+            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.email.DataPropertyName = "Email";
             this.email.HeaderText = "Email";
             this.email.Name = "email";
             // 
             // quoctich
             // 
+            this.quoctich.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.quoctich.DataPropertyName = "TenQG";
             this.quoctich.HeaderText = "Quốc tịch";
             this.quoctich.Name = "quoctich";
             // 

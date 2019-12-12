@@ -181,14 +181,14 @@
             // 
             // Column1
             // 
-            this.Column1.DataPropertyName = "MaLVS1";
+            this.Column1.DataPropertyName = "MaLVS";
             this.Column1.HeaderText = "Mã";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.DataPropertyName = "Ten1";
+            this.Column2.DataPropertyName = "Ten";
             this.Column2.HeaderText = "Loại ViSa";
             this.Column2.Name = "Column2";
             // 

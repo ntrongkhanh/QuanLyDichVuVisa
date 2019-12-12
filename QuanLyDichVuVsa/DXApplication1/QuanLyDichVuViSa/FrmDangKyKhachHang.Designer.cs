@@ -158,6 +158,7 @@
             // 
             // dateNgaySinh
             // 
+            this.dateNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateNgaySinh.Location = new System.Drawing.Point(406, 143);
             this.dateNgaySinh.Name = "dateNgaySinh";
             this.dateNgaySinh.Size = new System.Drawing.Size(231, 20);
@@ -288,6 +289,7 @@
             // 
             // comboQuocTich
             // 
+            this.comboQuocTich.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboQuocTich.FormattingEnabled = true;
             this.comboQuocTich.Location = new System.Drawing.Point(406, 233);
             this.comboQuocTich.Name = "comboQuocTich";

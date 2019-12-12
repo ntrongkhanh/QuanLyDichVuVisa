@@ -182,7 +182,7 @@
             // MaDVBS
             // 
             this.MaDVBS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.MaDVBS.DataPropertyName = "MaDVBS1";
+            this.MaDVBS.DataPropertyName = "MaDVBS";
             this.MaDVBS.HeaderText = "Mã dịch vụ bổ sung";
             this.MaDVBS.Name = "MaDVBS";
             this.MaDVBS.Width = 95;
@@ -190,14 +190,14 @@
             // DichVu
             // 
             this.DichVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DichVu.DataPropertyName = "Ten1";
+            this.DichVu.DataPropertyName = "Ten";
             this.DichVu.HeaderText = "Dịch vụ";
             this.DichVu.Name = "DichVu";
             // 
             // ChiPhi
             // 
             this.ChiPhi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ChiPhi.DataPropertyName = "ChiPhi1";
+            this.ChiPhi.DataPropertyName = "ChiPhi";
             this.ChiPhi.HeaderText = "Chi phí";
             this.ChiPhi.Name = "ChiPhi";
             // 

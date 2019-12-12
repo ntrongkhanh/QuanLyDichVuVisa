@@ -31,7 +31,7 @@ namespace QLVS_DAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@ma", tg.MaTG1);
+                    cmd.Parameters.AddWithValue("@ma", tg.MaTG);
                     cmd.Parameters.AddWithValue("@ten", tg.ThoiGian);
                     cmd.Parameters.AddWithValue("@songay", tg.SoNgay);
                     cmd.Parameters.AddWithValue("@chiphi", tg.ChiPhi);
@@ -64,7 +64,7 @@ namespace QLVS_DAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@ma", tg.MaTG1);
+                    cmd.Parameters.AddWithValue("@ma", tg.MaTG);
                     cmd.Parameters.AddWithValue("@thoigian", tg.ThoiGian);
                     cmd.Parameters.AddWithValue("@songay", tg.SoNgay);
                     cmd.Parameters.AddWithValue("@chiphi", tg.ChiPhi);
@@ -112,7 +112,7 @@ namespace QLVS_DAL
                             while (reader.Read())
                             {
                                 ThoiGianXuLyDTO tg = new ThoiGianXuLyDTO();
-                                tg.MaTG1 = reader["MaThoiGianXuLy"].ToString();
+                                tg.MaTG = reader["MaThoiGianXuLy"].ToString();
                                 tg.ThoiGian = reader["TGXuLy"].ToString();
                                 tg.SoNgay = int.Parse(reader["SoNgay"].ToString());
                                 tg.ChiPhi = int.Parse(reader["ChiPhi"].ToString());

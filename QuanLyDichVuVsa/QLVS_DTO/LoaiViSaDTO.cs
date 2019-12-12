@@ -8,8 +8,8 @@ namespace QLVS_DTO
 {
     public class LoaiViSaDTO
     {
-        private string MaLVS;
-        private string Ten;
+        private string maLVS;
+        private string ten;
         private int chiPhi;
 
         public LoaiViSaDTO()
@@ -18,13 +18,13 @@ namespace QLVS_DTO
 
         public LoaiViSaDTO(string maLVS, string ten, int chiPhi)
         {
-            MaLVS = maLVS;
-            Ten = ten;
-            this.chiPhi = chiPhi;
+            this.MaLVS = maLVS;
+            this.Ten = ten;
+            this.ChiPhi = chiPhi;
         }
 
-        public string MaLVS1 { get => MaLVS; set => MaLVS = value; }
-        public string Ten1 { get => Ten; set => Ten = value; }
+        public string MaLVS { get => maLVS; set => maLVS = value; }
+        public string Ten { get => ten; set => ten = value; }
         public int ChiPhi { get => chiPhi; set => chiPhi = value; }
     }
 }

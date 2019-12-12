@@ -147,7 +147,7 @@
             // 
             // Ma
             // 
-            this.Ma.DataPropertyName = "MaDCNC1";
+            this.Ma.DataPropertyName = "MaDCNC";
             this.Ma.Frozen = true;
             this.Ma.HeaderText = "Mã Địa Chỉ Nhập Cảnh";
             this.Ma.Name = "Ma";
@@ -155,7 +155,7 @@
             // 
             // DiaChi
             // 
-            this.DiaChi.DataPropertyName = "DiaChiNC1";
+            this.DiaChi.DataPropertyName = "DiaChiNC";
             this.DiaChi.HeaderText = "Địa Chỉ Nhập Cảnh";
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.Width = 500;

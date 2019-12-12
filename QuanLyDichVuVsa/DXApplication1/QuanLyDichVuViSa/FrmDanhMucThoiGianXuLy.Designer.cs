@@ -194,7 +194,7 @@
             // 
             // Column1
             // 
-            this.Column1.DataPropertyName = "MaTG1";
+            this.Column1.DataPropertyName = "MaTG";
             this.Column1.HeaderText = "Mã ";
             this.Column1.Name = "Column1";
             // 

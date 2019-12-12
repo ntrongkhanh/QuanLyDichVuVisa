@@ -21,7 +21,7 @@ namespace QuanLyDichVuViSa
         public FrmUpdateKhachHang()
         {
             InitializeComponent();
-            MAKH = "KH0003";
+          //  MAKH = "KH0003";
             connectionString = ConfigurationSettings.AppSettings["ConnectionString"];
         }
         public FrmUpdateKhachHang(string makh)
