@@ -51,7 +51,7 @@ namespace QLVS_DAL
                                 kh.SoHoChieu = reader["SoHoChieu"].ToString();
                                 kh.NgaySinh= (DateTime)reader["NGAYSINH"];
                                 kh.SDT = reader["SDT"].ToString();
-                                kh.Email = reader["TenQG"].ToString();
+                                kh.Email = reader["Email"].ToString();
                                 kh.GioiTinh = reader["GIOITINH"].ToString();
                                 kh.TenQG = reader["TENQG"].ToString();
 

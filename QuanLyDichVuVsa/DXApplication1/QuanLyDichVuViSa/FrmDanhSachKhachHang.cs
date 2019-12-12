@@ -32,7 +32,7 @@ namespace QuanLyDichVuViSa
                 MessageBox.Show("Load danh sách khách hàng thất bại. Vui lòng kiểm tra lại dũ liệu");
             else
             {
-                MessageBox.Show("Load khách hàng thành công");
+               
 
             }
             loadDanhSach(list);
