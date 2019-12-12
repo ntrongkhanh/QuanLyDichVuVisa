@@ -106,7 +106,7 @@ namespace QuanLyDichVuViSa
             bool kq = khbus.them(khdto);
             if (kq == true)
             {
-                MessageBox.Show("Thêm khách hàng thành công");
+                //MessageBox.Show("Thêm khách hàng thành công");
                 empty();
             }
             else

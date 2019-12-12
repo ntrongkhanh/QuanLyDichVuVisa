@@ -53,7 +53,7 @@ namespace QuanLyDichVuViSa
             var bindingList = new BindingList<ThoiGianXuLyDTO>(list);
             var source = new BindingSource(bindingList, null);
             dataGridView1.DataSource = source;
-            MessageBox.Show(list.Count.ToString());
+           
             // dataGridView1.DataSource = list;
 
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dataGridView1.DataSource];

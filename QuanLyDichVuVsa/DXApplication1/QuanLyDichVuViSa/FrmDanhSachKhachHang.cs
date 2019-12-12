@@ -44,7 +44,7 @@ namespace QuanLyDichVuViSa
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.DataSource = list;
-            MessageBox.Show(list.Count.ToString());
+            
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dataGridView1.DataSource];
             myCurrencyManager.Refresh();
         }

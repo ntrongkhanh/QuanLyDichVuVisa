@@ -131,6 +131,7 @@
             // 
             // comboQuocTich
             // 
+            this.comboQuocTich.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboQuocTich.FormattingEnabled = true;
             this.comboQuocTich.Location = new System.Drawing.Point(413, 236);
             this.comboQuocTich.Name = "comboQuocTich";

@@ -38,6 +38,7 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbQuocGia = new System.Windows.Forms.TextBox();
             this.tbSDT = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -73,7 +74,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.comboLoaiViSa = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.tbQuocGia = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -180,6 +180,13 @@
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách hàng";
+            // 
+            // tbQuocGia
+            // 
+            this.tbQuocGia.Location = new System.Drawing.Point(605, 74);
+            this.tbQuocGia.Name = "tbQuocGia";
+            this.tbQuocGia.Size = new System.Drawing.Size(350, 20);
+            this.tbQuocGia.TabIndex = 34;
             // 
             // tbSDT
             // 
@@ -473,6 +480,7 @@
             // 
             // comboNoiNhapCanh
             // 
+            this.comboNoiNhapCanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboNoiNhapCanh.FormattingEnabled = true;
             this.comboNoiNhapCanh.Location = new System.Drawing.Point(121, 102);
             this.comboNoiNhapCanh.Name = "comboNoiNhapCanh";
@@ -504,13 +512,6 @@
             this.label9.Size = new System.Drawing.Size(54, 13);
             this.label9.TabIndex = 84;
             this.label9.Text = "Loại VISA";
-            // 
-            // tbQuocGia
-            // 
-            this.tbQuocGia.Location = new System.Drawing.Point(605, 74);
-            this.tbQuocGia.Name = "tbQuocGia";
-            this.tbQuocGia.Size = new System.Drawing.Size(350, 20);
-            this.tbQuocGia.TabIndex = 34;
             // 
             // FrmDangKyDichVu
             // 
