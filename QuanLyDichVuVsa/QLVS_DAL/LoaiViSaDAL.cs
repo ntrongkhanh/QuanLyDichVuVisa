@@ -31,8 +31,8 @@ namespace QLVS_DAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@mavs", vs.MaLVS1);
-                    cmd.Parameters.AddWithValue("@ten", vs.Ten1);
+                    cmd.Parameters.AddWithValue("@mavs", vs.MaLVS);
+                    cmd.Parameters.AddWithValue("@ten", vs.Ten);
                     cmd.Parameters.AddWithValue("@chiphi", vs.ChiPhi);
                     try
                     {
@@ -63,8 +63,8 @@ namespace QLVS_DAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@mavs", vs.MaLVS1);
-                    cmd.Parameters.AddWithValue("@ten", vs.Ten1);
+                    cmd.Parameters.AddWithValue("@mavs", vs.MaLVS);
+                    cmd.Parameters.AddWithValue("@ten", vs.Ten);
                     cmd.Parameters.AddWithValue("@chiphi", vs.ChiPhi);
 
                     try
@@ -110,8 +110,8 @@ namespace QLVS_DAL
                             while (reader.Read())
                             {
                                 LoaiViSaDTO vs = new LoaiViSaDTO();
-                               vs.MaLVS1 = reader["MaLoaiVISA"].ToString();
-                                vs.Ten1 = reader["LoaiVISA"].ToString();
+                               vs.MaLVS = reader["MaLoaiVISA"].ToString();
+                                vs.Ten = reader["LoaiVISA"].ToString();
                                 vs.ChiPhi= int.Parse(reader["ChiPhi"].ToString());
                                 list.Add(vs);
                             }

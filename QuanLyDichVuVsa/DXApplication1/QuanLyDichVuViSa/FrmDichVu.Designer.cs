@@ -436,6 +436,7 @@
             // 
             // comboNoiNhapCanh
             // 
+            this.comboNoiNhapCanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboNoiNhapCanh.FormattingEnabled = true;
             this.comboNoiNhapCanh.Location = new System.Drawing.Point(133, 133);
             this.comboNoiNhapCanh.Name = "comboNoiNhapCanh";

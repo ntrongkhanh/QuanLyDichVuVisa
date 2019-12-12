@@ -46,14 +46,14 @@ namespace QLVS_DAL
                             while (reader.Read())
                             {
                                 DanhSachKhachHangDTO kh = new DanhSachKhachHangDTO();
-                                kh.MaKH1 = reader["MaKH"].ToString();
-                                kh.HoTen1 = reader["HoTen"].ToString();
-                                kh.SoHoChieu1 = reader["SoHoChieu"].ToString();
-                                kh.NgaySinh1 = (DateTime)reader["NGAYSINH"];
-                                kh.SDT1 = reader["SDT"].ToString();
-                                kh.Email1 = reader["TenQG"].ToString();
-                                kh.GioiTinh1 = reader["GIOITINH"].ToString();
-                                kh.TenQG1 = reader["TENQG"].ToString();
+                                kh.MaKH = reader["MaKH"].ToString();
+                                kh.HoTen = reader["HoTen"].ToString();
+                                kh.SoHoChieu = reader["SoHoChieu"].ToString();
+                                kh.NgaySinh= (DateTime)reader["NGAYSINH"];
+                                kh.SDT = reader["SDT"].ToString();
+                                kh.Email = reader["TenQG"].ToString();
+                                kh.GioiTinh = reader["GIOITINH"].ToString();
+                                kh.TenQG = reader["TENQG"].ToString();
 
                                 list.Add(kh);
                             }

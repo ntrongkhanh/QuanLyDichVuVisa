@@ -41,6 +41,9 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaDVBS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DichVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChiPhi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -166,11 +169,37 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaDVBS,
+            this.DichVu,
+            this.ChiPhi});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 130);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(984, 351);
             this.dataGridView1.TabIndex = 48;
+            // 
+            // MaDVBS
+            // 
+            this.MaDVBS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.MaDVBS.DataPropertyName = "MaDVBS";
+            this.MaDVBS.HeaderText = "Mã dịch vụ bổ sung";
+            this.MaDVBS.Name = "MaDVBS";
+            this.MaDVBS.Width = 95;
+            // 
+            // DichVu
+            // 
+            this.DichVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DichVu.DataPropertyName = "Ten";
+            this.DichVu.HeaderText = "Dịch vụ";
+            this.DichVu.Name = "DichVu";
+            // 
+            // ChiPhi
+            // 
+            this.ChiPhi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ChiPhi.DataPropertyName = "ChiPhi";
+            this.ChiPhi.HeaderText = "Chi phí";
+            this.ChiPhi.Name = "ChiPhi";
             // 
             // FrmDanhMucDichVuBoSung
             // 
@@ -203,5 +232,8 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDVBS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DichVu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ChiPhi;
     }
 }

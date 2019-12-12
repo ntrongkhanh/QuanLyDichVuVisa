@@ -8,14 +8,14 @@ namespace QLVS_DTO
 {
    public class DanhSachKhachHangDTO
    {
-        private string MaKH;
-        private string HoTen;
-        private string GioiTinh;
-        private DateTime NgaySinh;
-        private string SDT;
-        private string Email;
-        private string TenQG;
-        private string SoHoChieu;
+        private string maKH;
+        private string hoTen;
+        private string gioiTinh;
+        private DateTime ngaySinh;
+        private string sDT;
+        private string email;
+        private string tenQG;
+        private string soHoChieu;
         private byte[] passport;
         private byte[] avatar;
 
@@ -23,28 +23,28 @@ namespace QLVS_DTO
         {
         }
 
-        public DanhSachKhachHangDTO(string maKH, string hoTen, string gioiTinh, DateTime ngaySinh, string sDT, string email, string maQG, string soHoChieu, byte[] passport, byte[] avatar)
+        public DanhSachKhachHangDTO(string maKH, string hoTen, string gioiTinh, DateTime ngaySinh, string sDT, string email, string tenQG, string soHoChieu, byte[] passport, byte[] avatar)
         {
-            MaKH = maKH;
-            HoTen = hoTen;
-            GioiTinh = gioiTinh;
-            NgaySinh = ngaySinh;
-            SDT = sDT;
-            Email = email;
-            TenQG = maQG;
-            SoHoChieu = soHoChieu;
-            this.passport = passport;
-            this.avatar = avatar;
+            this.MaKH = maKH;
+            this.HoTen = hoTen;
+            this.GioiTinh = gioiTinh;
+            this.NgaySinh = ngaySinh;
+            this.SDT = sDT;
+            this.Email = email;
+            this.TenQG = tenQG;
+            this.SoHoChieu = soHoChieu;
+            this.Passport = passport;
+            this.Avatar = avatar;
         }
 
-        public string MaKH1 { get => MaKH; set => MaKH = value; }
-        public string HoTen1 { get => HoTen; set => HoTen = value; }
-        public string GioiTinh1 { get => GioiTinh; set => GioiTinh = value; }
-        public DateTime NgaySinh1 { get => NgaySinh; set => NgaySinh = value; }
-        public string SDT1 { get => SDT; set => SDT = value; }
-        public string Email1 { get => Email; set => Email = value; }
-        public string TenQG1 { get => TenQG; set => TenQG = value; }
-        public string SoHoChieu1 { get => SoHoChieu; set => SoHoChieu = value; }
+        public string MaKH { get => maKH; set => maKH = value; }
+        public string HoTen { get => hoTen; set => hoTen = value; }
+        public string GioiTinh { get => gioiTinh; set => gioiTinh = value; }
+        public DateTime NgaySinh { get => ngaySinh; set => ngaySinh = value; }
+        public string SDT { get => sDT; set => sDT = value; }
+        public string Email { get => email; set => email = value; }
+        public string TenQG { get => tenQG; set => tenQG = value; }
+        public string SoHoChieu { get => soHoChieu; set => soHoChieu = value; }
         public byte[] Passport { get => passport; set => passport = value; }
         public byte[] Avatar { get => avatar; set => avatar = value; }
     }

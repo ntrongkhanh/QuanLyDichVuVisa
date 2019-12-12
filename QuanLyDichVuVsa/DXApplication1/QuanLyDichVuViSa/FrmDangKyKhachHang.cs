@@ -90,23 +90,23 @@ namespace QuanLyDichVuViSa
                 MessageBox.Show("Mời bạn nhập đầy đủ thông tin");
                 return; }
             DangKyKhachHangDTO khdto = new DangKyKhachHangDTO();
-            khdto.MaKH1 = TaoMaTuDong();
-            khdto.HoTen1 = tbName.Text;
+            khdto.MaKH = TaoMaTuDong();
+            khdto.HoTen = tbName.Text;
             if (radioNam.Checked == true)
-                khdto.GioiTinh1 = "Nam";
+                khdto.GioiTinh = "Nam";
             else if (radioNu.Checked == true)
-                khdto.GioiTinh1 = "Nữ";
-            khdto.NgaySinh1 = dateNgaySinh.Value;
-            khdto.SDT1 = tbSDT.Text;
-            khdto.Email1 = tbEmail.Text;
-            khdto.MaQG1 = maQG.ToString();
-            khdto.SoHoChieu1 = tbSHC.Text;
+                khdto.GioiTinh = "Nữ";
+            khdto.NgaySinh = dateNgaySinh.Value;
+            khdto.SDT = tbSDT.Text;
+            khdto.Email = tbEmail.Text;
+            khdto.MaQG = maQG.ToString();
+            khdto.SoHoChieu = tbSHC.Text;
             khdto.Passport = imageToByteArray(pBPassport.Image);
             khdto.Avatar = imageToByteArray(pBAvatar.Image);
             bool kq = khbus.them(khdto);
             if (kq == true)
             {
-                MessageBox.Show("Thêm khách hàng thành công");
+                //MessageBox.Show("Thêm khách hàng thành công");
                 empty();
             }
             else

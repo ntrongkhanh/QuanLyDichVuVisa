@@ -8,17 +8,17 @@ namespace QLVS_DTO
 {
     public class DiaChiNCDTO
     {
-        private string MaDCNC;
-        private string DiaChiNC;
+        private string maDCNC;
+        private string diaChiNC;
         public DiaChiNCDTO() { }
 
         public DiaChiNCDTO(string maDCNC, string diaChiNC)
         {
-            MaDCNC1 = maDCNC;
-            DiaChiNC1 = diaChiNC;
+            this.MaDCNC = maDCNC;
+            this.DiaChiNC = diaChiNC;
         }
 
-        public string MaDCNC1 { get => MaDCNC; set => MaDCNC = value; }
-        public string DiaChiNC1 { get => DiaChiNC; set => DiaChiNC = value; }
+        public string MaDCNC { get => maDCNC; set => maDCNC = value; }
+        public string DiaChiNC { get => diaChiNC; set => diaChiNC = value; }
     }
 }

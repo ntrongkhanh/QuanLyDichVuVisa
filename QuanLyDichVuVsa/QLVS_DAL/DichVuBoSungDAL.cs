@@ -32,9 +32,9 @@ namespace QLVS_DAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@madv", dv.MaDVBS1);
-                    cmd.Parameters.AddWithValue("@tendv", dv.Ten1);
-                    cmd.Parameters.AddWithValue("@chiphi", dv.ChiPhi1);
+                    cmd.Parameters.AddWithValue("@madv", dv.MaDVBS);
+                    cmd.Parameters.AddWithValue("@tendv", dv.Ten);
+                    cmd.Parameters.AddWithValue("@chiphi", dv.ChiPhi);
                     try
                     {
                         con.Open();
@@ -64,9 +64,9 @@ namespace QLVS_DAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@madv", dv.MaDVBS1);
-                    cmd.Parameters.AddWithValue("@tendv", dv.Ten1);
-                    cmd.Parameters.AddWithValue("@chiphi", dv.ChiPhi1);
+                    cmd.Parameters.AddWithValue("@madv", dv.MaDVBS);
+                    cmd.Parameters.AddWithValue("@tendv", dv.Ten);
+                    cmd.Parameters.AddWithValue("@chiphi", dv.ChiPhi);
 
                     try
                     {
@@ -111,9 +111,9 @@ namespace QLVS_DAL
                             while (reader.Read())
                             {
                                 DichVuBoSungDTO dv = new DichVuBoSungDTO();
-                                dv.MaDVBS1 = reader["MaDVBS"].ToString();
-                               dv.Ten1 = reader["TenDVBS"].ToString();
-                                dv.ChiPhi1 =int.Parse(reader["ChiPhi"].ToString());
+                                dv.MaDVBS = reader["MaDVBS"].ToString();
+                               dv.Ten = reader["TenDVBS"].ToString();
+                                dv.ChiPhi =int.Parse(reader["ChiPhi"].ToString());
                                 list.Add(dv);
                             }
                         }

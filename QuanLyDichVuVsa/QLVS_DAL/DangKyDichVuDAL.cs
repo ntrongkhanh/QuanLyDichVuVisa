@@ -9,23 +9,23 @@ using MySql.Data.MySqlClient;
 using QLVS_DTO;
 namespace QLVS_DAL
 {
-   public class DangKyKhachHangDAL
+  public  class DangKyDichVuDAL
     {
         private string connectionString;
 
         public string ConnectionString { get => connectionString; set => connectionString = value; }
-        public DangKyKhachHangDAL()
+        public DangKyDichVuDAL()
         {
             connectionString = ConfigurationManager.AppSettings["ConnectionString"];
         }
-        public DataTable loadQGtoCombobox()
+        public DataTable loadNoiNhapCanh()
         {
             DataTable k = new DataTable();
             MySqlConnection kn = new MySqlConnection(connectionString);
             try
             {
                 kn.Open();
-                string sql = "SELECT * FROM quocgia";
+                string sql = "SELECT * FROM DCNHAPCANH";
                 MySqlDataAdapter dt = new MySqlDataAdapter(sql, kn);
                 dt.Fill(k);//đổ dữ liệu từ DataBase sang bảng
                 kn.Close();
@@ -82,7 +82,7 @@ namespace QLVS_DAL
                     }
                     catch (Exception ex)
                     {
-                        
+
                         con.Close();
                         return false;
                     }
@@ -90,14 +90,14 @@ namespace QLVS_DAL
             }
             return true;
         }
-        public DataTable loadDuLieuKH()
+        public DataTable loadDVBS()
         {
             DataTable k = new DataTable();
             MySqlConnection kn = new MySqlConnection(connectionString);
             try
             {
                 kn.Open();
-                string sql = "select * from khachhang";
+                string sql = "select * from dichvubosung";
                 MySqlDataAdapter dt = new MySqlDataAdapter(sql, kn);
                 dt.Fill(k);//đổ dữ liệu từ DataBase sang bảng
                 kn.Close();
@@ -110,6 +110,5 @@ namespace QLVS_DAL
             }
             return k;
         }
-
     }
 }

@@ -34,8 +34,8 @@ namespace QLVS_DAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@madc", dc.MaDCNC1);
-                    cmd.Parameters.AddWithValue("@dcnc", dc.DiaChiNC1);
+                    cmd.Parameters.AddWithValue("@madc", dc.MaDCNC);
+                    cmd.Parameters.AddWithValue("@dcnc", dc.DiaChiNC);
                     
                     try
                     {
@@ -66,8 +66,8 @@ namespace QLVS_DAL
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@madc", dc.MaDCNC1);
-                    cmd.Parameters.AddWithValue("@noinc", dc.DiaChiNC1);
+                    cmd.Parameters.AddWithValue("@madc", dc.MaDCNC);
+                    cmd.Parameters.AddWithValue("@noinc", dc.DiaChiNC);
                     
                     try
                     {
@@ -112,8 +112,8 @@ namespace QLVS_DAL
                             while (reader.Read())
                             {
                                 DiaChiNCDTO dc = new DiaChiNCDTO();
-                                dc.MaDCNC1 = reader["MaDCNC"].ToString();
-                                dc.DiaChiNC1 = reader["NoiNhapCanh"].ToString();
+                                dc.MaDCNC = reader["MaDCNC"].ToString();
+                                dc.DiaChiNC = reader["NoiNhapCanh"].ToString();
                                 list.Add(dc);
                             }
                         }

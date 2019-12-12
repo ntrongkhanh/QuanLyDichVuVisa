@@ -8,7 +8,7 @@ namespace QLVS_DTO
 {
      public  class ThoiGianXuLyDTO
     {
-        private string MaTG;
+        private string maTG;
         private string thoiGian;
         private int soNgay;
         private int chiPhi;
@@ -19,13 +19,13 @@ namespace QLVS_DTO
 
         public ThoiGianXuLyDTO(string maTG, string thoiGian, int soNgay, int chiPhi)
         {
-            MaTG1 = maTG;
+            MaTG = maTG;
             this.ThoiGian = thoiGian;
             this.SoNgay = soNgay;
             this.ChiPhi = chiPhi;
         }
 
-        public string MaTG1 { get => MaTG; set => MaTG = value; }
+        public string MaTG { get => maTG; set => maTG = value; }
         public string ThoiGian { get => thoiGian; set => thoiGian = value; }
         public int SoNgay { get => soNgay; set => soNgay = value; }
         public int ChiPhi { get => chiPhi; set => chiPhi = value; }

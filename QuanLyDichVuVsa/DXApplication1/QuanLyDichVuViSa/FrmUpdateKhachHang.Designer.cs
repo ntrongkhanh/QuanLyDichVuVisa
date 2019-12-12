@@ -57,6 +57,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pBAvatar = new System.Windows.Forms.PictureBox();
+            this.btnDK = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBPassport)).BeginInit();
@@ -93,7 +94,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(413, 428);
+            this.btnLuu.Location = new System.Drawing.Point(413, 455);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(135, 31);
             this.btnLuu.TabIndex = 73;
@@ -102,7 +103,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(577, 427);
+            this.btnHuy.Location = new System.Drawing.Point(577, 455);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(135, 31);
             this.btnHuy.TabIndex = 75;
@@ -130,6 +131,7 @@
             // 
             // comboQuocTich
             // 
+            this.comboQuocTich.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboQuocTich.FormattingEnabled = true;
             this.comboQuocTich.Location = new System.Drawing.Point(413, 236);
             this.comboQuocTich.Name = "comboQuocTich";
@@ -313,17 +315,27 @@
             // pBAvatar
             // 
             this.pBAvatar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pBAvatar.Location = new System.Drawing.Point(165, 82);
+            this.pBAvatar.Location = new System.Drawing.Point(159, 82);
             this.pBAvatar.Name = "pBAvatar";
             this.pBAvatar.Size = new System.Drawing.Size(113, 149);
             this.pBAvatar.TabIndex = 76;
             this.pBAvatar.TabStop = false;
+            // 
+            // btnDK
+            // 
+            this.btnDK.Location = new System.Drawing.Point(159, 427);
+            this.btnDK.Name = "btnDK";
+            this.btnDK.Size = new System.Drawing.Size(135, 31);
+            this.btnDK.TabIndex = 96;
+            this.btnDK.Text = "Đăng ký dịch vụ";
+            this.btnDK.UseVisualStyleBackColor = true;
             // 
             // FrmUpdateKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 488);
+            this.Controls.Add(this.btnDK);
             this.Controls.Add(this.comboQuocTich);
             this.Controls.Add(this.tbSHC);
             this.Controls.Add(this.label10);
@@ -394,5 +406,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pBAvatar;
+        private System.Windows.Forms.Button btnDK;
     }
 }

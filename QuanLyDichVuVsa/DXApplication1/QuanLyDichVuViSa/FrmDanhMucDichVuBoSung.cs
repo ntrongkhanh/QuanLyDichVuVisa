@@ -50,7 +50,7 @@ namespace QuanLyDichVuViSa
             dataGridView1.DataSource = source;
 
             // dataGridView1.DataSource = list;
-            MessageBox.Show(list.Count.ToString());
+            
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dataGridView1.DataSource];
             myCurrencyManager.Refresh();
 

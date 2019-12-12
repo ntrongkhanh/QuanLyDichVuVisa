@@ -8,19 +8,20 @@ namespace QLVS_DTO
 {
     public class DichVuBoSungDTO
     {
-        private string MaDVBS;
-        private string Ten;
-        private int ChiPhi;
+        private string maDVBS;
+        private string ten;
+        private int chiPhi;
         public DichVuBoSungDTO() { }
+
         public DichVuBoSungDTO(string maDVBS, string ten, int chiPhi)
         {
-            MaDVBS = maDVBS;
-            Ten = ten;
-            ChiPhi = chiPhi;
+            this.MaDVBS = maDVBS;
+            this.Ten = ten;
+            this.ChiPhi = chiPhi;
         }
 
-        public string MaDVBS1 { get => MaDVBS; set => MaDVBS = value; }
-        public string Ten1 { get => Ten; set => Ten = value; }
-        public int ChiPhi1 { get => ChiPhi; set => ChiPhi = value; }
+        public string MaDVBS { get => maDVBS; set => maDVBS = value; }
+        public string Ten { get => ten; set => ten = value; }
+        public int ChiPhi { get => chiPhi; set => chiPhi = value; }
     }
 }
