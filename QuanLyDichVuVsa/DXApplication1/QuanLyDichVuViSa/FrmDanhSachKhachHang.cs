@@ -38,14 +38,13 @@ namespace QuanLyDichVuViSa
             if (list == null)
                 MessageBox.Show("Load danh sách khách hàng thất bại. Vui lòng kiểm tra lại dũ liệu");
             else
-            {
-
+            {   
 
             }
             loadDanhSach(list);
         }
 
-        private void loadDanhSach(List<DanhSachKhachHangDTO> list)
+        public void loadDanhSach(List<DanhSachKhachHangDTO> list)
         {
             dataGridView1.DataSource = null;
             dataGridView1.AutoGenerateColumns = false;
