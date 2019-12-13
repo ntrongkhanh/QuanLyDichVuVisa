@@ -19,13 +19,12 @@ namespace QLVS_DAL
         public DiaChiNCDAL()
         {
             connectionString = ConfigurationSettings.AppSettings["ConnectionString"];
-
         }
         public bool them(DiaChiNCDTO dc)
         {
             //INSERT INTO `quanlikh`.`dcnhapcanh` VALUES('DC0001', 'Tan Son Nhat airport (SGN) – Hochiminh city');
             string query = string.Empty;
-            query += "INSERT INTO `quanlikh`.`dcnhapcanh`  VALUES (@madc,@dcnc)";
+            query += "INSERT INTO `quanlikh`.`dcnhapcanh` VALUES (@madc,@dcnc)";
             using (MySqlConnection con = new MySqlConnection(connectionString))
             {
 
@@ -85,6 +84,37 @@ namespace QLVS_DAL
             }
             return true;
         }
+        public bool xoa(DiaChiNCDTO dc)
+        {
+            string query = string.Empty;
+            query += "DELETE FROM `quanlikh`.`dcnhapcanh` WHERE MaDCNC = @madc";
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
+            {
+
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@madc", dc.MaDCNC);
+
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
         public List<DiaChiNCDTO> select()
         {
             string query = string.Empty;

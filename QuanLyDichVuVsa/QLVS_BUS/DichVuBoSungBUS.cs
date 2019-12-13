@@ -11,29 +11,34 @@ namespace QLVS_BUS
 {
   public  class DichVuBoSungBUS
     {
-        private DichVuBoSungDAL dcDAL;
+        private DichVuBoSungDAL dvDAL;
 
         public DichVuBoSungBUS()
         {
-            dcDAL = new DichVuBoSungDAL();
+            dvDAL = new DichVuBoSungDAL();
         }
-        public bool them(DichVuBoSungDTO dc)
+        public bool them(DichVuBoSungDTO dv)
         {
-            bool re = dcDAL.them(dc);
+            bool re = dvDAL.them(dv);
             return re;
         }
-        public bool sua(DichVuBoSungDTO dc)
+        public bool xoa(DichVuBoSungDTO dv)
         {
-            bool re = dcDAL.sua(dc);
+            bool re = dvDAL.xoa(dv);
+            return re;
+        }
+        public bool sua(DichVuBoSungDTO dv)
+        {
+            bool re = dvDAL.sua(dv);
             return re;
         }
         public List<DichVuBoSungDTO> select()
         {
-            return dcDAL.select();
+            return dvDAL.select();
         }
         public DataTable loadToDataTable()
         {
-            return dcDAL.loadToDataTable();
+            return dvDAL.loadToDataTable();
         }
     }
 }

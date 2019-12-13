@@ -51,6 +51,38 @@ namespace QLVS_DAL
             }
             return false;
         }
+
+        public bool xoa(LoaiViSaDTO lVS)
+        {
+            string query = string.Empty;
+            query += "DELETE FROM `quanlikh`.`loaivisa` WHERE MaLoaiVISA = @mavs";
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
+            {
+
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@mavs", lVS.MaLVS);
+
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
         public bool sua(LoaiViSaDTO vs)
         {
             string query = string.Empty;

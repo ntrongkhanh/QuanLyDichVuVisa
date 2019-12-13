@@ -22,6 +22,11 @@ namespace QLVS_BUS
             bool re = dcDAL.them(dc);
             return re;
         }
+        public bool xoa(LoaiViSaDTO dc)
+        {
+            bool re = dcDAL.xoa(dc);
+            return re;
+        }
         public bool sua(LoaiViSaDTO dc)
         {
             bool re = dcDAL.sua(dc);

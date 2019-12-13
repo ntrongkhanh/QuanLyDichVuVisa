@@ -32,14 +32,12 @@
             this.btnDong = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
             this.tbChiPhi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_thongBao = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
+            this.btn_Sua = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MaDVBS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DichVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +48,6 @@
             // 
             // tbTenDichVu
             // 
-            this.tbTenDichVu.Enabled = false;
             this.tbTenDichVu.Location = new System.Drawing.Point(118, 67);
             this.tbTenDichVu.Name = "tbTenDichVu";
             this.tbTenDichVu.Size = new System.Drawing.Size(253, 20);
@@ -58,22 +55,25 @@
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(657, 93);
+            this.btnDong.BackColor = System.Drawing.Color.Red;
+            this.btnDong.ForeColor = System.Drawing.Color.White;
+            this.btnDong.Location = new System.Drawing.Point(827, 93);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(75, 31);
             this.btnDong.TabIndex = 44;
             this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.UseVisualStyleBackColor = false;
             this.btnDong.Click += new System.EventHandler(this.BtnDong_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(118, 93);
+            this.btnThem.Location = new System.Drawing.Point(397, 61);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 31);
             this.btnThem.TabIndex = 40;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label1
             // 
@@ -84,36 +84,18 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Tên dịch vụ";
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(208, 93);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 31);
-            this.btnLuu.TabIndex = 41;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(208, 93);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 31);
-            this.btnSua.TabIndex = 36;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
             // tbChiPhi
             // 
-            this.tbChiPhi.Enabled = false;
-            this.tbChiPhi.Location = new System.Drawing.Point(479, 67);
+            this.tbChiPhi.Location = new System.Drawing.Point(649, 67);
             this.tbChiPhi.Name = "tbChiPhi";
             this.tbChiPhi.Size = new System.Drawing.Size(253, 20);
             this.tbChiPhi.TabIndex = 46;
+            this.tbChiPhi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbChiPhi_KeyPress);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(432, 70);
+            this.label2.Location = new System.Drawing.Point(602, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 45;
@@ -121,22 +103,29 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lb_thongBao);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnXoa);
-            this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.tbTenDichVu);
             this.panel1.Controls.Add(this.tbChiPhi);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnLuu);
-            this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.btnDong);
+            this.panel1.Controls.Add(this.btn_Sua);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 130);
             this.panel1.TabIndex = 47;
+            // 
+            // lb_thongBao
+            // 
+            this.lb_thongBao.AutoSize = true;
+            this.lb_thongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_thongBao.Location = new System.Drawing.Point(115, 102);
+            this.lb_thongBao.Name = "lb_thongBao";
+            this.lb_thongBao.Size = new System.Drawing.Size(0, 16);
+            this.lb_thongBao.TabIndex = 50;
             // 
             // label3
             // 
@@ -148,23 +137,14 @@
             this.label3.TabIndex = 49;
             this.label3.Text = "DANH MỤC DỊCH VỤ BỔ SUNG";
             // 
-            // btnXoa
+            // btn_Sua
             // 
-            this.btnXoa.Location = new System.Drawing.Point(296, 93);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 31);
-            this.btnXoa.TabIndex = 48;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Location = new System.Drawing.Point(296, 93);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 31);
-            this.btnHuy.TabIndex = 47;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btn_Sua.Location = new System.Drawing.Point(397, 61);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(75, 31);
+            this.btn_Sua.TabIndex = 51;
+            this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -176,6 +156,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 130);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(984, 351);
             this.dataGridView1.TabIndex = 48;
             // 
@@ -223,17 +204,15 @@
         private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.TextBox tbChiPhi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDVBS;
         private System.Windows.Forms.DataGridViewTextBoxColumn DichVu;
         private System.Windows.Forms.DataGridViewTextBoxColumn ChiPhi;
+        private System.Windows.Forms.Label lb_thongBao;
+        private System.Windows.Forms.Button btn_Sua;
     }
 }
