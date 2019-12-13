@@ -79,10 +79,11 @@ namespace QuanLyDichVuViSa
                 int r = dataGridView1.CurrentRow.Index;
                 DataGridViewRow row = dataGridView1.Rows[r];
                 maKH = row.Cells[0].Value.ToString();
-            }
-            FrmUpdateKhachHang frmUpdateKhachHang = new FrmUpdateKhachHang(maKH,frmMain);
+                FrmUpdateKhachHang frmUpdateKhachHang = new FrmUpdateKhachHang(maKH,frmMain);
             
-            frmUpdateKhachHang.Show();
+                frmUpdateKhachHang.Show();
+            }
+           
             
         }
 

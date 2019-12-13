@@ -58,7 +58,8 @@ namespace QuanLyDichVuViSa
 
         private void BarButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = kiemtraform(typeof(FrmDanhSachDichVu));
+            
+            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
             if (frm == null)
             {
                 FrmDangKyDichVu forms = new FrmDangKyDichVu();

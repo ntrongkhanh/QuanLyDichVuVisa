@@ -53,15 +53,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbNoiCap = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.tbNoiNhan = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.checkedComboBoxEdit1 = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.labelGiaDVBS = new System.Windows.Forms.Label();
-            this.dateNgayNhanKQ = new System.Windows.Forms.DateTimePicker();
             this.labelTongChiPhi = new System.Windows.Forms.Label();
             this.labelGiaViSa = new System.Windows.Forms.Label();
             this.labelGiaThoiGian = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.dateNgayDK = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.comboThoiGianXL = new System.Windows.Forms.ComboBox();
@@ -148,6 +150,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(70, 26);
             this.simpleButton1.TabIndex = 55;
             this.simpleButton1.Text = "Tìm";
+            this.simpleButton1.Click += new System.EventHandler(this.SimpleButton1_Click);
             // 
             // label1
             // 
@@ -185,6 +188,7 @@
             // 
             this.tbQuocGia.Location = new System.Drawing.Point(605, 74);
             this.tbQuocGia.Name = "tbQuocGia";
+            this.tbQuocGia.ReadOnly = true;
             this.tbQuocGia.Size = new System.Drawing.Size(350, 20);
             this.tbQuocGia.TabIndex = 34;
             // 
@@ -192,6 +196,7 @@
             // 
             this.tbSDT.Location = new System.Drawing.Point(605, 43);
             this.tbSDT.Name = "tbSDT";
+            this.tbSDT.ReadOnly = true;
             this.tbSDT.Size = new System.Drawing.Size(350, 20);
             this.tbSDT.TabIndex = 33;
             // 
@@ -199,6 +204,7 @@
             // 
             this.tbEmail.Location = new System.Drawing.Point(605, 13);
             this.tbEmail.Name = "tbEmail";
+            this.tbEmail.ReadOnly = true;
             this.tbEmail.Size = new System.Drawing.Size(350, 20);
             this.tbEmail.TabIndex = 32;
             // 
@@ -231,6 +237,7 @@
             // 
             // dateNgaySinh
             // 
+            this.dateNgaySinh.Enabled = false;
             this.dateNgaySinh.Location = new System.Drawing.Point(88, 74);
             this.dateNgaySinh.Name = "dateNgaySinh";
             this.dateNgaySinh.Size = new System.Drawing.Size(350, 20);
@@ -280,6 +287,7 @@
             // 
             this.tbTen.Location = new System.Drawing.Point(88, 13);
             this.tbTen.Name = "tbTen";
+            this.tbTen.ReadOnly = true;
             this.tbTen.Size = new System.Drawing.Size(350, 20);
             this.tbTen.TabIndex = 25;
             // 
@@ -303,15 +311,17 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tbNoiCap);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.tbNoiNhan);
+            this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.checkedComboBoxEdit1);
             this.groupBox2.Controls.Add(this.labelGiaDVBS);
-            this.groupBox2.Controls.Add(this.dateNgayNhanKQ);
             this.groupBox2.Controls.Add(this.labelTongChiPhi);
             this.groupBox2.Controls.Add(this.labelGiaViSa);
             this.groupBox2.Controls.Add(this.labelGiaThoiGian);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.dateNgayDK);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.comboThoiGianXL);
@@ -332,6 +342,38 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dịch vụ";
             // 
+            // tbNoiCap
+            // 
+            this.tbNoiCap.Location = new System.Drawing.Point(121, 99);
+            this.tbNoiCap.Name = "tbNoiCap";
+            this.tbNoiCap.Size = new System.Drawing.Size(198, 20);
+            this.tbNoiCap.TabIndex = 111;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 102);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(45, 13);
+            this.label19.TabIndex = 110;
+            this.label19.Text = "Nơi Cấp";
+            // 
+            // tbNoiNhan
+            // 
+            this.tbNoiNhan.Location = new System.Drawing.Point(121, 72);
+            this.tbNoiNhan.Name = "tbNoiNhan";
+            this.tbNoiNhan.Size = new System.Drawing.Size(198, 20);
+            this.tbNoiNhan.TabIndex = 109;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(8, 75);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(50, 13);
+            this.label17.TabIndex = 108;
+            this.label17.Text = "Nơi nhận";
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -350,6 +392,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.checkedComboBoxEdit1.Size = new System.Drawing.Size(292, 20);
             this.checkedComboBoxEdit1.TabIndex = 106;
+            this.checkedComboBoxEdit1.EditValueChanged += new System.EventHandler(this.CheckedComboBoxEdit1_EditValueChanged);
+            this.checkedComboBoxEdit1.TextChanged += new System.EventHandler(this.CheckedComboBoxEdit1_TextChanged);
             // 
             // labelGiaDVBS
             // 
@@ -359,14 +403,6 @@
             this.labelGiaDVBS.TabIndex = 105;
             this.labelGiaDVBS.Text = "0 USD";
             this.labelGiaDVBS.UseCompatibleTextRendering = true;
-            // 
-            // dateNgayNhanKQ
-            // 
-            this.dateNgayNhanKQ.Enabled = false;
-            this.dateNgayNhanKQ.Location = new System.Drawing.Point(121, 72);
-            this.dateNgayNhanKQ.Name = "dateNgayNhanKQ";
-            this.dateNgayNhanKQ.Size = new System.Drawing.Size(198, 20);
-            this.dateNgayNhanKQ.TabIndex = 104;
             // 
             // labelTongChiPhi
             // 
@@ -404,17 +440,9 @@
             this.label18.TabIndex = 100;
             this.label18.Text = "Tổng chi phí";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(8, 75);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(98, 13);
-            this.label15.TabIndex = 96;
-            this.label15.Text = "Ngày nhận kết quả";
-            // 
             // dateNgayDK
             // 
+            this.dateNgayDK.Enabled = false;
             this.dateNgayDK.Location = new System.Drawing.Point(605, 8);
             this.dateNgayDK.Name = "dateNgayDK";
             this.dateNgayDK.Size = new System.Drawing.Size(350, 20);
@@ -437,6 +465,7 @@
             this.comboThoiGianXL.Name = "comboThoiGianXL";
             this.comboThoiGianXL.Size = new System.Drawing.Size(198, 21);
             this.comboThoiGianXL.TabIndex = 93;
+            this.comboThoiGianXL.TextChanged += new System.EventHandler(this.ComboThoiGianXL_TextChanged);
             // 
             // label13
             // 
@@ -483,15 +512,16 @@
             // 
             this.comboNoiNhapCanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboNoiNhapCanh.FormattingEnabled = true;
-            this.comboNoiNhapCanh.Location = new System.Drawing.Point(121, 102);
+            this.comboNoiNhapCanh.Location = new System.Drawing.Point(121, 129);
             this.comboNoiNhapCanh.Name = "comboNoiNhapCanh";
             this.comboNoiNhapCanh.Size = new System.Drawing.Size(198, 21);
             this.comboNoiNhapCanh.TabIndex = 87;
+            this.comboNoiNhapCanh.TextChanged += new System.EventHandler(this.ComboNoiNhapCanh_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 105);
+            this.label10.Location = new System.Drawing.Point(6, 132);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 13);
             this.label10.TabIndex = 86;
@@ -571,7 +601,6 @@
         private System.Windows.Forms.Label labelGiaViSa;
         private System.Windows.Forms.Label labelGiaThoiGian;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker dateNgayDK;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox comboThoiGianXL;
@@ -585,10 +614,13 @@
         private System.Windows.Forms.ComboBox comboLoaiViSa;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbSoHoChieu;
-        private System.Windows.Forms.DateTimePicker dateNgayNhanKQ;
         private System.Windows.Forms.Label labelGiaDVBS;
         private System.Windows.Forms.Label label16;
         private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
         private System.Windows.Forms.TextBox tbQuocGia;
+        private System.Windows.Forms.TextBox tbNoiNhan;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox tbNoiCap;
+        private System.Windows.Forms.Label label19;
     }
 }

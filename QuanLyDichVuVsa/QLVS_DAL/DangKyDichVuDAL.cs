@@ -78,11 +78,50 @@ namespace QLVS_DAL
             }
             return k;
         }
+        public bool insertDanhSachDVBS(DangKyDichVuDTO dt)
+        {
+            foreach (string str in dt.Madvbs)
+            {
+                string query = string.Empty;
+                query += "insert into danhsachdichvubosung" +
+                            " values (@madvbs,@madv)";
 
-        public bool them(DangKyKhachHangDTO dt)
+
+                using (MySqlConnection con = new MySqlConnection(ConnectionString))
+                {
+
+                    using (MySqlCommand cmd = new MySqlCommand())
+                    {
+                        cmd.Connection = con;
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        cmd.CommandText = query;
+
+                        cmd.Parameters.AddWithValue("@madv", dt.MaDV);
+                        cmd.Parameters.AddWithValue("@madvbs", str);
+
+                        try
+                        {
+                            con.Open();
+                            cmd.ExecuteNonQuery();
+                            con.Close();
+                            con.Dispose();
+                        }
+                        catch (Exception ex)
+                        {
+
+                            con.Close();
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
+        }
+        public bool insert(DangKyDichVuDTO dt)
         {
             string query = string.Empty;
-            query += "insert into khachhang VALUES (@makh,@hoten,@gioitinh,@ngaysinh,@sdt,@email,@maqg,@sohochieu,@passport,@avatar)";
+            query += "insert into dichvu"+
+                        " values(@madv, @malvs, @madcnc, @makh, @noicap, @ngaydk, @ngaynhapcanh, @ngayxuatcanh, @matgxl, @noinhan, @chiphi, \"TT0001\")";
 
 
             using (MySqlConnection con = new MySqlConnection(ConnectionString))
@@ -94,24 +133,17 @@ namespace QLVS_DAL
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
 
+                    cmd.Parameters.AddWithValue("@madv", dt.MaDV);
+                    cmd.Parameters.AddWithValue("@malvs", dt.MaLoaiViSa);
+                    cmd.Parameters.AddWithValue("@madcnc", dt.MaDCNC);
                     cmd.Parameters.AddWithValue("@makh", dt.MaKH);
-                    cmd.Parameters.AddWithValue("@hoten", dt.HoTen);
-                    cmd.Parameters.AddWithValue("@gioitinh", dt.GioiTinh);
-                    cmd.Parameters.AddWithValue("@ngaysinh", dt.NgaySinh);
-                    cmd.Parameters.AddWithValue("@sdt", dt.SDT);
-                    cmd.Parameters.AddWithValue("@email", dt.Email);
-                    cmd.Parameters.AddWithValue("@maqg", dt.MaQG);
-                    cmd.Parameters.AddWithValue("@sohochieu", dt.SoHoChieu);
-                    MySqlParameter picpara = new MySqlParameter();
-                    picpara.MySqlDbType = MySqlDbType.MediumBlob;
-                    picpara.ParameterName = "passport";
-                    picpara.Value = dt.Passport;
-                    cmd.Parameters.Add(picpara);
-                    MySqlParameter picpara1 = new MySqlParameter();
-                    picpara1.MySqlDbType = MySqlDbType.MediumBlob;
-                    picpara1.ParameterName = "avatar";
-                    picpara1.Value = dt.Avatar;
-                    cmd.Parameters.Add(picpara1);
+                    cmd.Parameters.AddWithValue("@noicap", dt.NoiCap);
+                    cmd.Parameters.AddWithValue("@ngaydk", dt.NgayDK);
+                    cmd.Parameters.AddWithValue("@ngaynhapcanh", dt.NgayNhapCanh);
+                    cmd.Parameters.AddWithValue("@ngayxuatcanh", dt.NgayXuatCanh);
+                    cmd.Parameters.AddWithValue("@matgxl", dt.MaTGXL);
+                    cmd.Parameters.AddWithValue("@noinhan", dt.NoiNhan);
+                    cmd.Parameters.AddWithValue("@chiphi", dt.ChiPhi);
                     try
                     {
                         con.Open();
@@ -137,6 +169,46 @@ namespace QLVS_DAL
             {
                 kn.Open();
                 string sql = "select * from dichvubosung";
+                MySqlDataAdapter dt = new MySqlDataAdapter(sql, kn);
+                dt.Fill(k);//đổ dữ liệu từ DataBase sang bảng
+                kn.Close();
+                dt.Dispose();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            return k;
+        }
+        public DataTable loadThongTinKH(string shc)
+        {
+            DataTable k = new DataTable();
+            MySqlConnection kn = new MySqlConnection(connectionString);
+            try
+            {
+                kn.Open();
+                string sql = "select * from khachhang , quocgia where khachhang.maqg=quocgia.maqg and sohochieu=\"" + shc+"\"";
+                MySqlDataAdapter dt = new MySqlDataAdapter(sql, kn);
+                dt.Fill(k);//đổ dữ liệu từ DataBase sang bảng
+                kn.Close();
+                dt.Dispose();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            return k;
+        }
+        public DataTable loadDanhSachDV()
+        {
+            DataTable k = new DataTable();
+            MySqlConnection kn = new MySqlConnection(connectionString);
+            try
+            {
+                kn.Open();
+                string sql = "select * from dichvu";
                 MySqlDataAdapter dt = new MySqlDataAdapter(sql, kn);
                 dt.Fill(k);//đổ dữ liệu từ DataBase sang bảng
                 kn.Close();

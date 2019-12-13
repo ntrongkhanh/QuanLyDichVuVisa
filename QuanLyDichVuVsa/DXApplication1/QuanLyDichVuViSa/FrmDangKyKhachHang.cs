@@ -151,7 +151,7 @@ namespace QuanLyDichVuViSa
                 {
                     if(int.Parse(dtKH.Rows[0][0].ToString().Substring(2, 4))!=1)
                     {
-                        MessageBox.Show("dsadsad");
+                        
                         coso = 1;
                         break;
                     }else

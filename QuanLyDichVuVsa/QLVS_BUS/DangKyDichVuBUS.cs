@@ -28,9 +28,26 @@ namespace QLVS_BUS
         {
             return dvdal.loadLoaiVISA();
         }
+        public DataTable loadDanhSachDV()
+        {
+            return dvdal.loadDanhSachDV();
+        }
+        public DataTable loadThongTinKH(string shc)
+        {
+            return dvdal.loadThongTinKH(shc);
+        }
         public DataTable loadTGXL()
         {
             return dvdal.loadTGXL();
         }
+        public bool insert(DangKyDichVuDTO dt)
+        {
+            return dvdal.insert(dt);
+        }
+        public bool insertDanhSachDVBS(DangKyDichVuDTO dt)
+        {
+            return dvdal.insertDanhSachDVBS(dt);
+        }
+        
     }
 }
