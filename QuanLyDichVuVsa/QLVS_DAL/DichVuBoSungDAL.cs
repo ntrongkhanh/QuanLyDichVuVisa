@@ -52,6 +52,39 @@ namespace QLVS_DAL
             }
             return false;
         }
+
+        public bool xoa(DichVuBoSungDTO dichVu)
+        {
+            string query = string.Empty;
+            query += "DELETE FROM `quanlikh`.`dichvubosung` WHERE MaDVBS = @madv";
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
+            {
+
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@madv", dichVu.MaDVBS);
+
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+
         public bool sua(DichVuBoSungDTO dv)
         {
             string query = string.Empty;

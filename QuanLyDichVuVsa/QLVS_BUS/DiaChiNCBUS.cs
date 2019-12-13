@@ -27,6 +27,11 @@ namespace QLVS_BUS
             bool re = dcDAL.sua(dc);
             return re;
         }
+        public bool xoa(DiaChiNCDTO dc)
+        {
+            bool re = dcDAL.xoa(dc);
+            return re;
+        }
         public List<DiaChiNCDTO> select()
         {
             return dcDAL.select();

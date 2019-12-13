@@ -52,6 +52,38 @@ namespace QLVS_DAL
             }
             return false;
         }
+
+        public bool xoa(ThoiGianXuLyDTO tg)
+        {
+            string query = string.Empty;
+            query += "DELETE FROM `quanlikh`.`thoigianxuly` WHERE MaThoiGianXuLy = @ma";
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
+            {
+
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@ma", tg.MaTG);
+
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
         public bool sua(ThoiGianXuLyDTO tg)
         {
             string query = string.Empty;
