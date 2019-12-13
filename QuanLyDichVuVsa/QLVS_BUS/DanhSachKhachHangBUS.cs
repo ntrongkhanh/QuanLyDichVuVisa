@@ -19,5 +19,9 @@ namespace QLVS_BUS
         {
             return khdal.select();
         }
+        public List<DanhSachKhachHangDTO> selectByKeyword(string str)
+        {
+            return khdal.selectByKeyword(str);
+        }
     }
 }
