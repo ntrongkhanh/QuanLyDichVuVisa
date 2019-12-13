@@ -50,6 +50,7 @@
     <Compile Include="LoaiViSaBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoiGianXuLyBUS.cs" />
+    <Compile Include="UpdateKhachHangBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QLVS_DAL\QLVS_DAL.csproj">

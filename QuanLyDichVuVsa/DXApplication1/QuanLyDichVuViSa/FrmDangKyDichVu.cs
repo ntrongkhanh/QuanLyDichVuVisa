@@ -20,18 +20,24 @@ namespace QuanLyDichVuViSa
         private DataTable dtDVBS;
         private DataTable dtDCNC;
         private string maDCNC;
-        private string[] maDVBS; 
+        private string[] maDVBS;
+        private string soHoChieu;
         public FrmDangKyDichVu()
         {
             InitializeComponent();
         }
+        public FrmDangKyDichVu(string shc)
+        {
+            soHoChieu = shc;
+            InitializeComponent();
+        }
 
-        
         private void FrmDangKyDichVu_Load(object sender, EventArgs e)
         {
             dvbus = new DangKyDichVuBUS();
             loadDCNC();
             loadDVBS();
+            tbSoHoChieu.Text = soHoChieu;
         }
         
         private void Label2_Click(object sender, EventArgs e)
@@ -39,7 +45,7 @@ namespace QuanLyDichVuViSa
 
         }
 
-       
+        
 
         private void BtLuu_Click(object sender, EventArgs e)
         {

@@ -46,7 +46,7 @@ namespace QuanLyDichVuViSa
             Form frm = kiemtraform(typeof(FrmDanhSachKhachHang));
             if (frm == null)
             {
-                FrmDanhSachKhachHang forms = new FrmDanhSachKhachHang();
+                FrmDanhSachKhachHang forms = new FrmDanhSachKhachHang(this);
                 forms.MdiParent = this;
                 forms.Show();
             }
