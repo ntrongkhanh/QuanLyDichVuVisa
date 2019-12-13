@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDanhSachKhachHang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDong = new System.Windows.Forms.Button();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
@@ -42,12 +43,14 @@
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quoctich = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.simpleButton1);
             this.panel1.Controls.Add(this.btnDong);
             this.panel1.Controls.Add(this.tbTimKiem);
             this.panel1.Controls.Add(this.btnTimKiem);
@@ -75,6 +78,7 @@
             this.tbTimKiem.Name = "tbTimKiem";
             this.tbTimKiem.Size = new System.Drawing.Size(307, 31);
             this.tbTimKiem.TabIndex = 51;
+            this.tbTimKiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbTimKiem_KeyDown);
             // 
             // btnTimKiem
             // 
@@ -85,6 +89,7 @@
             this.btnTimKiem.TabIndex = 52;
             this.btnTimKiem.Text = "Tìm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.BtnTimKiem_Click);
             // 
             // label1
             // 
@@ -114,6 +119,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(984, 351);
             this.dataGridView1.TabIndex = 53;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
             // 
             // makh
             // 
@@ -170,6 +176,17 @@
             this.quoctich.HeaderText = "Quốc tịch";
             this.quoctich.Name = "quoctich";
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.simpleButton1.Location = new System.Drawing.Point(397, 87);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton1.Size = new System.Drawing.Size(36, 31);
+            this.simpleButton1.TabIndex = 54;
+            this.simpleButton1.Click += new System.EventHandler(this.SimpleButton1_Click);
+            // 
             // FrmDanhSachKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,5 +219,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn quoctich;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

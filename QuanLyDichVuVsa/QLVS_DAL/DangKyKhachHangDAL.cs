@@ -90,6 +90,7 @@ namespace QLVS_DAL
             }
             return true;
         }
+
         public DataTable loadDuLieuKH()
         {
             DataTable k = new DataTable();

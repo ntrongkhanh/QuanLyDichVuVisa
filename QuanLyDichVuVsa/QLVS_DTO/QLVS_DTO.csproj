@@ -49,6 +49,7 @@
     <Compile Include="LoaiViSaDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoiGianXuLyDTO.cs" />
+    <Compile Include="UpdateKhachHangDTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

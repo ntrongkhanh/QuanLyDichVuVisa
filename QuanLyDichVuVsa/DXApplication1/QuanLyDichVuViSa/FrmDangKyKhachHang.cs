@@ -38,11 +38,14 @@ namespace QuanLyDichVuViSa
             {
                 comboQuocTich.Items.Add(dt.Rows[i][1].ToString());
             }
+            comboQuocTich.Text = dt.Rows[0][1].ToString();
         }
 
         private void FrmDangKyKhachHang_Load(object sender, EventArgs e)
         {
+
             loadcomboboxQG();
+
         }
 
         private void ComboQuocTich_TextChanged(object sender, EventArgs e)
@@ -85,13 +88,15 @@ namespace QuanLyDichVuViSa
         }
         private void BtnDangKi_Click(object sender, EventArgs e)
         {
+
             if (!kiemTraDL())
             {
                 MessageBox.Show("Mời bạn nhập đầy đủ thông tin");
-                return; }
+                return;
+            }
             DangKyKhachHangDTO khdto = new DangKyKhachHangDTO();
             khdto.MaKH = TaoMaTuDong();
-            khdto.HoTen = tbName.Text;
+            khdto.HoTen = ChuanHoaChuoi(tbName.Text);
             if (radioNam.Checked == true)
                 khdto.GioiTinh = "Nam";
             else if (radioNu.Checked == true)
@@ -106,7 +111,7 @@ namespace QuanLyDichVuViSa
             bool kq = khbus.them(khdto);
             if (kq == true)
             {
-                //MessageBox.Show("Thêm khách hàng thành công");
+                MessageBox.Show("Thêm khách hàng thành công");
                 empty();
             }
             else
@@ -120,8 +125,9 @@ namespace QuanLyDichVuViSa
         {
             DataTable dtKH = new DataTable();
             dtKH = khbus.loadDuLieuKH();
-
-
+           
+            
+            
 
             //Phương thức thứ 2 là Substring(int index,int lenght).
             //Phuơng thức này sẽ trả về chuỗi con của chuỗi từ vị trí bắt đầu (index) và có chiều dài bao nhiêu (lenght)
@@ -143,13 +149,22 @@ namespace QuanLyDichVuViSa
             {
                 for (int i = 0; i < dtKH.Rows.Count - 1; i++)
                 {
-                    if (int.Parse(dtKH.Rows[i + 1][0].ToString().Substring(2, 4)) - int.Parse(dtKH.Rows[i][0].ToString().Substring(2, 4)) > 1)
+                    if(int.Parse(dtKH.Rows[0][0].ToString().Substring(2, 4))!=1)
+                    {
+                        MessageBox.Show("dsadsad");
+                        coso = 1;
+                        break;
+                    }else
+                    if ((int.Parse(dtKH.Rows[i + 1][0].ToString().Substring(2, 4)) - int.Parse(dtKH.Rows[i][0].ToString().Substring(2, 4)))> 1)
                     {
                         coso = int.Parse(dtKH.Rows[i][0].ToString().Substring(2, 4)) + 1;
                         break;
                     }
+                    else if(i== dtKH.Rows.Count - 2)
+                        coso = int.Parse(dtKH.Rows[dtKH.Rows.Count - 1][0].ToString().Substring(2, 4)) + 1;
                 }
-                coso = int.Parse(dtKH.Rows[dtKH.Rows.Count - 1][0].ToString().Substring(2, 4)) + 1;
+               
+                
             }
 
             //Sau khi lấy được cơ số thứ tự của thuốc, ta gắn thêm tiền tố T vào
@@ -189,7 +204,7 @@ namespace QuanLyDichVuViSa
         }
         private bool kiemTraDL()
         {
-            if(tbEmail.Text==null || tbName.Text==null || tbSDT.Text==null||tbSHC.Text==null||comboQuocTich.Text==null)
+            if (tbEmail.Text == "" || tbName.Text == "" || tbSDT.Text == "" || tbSHC.Text == "" || comboQuocTich.Text == "" || pBAvatar.Image == null || pBPassport.Image == null)
              return false;
             return true;
         }

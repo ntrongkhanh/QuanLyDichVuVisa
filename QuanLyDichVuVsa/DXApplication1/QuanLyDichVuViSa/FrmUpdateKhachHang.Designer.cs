@@ -38,11 +38,11 @@
             this.comboQuocTich = new System.Windows.Forms.ComboBox();
             this.tbSHC = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnChonPass = new System.Windows.Forms.Button();
+            this.btnPassport = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioNu = new System.Windows.Forms.RadioButton();
             this.radioNam = new System.Windows.Forms.RadioButton();
-            this.btnChonAnh = new System.Windows.Forms.Button();
+            this.btnAvatar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.pBPassport = new System.Windows.Forms.PictureBox();
@@ -82,6 +82,7 @@
             this.btnThayDoi.TabIndex = 65;
             this.btnThayDoi.Text = "Thay đổi thông tin";
             this.btnThayDoi.UseVisualStyleBackColor = true;
+            this.btnThayDoi.Click += new System.EventHandler(this.BtnThayDoi_Click);
             // 
             // btnXoa
             // 
@@ -91,24 +92,29 @@
             this.btnXoa.TabIndex = 72;
             this.btnXoa.Text = "Xóa khách hàng";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.BtnXoa_Click);
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(413, 455);
+            this.btnLuu.Location = new System.Drawing.Point(413, 428);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(135, 31);
             this.btnLuu.TabIndex = 73;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Visible = false;
+            this.btnLuu.Click += new System.EventHandler(this.BtnLuu_Click);
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(577, 455);
+            this.btnHuy.Location = new System.Drawing.Point(577, 427);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(135, 31);
             this.btnHuy.TabIndex = 75;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Visible = false;
+            this.btnHuy.Click += new System.EventHandler(this.BtnHuy_Click);
             // 
             // label1
             // 
@@ -131,15 +137,18 @@
             // 
             // comboQuocTich
             // 
+            this.comboQuocTich.Cursor = System.Windows.Forms.Cursors.Default;
             this.comboQuocTich.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboQuocTich.FormattingEnabled = true;
             this.comboQuocTich.Location = new System.Drawing.Point(413, 236);
             this.comboQuocTich.Name = "comboQuocTich";
             this.comboQuocTich.Size = new System.Drawing.Size(420, 21);
             this.comboQuocTich.TabIndex = 95;
+            this.comboQuocTich.TextChanged += new System.EventHandler(this.ComboQuocTich_TextChanged);
             // 
             // tbSHC
             // 
+            this.tbSHC.Cursor = System.Windows.Forms.Cursors.Default;
             this.tbSHC.Location = new System.Drawing.Point(413, 116);
             this.tbSHC.Name = "tbSHC";
             this.tbSHC.Size = new System.Drawing.Size(231, 21);
@@ -154,14 +163,15 @@
             this.label10.TabIndex = 93;
             this.label10.Text = "Số hộ chiếu";
             // 
-            // btnChonPass
+            // btnPassport
             // 
-            this.btnChonPass.Location = new System.Drawing.Point(413, 400);
-            this.btnChonPass.Name = "btnChonPass";
-            this.btnChonPass.Size = new System.Drawing.Size(78, 22);
-            this.btnChonPass.TabIndex = 92;
-            this.btnChonPass.Text = "Chọn tệp";
-            this.btnChonPass.UseVisualStyleBackColor = true;
+            this.btnPassport.Location = new System.Drawing.Point(413, 400);
+            this.btnPassport.Name = "btnPassport";
+            this.btnPassport.Size = new System.Drawing.Size(78, 22);
+            this.btnPassport.TabIndex = 92;
+            this.btnPassport.Text = "Chọn tệp";
+            this.btnPassport.UseVisualStyleBackColor = true;
+            this.btnPassport.Click += new System.EventHandler(this.BtnPassport_Click);
             // 
             // panel1
             // 
@@ -194,14 +204,15 @@
             this.radioNam.Text = "Nam";
             this.radioNam.UseVisualStyleBackColor = true;
             // 
-            // btnChonAnh
+            // btnAvatar
             // 
-            this.btnChonAnh.Location = new System.Drawing.Point(178, 236);
-            this.btnChonAnh.Name = "btnChonAnh";
-            this.btnChonAnh.Size = new System.Drawing.Size(76, 23);
-            this.btnChonAnh.TabIndex = 90;
-            this.btnChonAnh.Text = "Chọn ảnh";
-            this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnAvatar.Location = new System.Drawing.Point(178, 236);
+            this.btnAvatar.Name = "btnAvatar";
+            this.btnAvatar.Size = new System.Drawing.Size(76, 23);
+            this.btnAvatar.TabIndex = 90;
+            this.btnAvatar.Text = "Chọn ảnh";
+            this.btnAvatar.UseVisualStyleBackColor = true;
+            this.btnAvatar.Click += new System.EventHandler(this.BtnAvatar_Click);
             // 
             // label9
             // 
@@ -214,6 +225,7 @@
             // 
             // dateNgaySinh
             // 
+            this.dateNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateNgaySinh.Location = new System.Drawing.Point(413, 146);
             this.dateNgaySinh.Name = "dateNgaySinh";
             this.dateNgaySinh.Size = new System.Drawing.Size(231, 21);
@@ -244,7 +256,8 @@
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(413, 86);
+            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbName.Location = new System.Drawing.Point(413, 87);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(420, 21);
             this.tbName.TabIndex = 84;
@@ -329,6 +342,7 @@
             this.btnDK.TabIndex = 96;
             this.btnDK.Text = "Đăng ký dịch vụ";
             this.btnDK.UseVisualStyleBackColor = true;
+            this.btnDK.Click += new System.EventHandler(this.BtnDK_Click);
             // 
             // FrmUpdateKhachHang
             // 
@@ -339,9 +353,9 @@
             this.Controls.Add(this.comboQuocTich);
             this.Controls.Add(this.tbSHC);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.btnChonPass);
+            this.Controls.Add(this.btnPassport);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnChonAnh);
+            this.Controls.Add(this.btnAvatar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dateNgaySinh);
             this.Controls.Add(this.pBPassport);
@@ -387,11 +401,11 @@
         private System.Windows.Forms.ComboBox comboQuocTich;
         private System.Windows.Forms.TextBox tbSHC;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnChonPass;
+        private System.Windows.Forms.Button btnPassport;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton radioNu;
         private System.Windows.Forms.RadioButton radioNam;
-        private System.Windows.Forms.Button btnChonAnh;
+        private System.Windows.Forms.Button btnAvatar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateNgaySinh;
         private System.Windows.Forms.PictureBox pBPassport;
