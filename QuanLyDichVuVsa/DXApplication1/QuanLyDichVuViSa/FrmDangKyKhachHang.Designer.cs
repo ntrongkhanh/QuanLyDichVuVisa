@@ -65,7 +65,7 @@
             this.tbSHC.Location = new System.Drawing.Point(406, 113);
             this.tbSHC.Name = "tbSHC";
             this.tbSHC.Size = new System.Drawing.Size(231, 20);
-            this.tbSHC.TabIndex = 48;
+            this.tbSHC.TabIndex = 1;
             // 
             // label10
             // 
@@ -81,7 +81,7 @@
             this.btnChonPass.Location = new System.Drawing.Point(406, 397);
             this.btnChonPass.Name = "btnChonPass";
             this.btnChonPass.Size = new System.Drawing.Size(78, 22);
-            this.btnChonPass.TabIndex = 46;
+            this.btnChonPass.TabIndex = 6;
             this.btnChonPass.Text = "Chọn tệp";
             this.btnChonPass.UseVisualStyleBackColor = true;
             this.btnChonPass.Click += new System.EventHandler(this.BtnChonPass_Click);
@@ -122,7 +122,7 @@
             this.btnChonAnh.Location = new System.Drawing.Point(171, 233);
             this.btnChonAnh.Name = "btnChonAnh";
             this.btnChonAnh.Size = new System.Drawing.Size(76, 23);
-            this.btnChonAnh.TabIndex = 44;
+            this.btnChonAnh.TabIndex = 7;
             this.btnChonAnh.Text = "Chọn ảnh";
             this.btnChonAnh.UseVisualStyleBackColor = true;
             this.btnChonAnh.Click += new System.EventHandler(this.BtnChonAnh_Click);
@@ -132,7 +132,7 @@
             this.btnThoat.Location = new System.Drawing.Point(632, 438);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(194, 31);
-            this.btnThoat.TabIndex = 43;
+            this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Đóng";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.BtnThoat_Click);
@@ -142,7 +142,7 @@
             this.btnDangKi.Location = new System.Drawing.Point(406, 438);
             this.btnDangKi.Name = "btnDangKi";
             this.btnDangKi.Size = new System.Drawing.Size(202, 31);
-            this.btnDangKi.TabIndex = 42;
+            this.btnDangKi.TabIndex = 8;
             this.btnDangKi.Text = "Đăng kí";
             this.btnDangKi.UseVisualStyleBackColor = true;
             this.btnDangKi.Click += new System.EventHandler(this.BtnDangKi_Click);
@@ -162,14 +162,14 @@
             this.dateNgaySinh.Location = new System.Drawing.Point(406, 143);
             this.dateNgaySinh.Name = "dateNgaySinh";
             this.dateNgaySinh.Size = new System.Drawing.Size(231, 20);
-            this.dateNgaySinh.TabIndex = 40;
+            this.dateNgaySinh.TabIndex = 2;
             // 
             // tbSDT
             // 
             this.tbSDT.Location = new System.Drawing.Point(406, 203);
             this.tbSDT.Name = "tbSDT";
             this.tbSDT.Size = new System.Drawing.Size(420, 20);
-            this.tbSDT.TabIndex = 37;
+            this.tbSDT.TabIndex = 4;
             this.tbSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TbSDT_KeyPress);
             // 
             // tbEmail
@@ -177,14 +177,14 @@
             this.tbEmail.Location = new System.Drawing.Point(406, 173);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(420, 20);
-            this.tbEmail.TabIndex = 36;
+            this.tbEmail.TabIndex = 3;
             // 
             // tbName
             // 
             this.tbName.Location = new System.Drawing.Point(406, 83);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(420, 20);
-            this.tbName.TabIndex = 35;
+            this.tbName.TabIndex = 0;
             // 
             // label8
             // 
@@ -294,7 +294,7 @@
             this.comboQuocTich.Location = new System.Drawing.Point(406, 233);
             this.comboQuocTich.Name = "comboQuocTich";
             this.comboQuocTich.Size = new System.Drawing.Size(420, 21);
-            this.comboQuocTich.TabIndex = 51;
+            this.comboQuocTich.TabIndex = 5;
             this.comboQuocTich.TextChanged += new System.EventHandler(this.ComboQuocTich_TextChanged);
             // 
             // FrmDangKyKhachHang

@@ -34,7 +34,7 @@ namespace QuanLyDichVuViSa
         
         
         private List<string> maDVBS=new List<string>();
-        private string soHoChieu;
+        private string soHoChieu="";
         public FrmDangKyDichVu()
         {
             InitializeComponent();

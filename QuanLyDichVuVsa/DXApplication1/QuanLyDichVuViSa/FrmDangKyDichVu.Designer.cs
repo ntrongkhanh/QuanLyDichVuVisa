@@ -88,7 +88,7 @@
             this.btDong.Location = new System.Drawing.Point(865, 442);
             this.btDong.Name = "btDong";
             this.btDong.Size = new System.Drawing.Size(90, 27);
-            this.btDong.TabIndex = 79;
+            this.btDong.TabIndex = 2;
             this.btDong.Text = "Đóng";
             this.btDong.UseVisualStyleBackColor = true;
             this.btDong.Click += new System.EventHandler(this.BtDong_Click);
@@ -98,7 +98,7 @@
             this.btXuat.Location = new System.Drawing.Point(736, 442);
             this.btXuat.Name = "btXuat";
             this.btXuat.Size = new System.Drawing.Size(119, 27);
-            this.btXuat.TabIndex = 78;
+            this.btXuat.TabIndex = 1;
             this.btXuat.Text = "Xuất biên nhận";
             this.btXuat.UseVisualStyleBackColor = true;
             // 
@@ -107,7 +107,7 @@
             this.btLuu.Location = new System.Drawing.Point(605, 442);
             this.btLuu.Name = "btLuu";
             this.btLuu.Size = new System.Drawing.Size(119, 27);
-            this.btLuu.TabIndex = 77;
+            this.btLuu.TabIndex = 0;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
             this.btLuu.Click += new System.EventHandler(this.BtLuu_Click);
@@ -140,7 +140,7 @@
             this.tbSoHoChieu.Multiline = true;
             this.tbSoHoChieu.Name = "tbSoHoChieu";
             this.tbSoHoChieu.Size = new System.Drawing.Size(231, 26);
-            this.tbSoHoChieu.TabIndex = 56;
+            this.tbSoHoChieu.TabIndex = 0;
             // 
             // simpleButton1
             // 
@@ -190,7 +190,7 @@
             this.tbQuocGia.Name = "tbQuocGia";
             this.tbQuocGia.ReadOnly = true;
             this.tbQuocGia.Size = new System.Drawing.Size(350, 20);
-            this.tbQuocGia.TabIndex = 34;
+            this.tbQuocGia.TabIndex = 4;
             // 
             // tbSDT
             // 
@@ -198,7 +198,7 @@
             this.tbSDT.Name = "tbSDT";
             this.tbSDT.ReadOnly = true;
             this.tbSDT.Size = new System.Drawing.Size(350, 20);
-            this.tbSDT.TabIndex = 33;
+            this.tbSDT.TabIndex = 3;
             // 
             // tbEmail
             // 
@@ -206,7 +206,7 @@
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.ReadOnly = true;
             this.tbEmail.Size = new System.Drawing.Size(350, 20);
-            this.tbEmail.TabIndex = 32;
+            this.tbEmail.TabIndex = 2;
             // 
             // label8
             // 
@@ -241,7 +241,7 @@
             this.dateNgaySinh.Location = new System.Drawing.Point(88, 74);
             this.dateNgaySinh.Name = "dateNgaySinh";
             this.dateNgaySinh.Size = new System.Drawing.Size(350, 20);
-            this.dateNgaySinh.TabIndex = 28;
+            this.dateNgaySinh.TabIndex = 1;
             // 
             // label5
             // 
@@ -289,7 +289,7 @@
             this.tbTen.Name = "tbTen";
             this.tbTen.ReadOnly = true;
             this.tbTen.Size = new System.Drawing.Size(350, 20);
-            this.tbTen.TabIndex = 25;
+            this.tbTen.TabIndex = 0;
             // 
             // label3
             // 
@@ -347,7 +347,7 @@
             this.tbNoiCap.Location = new System.Drawing.Point(121, 99);
             this.tbNoiCap.Name = "tbNoiCap";
             this.tbNoiCap.Size = new System.Drawing.Size(198, 20);
-            this.tbNoiCap.TabIndex = 111;
+            this.tbNoiCap.TabIndex = 3;
             // 
             // label19
             // 
@@ -363,7 +363,7 @@
             this.tbNoiNhan.Location = new System.Drawing.Point(121, 72);
             this.tbNoiNhan.Name = "tbNoiNhan";
             this.tbNoiNhan.Size = new System.Drawing.Size(198, 20);
-            this.tbNoiNhan.TabIndex = 109;
+            this.tbNoiNhan.TabIndex = 2;
             // 
             // label17
             // 
@@ -391,7 +391,7 @@
             this.checkedComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.checkedComboBoxEdit1.Size = new System.Drawing.Size(292, 20);
-            this.checkedComboBoxEdit1.TabIndex = 106;
+            this.checkedComboBoxEdit1.TabIndex = 8;
             this.checkedComboBoxEdit1.EditValueChanged += new System.EventHandler(this.CheckedComboBoxEdit1_EditValueChanged);
             this.checkedComboBoxEdit1.TextChanged += new System.EventHandler(this.CheckedComboBoxEdit1_TextChanged);
             // 
@@ -446,7 +446,7 @@
             this.dateNgayDK.Location = new System.Drawing.Point(605, 8);
             this.dateNgayDK.Name = "dateNgayDK";
             this.dateNgayDK.Size = new System.Drawing.Size(350, 20);
-            this.dateNgayDK.TabIndex = 95;
+            this.dateNgayDK.TabIndex = 5;
             // 
             // label14
             // 
@@ -464,7 +464,7 @@
             this.comboThoiGianXL.Location = new System.Drawing.Point(121, 42);
             this.comboThoiGianXL.Name = "comboThoiGianXL";
             this.comboThoiGianXL.Size = new System.Drawing.Size(198, 21);
-            this.comboThoiGianXL.TabIndex = 93;
+            this.comboThoiGianXL.TabIndex = 1;
             this.comboThoiGianXL.TextChanged += new System.EventHandler(this.ComboThoiGianXL_TextChanged);
             // 
             // label13
@@ -481,7 +481,7 @@
             this.dateNgayXuatCanh.Location = new System.Drawing.Point(605, 69);
             this.dateNgayXuatCanh.Name = "dateNgayXuatCanh";
             this.dateNgayXuatCanh.Size = new System.Drawing.Size(350, 20);
-            this.dateNgayXuatCanh.TabIndex = 91;
+            this.dateNgayXuatCanh.TabIndex = 7;
             // 
             // label12
             // 
@@ -497,7 +497,7 @@
             this.dateNgayNhapCanh.Location = new System.Drawing.Point(605, 37);
             this.dateNgayNhapCanh.Name = "dateNgayNhapCanh";
             this.dateNgayNhapCanh.Size = new System.Drawing.Size(350, 20);
-            this.dateNgayNhapCanh.TabIndex = 89;
+            this.dateNgayNhapCanh.TabIndex = 6;
             // 
             // label11
             // 
@@ -515,7 +515,7 @@
             this.comboNoiNhapCanh.Location = new System.Drawing.Point(121, 129);
             this.comboNoiNhapCanh.Name = "comboNoiNhapCanh";
             this.comboNoiNhapCanh.Size = new System.Drawing.Size(198, 21);
-            this.comboNoiNhapCanh.TabIndex = 87;
+            this.comboNoiNhapCanh.TabIndex = 4;
             this.comboNoiNhapCanh.TextChanged += new System.EventHandler(this.ComboNoiNhapCanh_TextChanged);
             // 
             // label10
@@ -534,7 +534,7 @@
             this.comboLoaiViSa.Location = new System.Drawing.Point(121, 12);
             this.comboLoaiViSa.Name = "comboLoaiViSa";
             this.comboLoaiViSa.Size = new System.Drawing.Size(198, 21);
-            this.comboLoaiViSa.TabIndex = 85;
+            this.comboLoaiViSa.TabIndex = 0;
             this.comboLoaiViSa.TextChanged += new System.EventHandler(this.ComboLoaiViSa_TextChanged);
             // 
             // label9
