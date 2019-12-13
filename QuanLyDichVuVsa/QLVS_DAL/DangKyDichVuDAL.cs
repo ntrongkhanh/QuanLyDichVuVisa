@@ -38,7 +38,46 @@ namespace QLVS_DAL
             }
             return k;
         }
+        public DataTable loadLoaiVISA()
+        {
+            DataTable k = new DataTable();
+            MySqlConnection kn = new MySqlConnection(connectionString);
+            try
+            {
+                kn.Open();
+                string sql = "SELECT * FROM loaivisa";
+                MySqlDataAdapter dt = new MySqlDataAdapter(sql, kn);
+                dt.Fill(k);//đổ dữ liệu từ DataBase sang bảng
+                kn.Close();
+                dt.Dispose();
 
+            }
+            catch (Exception e)
+            {
+
+            }
+            return k;
+        }
+        public DataTable loadTGXL()
+        {
+            DataTable k = new DataTable();
+            MySqlConnection kn = new MySqlConnection(connectionString);
+            try
+            {
+                kn.Open();
+                string sql = "SELECT * FROM thoigianxuly";
+                MySqlDataAdapter dt = new MySqlDataAdapter(sql, kn);
+                dt.Fill(k);//đổ dữ liệu từ DataBase sang bảng
+                kn.Close();
+                dt.Dispose();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            return k;
+        }
 
         public bool them(DangKyKhachHangDTO dt)
         {

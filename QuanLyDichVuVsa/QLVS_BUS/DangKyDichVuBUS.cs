@@ -24,5 +24,13 @@ namespace QLVS_BUS
         {
             return dvdal.loadDVBS();
         }
+        public DataTable loadLoaiViSa()
+        {
+            return dvdal.loadLoaiVISA();
+        }
+        public DataTable loadTGXL()
+        {
+            return dvdal.loadTGXL();
+        }
     }
 }
