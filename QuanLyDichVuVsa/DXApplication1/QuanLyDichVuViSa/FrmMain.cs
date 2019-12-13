@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace QuanLyDichVuViSa
 {
     public partial class FrmMain : DevExpress.XtraEditors.XtraForm
     {
+
+        FrmDanhSachDichVu form_DSDV;
         public FrmMain()
         {
             InitializeComponent();
@@ -28,6 +23,7 @@ namespace QuanLyDichVuViSa
             }
             return null;
         }
+
         private void BarButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Form frm = kiemtraform(typeof(FrmDangKyKhachHang));
@@ -35,9 +31,9 @@ namespace QuanLyDichVuViSa
             {
                 FrmDangKyKhachHang forms = new FrmDangKyKhachHang();
                 forms.MdiParent = this;
-                
+
                 forms.Show();
-                
+
             }
             else
             {
@@ -62,7 +58,7 @@ namespace QuanLyDichVuViSa
 
         private void BarButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            Form frm = kiemtraform(typeof(FrmDanhSachDichVu));
             if (frm == null)
             {
                 FrmDangKyDichVu forms = new FrmDangKyDichVu();
@@ -78,78 +74,82 @@ namespace QuanLyDichVuViSa
         private void BarButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
-            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            Form frm = kiemtraform(typeof(FrmDanhSachDichVu));
             if (frm == null)
             {
-                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-                forms.MdiParent = this;
-                forms.Show();
+                form_DSDV = new FrmDanhSachDichVu("TT0001");
+                form_DSDV.MdiParent = this;
+                form_DSDV.Show();
             }
             else
             {
                 frm.Activate();
+                form_DSDV.timDichVu("TT0001");
             }
-            
-            
+
         }
 
         private void BarButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            Form frm = kiemtraform(typeof(FrmDanhSachDichVu));
             if (frm == null)
             {
-                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-                forms.MdiParent = this;
-                forms.Show();
+                form_DSDV = new FrmDanhSachDichVu("TT0002");
+                form_DSDV.MdiParent = this;
+                form_DSDV.Show();
             }
             else
             {
                 frm.Activate();
+                form_DSDV.timDichVu("TT0002");
             }
         }
 
         private void BarButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            Form frm = kiemtraform(typeof(FrmDanhSachDichVu));
             if (frm == null)
             {
-                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-                forms.MdiParent = this;
-                forms.Show();
+                form_DSDV = new FrmDanhSachDichVu("TT0003");
+                form_DSDV.MdiParent = this;
+                form_DSDV.Show();
             }
             else
             {
                 frm.Activate();
+                form_DSDV.timDichVu("TT0003");
             }
         }
 
         private void BarButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            Form frm = kiemtraform(typeof(FrmDanhSachDichVu));
             if (frm == null)
             {
-                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-                forms.MdiParent = this;
-                forms.Show();
+                form_DSDV = new FrmDanhSachDichVu("TT0004");
+                form_DSDV.MdiParent = this;
+                form_DSDV.Show();
             }
             else
             {
                 frm.Activate();
+                form_DSDV.timDichVu("TT0004");
             }
         }
 
         private void BarButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = kiemtraform(typeof(FrmDangKyDichVu));
+            Form frm = kiemtraform(typeof(FrmDanhSachDichVu));
             if (frm == null)
             {
-                FrmDanhSachDichVu forms = new FrmDanhSachDichVu();
-                forms.MdiParent = this;
-                forms.Show();
+                form_DSDV = new FrmDanhSachDichVu("TT0005");
+                form_DSDV.MdiParent = this;
+                form_DSDV.Show();
             }
             else
             {
                 frm.Activate();
+                form_DSDV.timDichVu("TT0005");
             }
         }
 
@@ -230,15 +230,39 @@ namespace QuanLyDichVuViSa
 
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn thoát", "Thoát", MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn thoát", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Yes)
             {
-                
+
             }
             else if (dialogResult == DialogResult.No)
             {
                 //do something elsef
                 e.Cancel = (dialogResult == DialogResult.No);
+            }
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonControl1_SelectedPageChanged(object sender, EventArgs e)
+        {
+            if (ribbonControl1.SelectedPage.Name == "pageDichVu")
+            {
+                Form frm = kiemtraform(typeof(FrmDanhSachDichVu));
+                if (frm == null)
+                {
+                    form_DSDV = new FrmDanhSachDichVu();
+                    form_DSDV.MdiParent = this;
+                    form_DSDV.Show();
+                }
+                else
+                {
+                    frm.Activate();
+                    form_DSDV.timDichVu();
+                }
             }
         }
     }
