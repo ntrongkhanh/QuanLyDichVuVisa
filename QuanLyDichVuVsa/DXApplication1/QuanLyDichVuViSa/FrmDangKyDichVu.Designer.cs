@@ -431,6 +431,7 @@
             // 
             // comboThoiGianXL
             // 
+            this.comboThoiGianXL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboThoiGianXL.FormattingEnabled = true;
             this.comboThoiGianXL.Location = new System.Drawing.Point(121, 42);
             this.comboThoiGianXL.Name = "comboThoiGianXL";
@@ -498,11 +499,13 @@
             // 
             // comboLoaiViSa
             // 
+            this.comboLoaiViSa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLoaiViSa.FormattingEnabled = true;
             this.comboLoaiViSa.Location = new System.Drawing.Point(121, 12);
             this.comboLoaiViSa.Name = "comboLoaiViSa";
             this.comboLoaiViSa.Size = new System.Drawing.Size(198, 21);
             this.comboLoaiViSa.TabIndex = 85;
+            this.comboLoaiViSa.TextChanged += new System.EventHandler(this.ComboLoaiViSa_TextChanged);
             // 
             // label9
             // 
