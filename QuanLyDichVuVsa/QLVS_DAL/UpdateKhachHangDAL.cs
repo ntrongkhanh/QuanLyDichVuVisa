@@ -43,7 +43,7 @@ namespace QLVS_DAL
         public bool update(UpdateKhachHangDTO dt)
         {
             string query = string.Empty;
-            query += " UPDATE `quanlikh`.`khachhang`  SET `HoTen` = @hoten,`GioiTinh` = @gioitinh,`NgaySinh` =@ngaysinh,`SDT` =@sdt,`Email` =@email,`MaQG` =@maqg,`SoHoChieu` = @sohochieu,`HinhPassport` =@passport ,`HinhDaiDien`=@avatar WHERE `MaKH` = @makh";
+            query += " UPDATE `quanlikh`.`khachhang`  SET `HoTen` = @hoten,`GioiTinh` = @gioitinh,`NgaySinh` =@ngaysinh,`SDT` =@sdt,`Email` =@email,`MaQG` =@maqg,`SoHoChieu` = @sohochieu,`anhPassport` =@passport ,`anhDaiDien`=@avatar WHERE `MaKH` = @makh";
 
 
             using (MySqlConnection con = new MySqlConnection(ConnectionString))
@@ -141,7 +141,7 @@ namespace QLVS_DAL
             //query += " OR (([EMAIL] LIKE CONCAT('%',@strTuKhoa,'%'))";
             //query += " OR (([TENQG] LIKE CONCAT('%',@strTuKhoa,'%'))";
 
-            query += "select KH.MaKH,HOTEN,SOHOCHIEU,GIOITINH,NGAYSINH,SDT,EMAIL,TENQG,HinhPassport,HinhDaiDien ";
+            query += "select KH.MaKH,HOTEN,SOHOCHIEU,GIOITINH,NGAYSINH,SDT,EMAIL,TENQG,anhPassport,anhDaiDien ";
             query += " from KHACHHANG KH ,QUOCGIA QG";
             query += " WHERE KH.MaQG=QG.MaQG";
             query += " and KH.MAKH=@strMa";
@@ -175,8 +175,8 @@ namespace QLVS_DAL
                                 kh.Email = reader["Email"].ToString();
                                 kh.TenQG = reader["TENQG"].ToString();
                                 kh.SoHoChieu = reader["SoHoChieu"].ToString();
-                                kh.Passport = (byte[])reader["HinhPassport"];
-                                kh.Avatar = (byte[])reader["HinhDaiDien"];
+                                kh.Passport = (byte[])reader["anhPassport"];
+                                kh.Avatar = (byte[])reader["anhDaiDien"];
 
 
 
@@ -207,7 +207,7 @@ namespace QLVS_DAL
             {
                 kn.Open();
                 string query = string.Empty;
-                query += "select KH.MaKH,HOTEN,GIOITINH,NGAYSINH,SDT,EMAIL,TENQG,SOHOCHIEU,HinhPassport,HinhDaiDien ";
+                query += "select KH.MaKH,HOTEN,GIOITINH,NGAYSINH,SDT,EMAIL,TENQG,SOHOCHIEU,anhPassport,anhDaiDien ";
                 query += " from KHACHHANG KH ,QUOCGIA QG";
                 query += " WHERE KH.MaQG=QG.MaQG";
                 query += " and KH.MAKH=\""+str+"\"";
