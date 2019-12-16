@@ -31,5 +31,11 @@ namespace QLVS_BUS
         {
             return dsDichVu_DAL.SelectByKeyword(keyword);
         }
+
+        public bool suaTT(DSDichVu dv)
+        {
+            bool re = dsDichVu_DAL.suaTT(dv);
+            return re;
+        }
     }
 }

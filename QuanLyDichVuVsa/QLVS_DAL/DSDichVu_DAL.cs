@@ -65,6 +65,7 @@ namespace QLVS_DAL
                                 dichVu.NoiNhan = reader["NoiNhan"].ToString();
                                 dichVu.ChiPhiThanhToan = int.Parse(reader["ChiPhiThanhToan"].ToString());
                                 dichVu.TrangThai = reader["trangThai"].ToString();
+                                dichVu.MaTrangThai = reader["maTrangThai"].ToString();
 
                                 listDV.Add(dichVu);
                             }
@@ -132,6 +133,7 @@ namespace QLVS_DAL
                                 dichVu.NoiNhan = reader["NoiNhan"].ToString();
                                 dichVu.ChiPhiThanhToan = int.Parse(reader["ChiPhiThanhToan"].ToString());
                                 dichVu.TrangThai = reader["trangThai"].ToString();
+                                dichVu.MaTrangThai = reader["maTrangThai"].ToString();
 
                                 listDV.Add(dichVu);
                             }
@@ -200,6 +202,7 @@ namespace QLVS_DAL
                                 dichVu.NoiNhan = reader["NoiNhan"].ToString();
                                 dichVu.ChiPhiThanhToan = int.Parse(reader["ChiPhiThanhToan"].ToString());
                                 dichVu.TrangThai = reader["trangThai"].ToString();
+                                dichVu.MaTrangThai = reader["maTrangThai"].ToString();
 
                                 listDV.Add(dichVu);
                             }
@@ -217,5 +220,37 @@ namespace QLVS_DAL
             }
             return listDV;
         }
+
+        public bool suaTT(DSDichVu dv) // sua trang thai
+        {
+            string query = string.Empty;
+            query += "UPDATE  `quanlikh`.`dichvu`" + "SET MaTrangThai = @MaTrangThai WHERE MaDV=@maDV";
+            using (MySqlConnection con = new MySqlConnection(ConnectionString))
+            {
+
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@MaDV", dv.MaDV);
+                    cmd.Parameters.AddWithValue("@MaTrangThai", dv.MaTrangThai);
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
     }
 }

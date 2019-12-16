@@ -46,6 +46,7 @@
             this.noiNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chiPhiThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lb_trangThai = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gw_dsdv)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lb_trangThai);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnDong);
             this.panel1.Controls.Add(this.tbTimKiem);
@@ -220,6 +222,18 @@
             this.trangThai.ReadOnly = true;
             this.trangThai.Width = 65;
             // 
+            // lb_trangThai
+            // 
+            this.lb_trangThai.AutoSize = true;
+            this.lb_trangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_trangThai.ForeColor = System.Drawing.Color.Green;
+            this.lb_trangThai.Location = new System.Drawing.Point(458, 55);
+            this.lb_trangThai.Name = "lb_trangThai";
+            this.lb_trangThai.Size = new System.Drawing.Size(52, 16);
+            this.lb_trangThai.TabIndex = 51;
+            this.lb_trangThai.Text = "Tất cả";
+            this.lb_trangThai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmDanhSachDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +243,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmDanhSachDichVu";
             this.Text = "Danh sách dịch vụ";
+            this.Load += new System.EventHandler(this.FrmDanhSachDichVu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gw_dsdv)).EndInit();
@@ -255,5 +270,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn noiNhan;
         private System.Windows.Forms.DataGridViewTextBoxColumn chiPhiThanhToan;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangThai;
+        public System.Windows.Forms.Label lb_trangThai;
     }
 }
