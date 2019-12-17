@@ -32,6 +32,7 @@
             this.tbTimKiem = new System.Windows.Forms.TextBox();
             this.btnDong = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_trangThai = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gw_dsdv = new System.Windows.Forms.DataGridView();
             this.maDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +47,6 @@
             this.noiNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chiPhiThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lb_trangThai = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gw_dsdv)).BeginInit();
             this.SuspendLayout();
@@ -73,12 +73,14 @@
             // 
             // btnDong
             // 
+            this.btnDong.BackColor = System.Drawing.Color.Red;
+            this.btnDong.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDong.Location = new System.Drawing.Point(897, 90);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(75, 31);
             this.btnDong.TabIndex = 10;
             this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.UseVisualStyleBackColor = false;
             this.btnDong.Click += new System.EventHandler(this.BtnDong_Click);
             // 
             // panel1
@@ -93,6 +95,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 130);
             this.panel1.TabIndex = 52;
+            // 
+            // lb_trangThai
+            // 
+            this.lb_trangThai.AutoSize = true;
+            this.lb_trangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_trangThai.ForeColor = System.Drawing.Color.Green;
+            this.lb_trangThai.Location = new System.Drawing.Point(458, 55);
+            this.lb_trangThai.Name = "lb_trangThai";
+            this.lb_trangThai.Size = new System.Drawing.Size(52, 16);
+            this.lb_trangThai.TabIndex = 51;
+            this.lb_trangThai.Text = "Tất cả";
+            this.lb_trangThai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -221,18 +235,6 @@
             this.trangThai.Name = "trangThai";
             this.trangThai.ReadOnly = true;
             this.trangThai.Width = 65;
-            // 
-            // lb_trangThai
-            // 
-            this.lb_trangThai.AutoSize = true;
-            this.lb_trangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_trangThai.ForeColor = System.Drawing.Color.Green;
-            this.lb_trangThai.Location = new System.Drawing.Point(458, 55);
-            this.lb_trangThai.Name = "lb_trangThai";
-            this.lb_trangThai.Size = new System.Drawing.Size(52, 16);
-            this.lb_trangThai.TabIndex = 51;
-            this.lb_trangThai.Text = "Tất cả";
-            this.lb_trangThai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmDanhSachDichVu
             // 

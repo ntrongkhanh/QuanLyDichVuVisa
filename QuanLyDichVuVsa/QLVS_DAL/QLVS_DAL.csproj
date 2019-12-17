@@ -58,6 +58,7 @@
     <Compile Include="DanhSachKhachHangDAL.cs" />
     <Compile Include="DiaChiNCDAL.cs" />
     <Compile Include="DichVuBoSungDAL.cs" />
+    <Compile Include="DoanhThuDAL.cs" />
     <Compile Include="DSDichVu_DAL.cs" />
     <Compile Include="LoaiViSaDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

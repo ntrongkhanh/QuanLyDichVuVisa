@@ -129,12 +129,14 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.Red;
+            this.btnThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThoat.Location = new System.Drawing.Point(632, 438);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(194, 31);
             this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Đóng";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.BtnThoat_Click);
             // 
             // btnDangKi

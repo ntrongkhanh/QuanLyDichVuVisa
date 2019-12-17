@@ -66,12 +66,14 @@
             // 
             // btnDong
             // 
+            this.btnDong.BackColor = System.Drawing.Color.Red;
+            this.btnDong.ForeColor = System.Drawing.Color.White;
             this.btnDong.Location = new System.Drawing.Point(759, 427);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(75, 31);
             this.btnDong.TabIndex = 66;
             this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.UseVisualStyleBackColor = false;
             this.btnDong.Click += new System.EventHandler(this.BtnDong_Click);
             // 
             // btnThayDoi
@@ -377,6 +379,7 @@
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnThayDoi);
             this.Name = "FrmUpdateKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chỉnh sửa thông tin";
             this.Load += new System.EventHandler(this.FrmUpdateKhachHang_Load);
             this.panel2.ResumeLayout(false);

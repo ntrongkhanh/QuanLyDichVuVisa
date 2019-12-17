@@ -517,12 +517,14 @@
             // 
             // btnDong
             // 
+            this.btnDong.BackColor = System.Drawing.Color.Red;
+            this.btnDong.ForeColor = System.Drawing.Color.White;
             this.btnDong.Location = new System.Drawing.Point(911, 411);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(75, 31);
             this.btnDong.TabIndex = 119;
             this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.UseVisualStyleBackColor = false;
             this.btnDong.Click += new System.EventHandler(this.BtnDong_Click);
             // 
             // FrmDichVu

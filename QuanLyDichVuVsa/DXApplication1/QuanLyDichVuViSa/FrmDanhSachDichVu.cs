@@ -137,7 +137,28 @@ namespace QuanLyDichVuViSa
                     kq = dsDichVu_Bus.suaTT(dichVu);
                     break;
             }
-            timDichVu();
+            if (lb_trangThai.Text == "Tất cả")
+                timDichVu();
+            else if (lb_trangThai.Text == "Chưa xử lý")
+            {
+                timDichVu("TT0001");
+            }
+            else if (lb_trangThai.Text == "Đang xử lý")
+            {
+                timDichVu("TT0002");
+            }
+            else if (lb_trangThai.Text == "Xử lý xong")
+            {
+                timDichVu("TT0003");
+            }
+            else if (lb_trangThai.Text == "Hoàn thành")
+            {
+                timDichVu("TT0004");
+            }
+            else
+            {
+                timDichVu("TT0005");
+            }
         }
 
         private void Gw_dsdv_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)

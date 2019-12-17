@@ -46,6 +46,7 @@
     <Compile Include="DanhSachKhachHangBUS.cs" />
     <Compile Include="DiaChiNCBUS.cs" />
     <Compile Include="DichVuBoSungBUS.cs" />
+    <Compile Include="DoanhThuBUS.cs" />
     <Compile Include="DSDichVu_BUS.cs" />
     <Compile Include="LoaiViSaBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

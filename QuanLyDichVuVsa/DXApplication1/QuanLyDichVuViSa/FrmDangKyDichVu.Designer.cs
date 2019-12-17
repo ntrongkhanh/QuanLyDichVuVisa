@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDangKyDichVu));
             this.btDong = new System.Windows.Forms.Button();
-            this.btXuat = new System.Windows.Forms.Button();
             this.btLuu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -85,28 +84,21 @@
             // 
             // btDong
             // 
-            this.btDong.Location = new System.Drawing.Point(865, 442);
+            this.btDong.BackColor = System.Drawing.Color.Red;
+            this.btDong.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btDong.Location = new System.Drawing.Point(818, 442);
             this.btDong.Name = "btDong";
-            this.btDong.Size = new System.Drawing.Size(90, 27);
+            this.btDong.Size = new System.Drawing.Size(137, 27);
             this.btDong.TabIndex = 2;
             this.btDong.Text = "Đóng";
-            this.btDong.UseVisualStyleBackColor = true;
+            this.btDong.UseVisualStyleBackColor = false;
             this.btDong.Click += new System.EventHandler(this.BtDong_Click);
-            // 
-            // btXuat
-            // 
-            this.btXuat.Location = new System.Drawing.Point(736, 442);
-            this.btXuat.Name = "btXuat";
-            this.btXuat.Size = new System.Drawing.Size(119, 27);
-            this.btXuat.TabIndex = 1;
-            this.btXuat.Text = "Xuất biên nhận";
-            this.btXuat.UseVisualStyleBackColor = true;
             // 
             // btLuu
             // 
             this.btLuu.Location = new System.Drawing.Point(605, 442);
             this.btLuu.Name = "btLuu";
-            this.btLuu.Size = new System.Drawing.Size(119, 27);
+            this.btLuu.Size = new System.Drawing.Size(157, 27);
             this.btLuu.TabIndex = 0;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
@@ -340,7 +332,7 @@
             this.groupBox2.Size = new System.Drawing.Size(984, 230);
             this.groupBox2.TabIndex = 85;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Dịch vụ";
+            this.groupBox2.Text = " ";
             // 
             // tbNoiCap
             // 
@@ -556,7 +548,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btDong);
             this.Controls.Add(this.btLuu);
-            this.Controls.Add(this.btXuat);
             this.Name = "FrmDangKyDichVu";
             this.Text = "Đăng ký dịch vụ";
             this.Load += new System.EventHandler(this.FrmDangKyDichVu_Load);
@@ -576,7 +567,6 @@
         #endregion
 
         private System.Windows.Forms.Button btDong;
-        private System.Windows.Forms.Button btXuat;
         private System.Windows.Forms.Button btLuu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
